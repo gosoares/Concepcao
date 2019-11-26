@@ -18,7 +18,6 @@ class Addac:
 
         self.s = mux1.y
         self.cout = adder.cout
-        self.acc = acc.y
 
 
 def create_addac_tvs():
