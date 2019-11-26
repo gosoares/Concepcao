@@ -14,7 +14,7 @@ class Inverter(LogicBlock):
         return {'y': y}
 
 
-def main():
+def create_inverter_tvs():
     inp = Wire()
     inverter = Inverter(inp)
     file = open('inverter.tv', 'w')
@@ -26,4 +26,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    create_inverter_tvs()

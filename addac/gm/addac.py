@@ -21,7 +21,7 @@ class Addac:
         self.acc = acc.y
 
 
-def main():
+def create_addac_tvs():
     a = Wire()
     sel0 = Wire()
     sel1 = Wire()
@@ -49,4 +49,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    create_addac_tvs()

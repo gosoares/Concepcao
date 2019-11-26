@@ -22,7 +22,7 @@ class Mux(LogicBlock):
             return {'y': inputs['d2']}
 
 
-def main():
+def create_mux_tvs():
     d1 = Wire()
     d2 = Wire()
     sel = Wire()
@@ -43,4 +43,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    create_mux_tvs()

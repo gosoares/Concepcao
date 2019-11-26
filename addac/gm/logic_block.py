@@ -1,13 +1,12 @@
 from __future__ import annotations
-from abc import ABC, abstractmethod
 
+from abc import abstractmethod
 from typing import List, Dict
 
 from gm.wire import Wire, WireListener
 
 
 class LogicBlock(WireListener):
-
     def __init__(self, inputs: Dict[str, Wire], outputs: List[str]):
         self.inputs = inputs
         self.outputs: Dict[str, Wire] = {x: Wire() for x in outputs}

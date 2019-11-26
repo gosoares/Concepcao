@@ -24,7 +24,7 @@ class Adder(LogicBlock):
         }
 
 
-def main():
+def create_adder_tvs():
     a = Wire()
     b = Wire()
     cin = Wire()
@@ -44,4 +44,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    create_adder_tvs()

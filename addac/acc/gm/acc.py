@@ -16,7 +16,7 @@ class Acc(LogicBlock):
         return output
 
 
-def main():
+def create_acc_tvs():
     x = Wire()
     clk = Wire()
     acc = Acc(x=x, clk=clk)
@@ -24,22 +24,18 @@ def main():
     file = open('acc.tv', 'w')
     file.write("# x_clk_y\n")
 
-    clock: int = 0
-    data: int = 0
-
     for i in range(50):  # gera 50 casos de teste
-        if randint(0, 1) == 0:  # muda dado
+        if randint(0, 2) == 0:  # inverte clock 1/3 de chance
+            clock = 1 - clk.data
+            clk.set(clock)
+        else:  # muda entrada 2/3 de chance
             data = randint(0, 15)
             x.set(data)
-        else:  # inverte clock
-            clock = 1 - clock
-            clk.set(clock)
 
-        file.write("{:04b}_{:1b}_{:04b}\n".format(data, clock, acc.y))
+        file.write("{:04b}_{:1b}_{:04b}\n".format(x, clk, acc.y))
 
     file.close()
 
 
 if __name__ == '__main__':
-    main()
-
+    create_acc_tvs()
