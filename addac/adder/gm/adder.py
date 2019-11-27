@@ -15,11 +15,14 @@ class Adder(LogicBlock):
         self.cout = self.outputs['cout']
 
     def operation(self, inputs: Dict[str, int]) -> Dict[str, int]:
-        sum_ = inputs['a'] + inputs['b'] + inputs['cin']
-        cout = sum_ >> 4
-        y = sum_ & 0b1111
+        a, b, cin = inputs['a'], inputs['b'], inputs['cin']
+
+        p = a ^ b
+        sum_ = p ^ cin
+        cout = a & b | (p & cin)
+
         return {
-            'y': y,
+            'y': sum_,
             'cout': cout
         }
 
@@ -29,17 +32,16 @@ def create_adder_tvs():
     b = Wire()
     cin = Wire()
     adder = Adder(a=a, b=b, cin=cin)
-    data_test = [0b0000, 0b1111, 0b1010, 0b0101, 0b0011, 0b1100]
 
-    file = open('adder.tv', 'w')
-    file.write("# a_b_cin_y_cout\n")
-    for i1 in data_test:
+    file = open('../simulation_modelsim/adder.tv', 'w')
+    file.write("# a_b_cin_cout_y\n")
+    for i1 in [0, 1]:
         a.set(i1)
-        for i2 in data_test:
+        for i2 in [0, 1]:
             b.set(i2)
             for c in [0, 1]:
                 cin.set(c)
-                file.write("{:04b}_{:04b}_{:1b}_{:04b}_{:1b}\n".format(i1, i2, c, adder.y, adder.cout))
+                file.write("{:1b}_{:1b}_{:1b}_{:1b}_{:1b}\n".format(a, b, cin, adder.cout, adder.y))
     file.close()
 
 

@@ -21,18 +21,18 @@ def create_acc_tvs():
     clk = Wire()
     acc = Acc(x=x, clk=clk)
 
-    file = open('acc.tv', 'w')
+    file = open('../simulation_modelsim/acc.tv', 'w')
     file.write("# x_clk_y\n")
 
-    for i in range(50):  # gera 50 casos de teste
+    for i in range(15):  # gera 15 casos de teste
         if randint(0, 2) == 0:  # inverte clock 1/3 de chance
             clock = 1 - clk.data
             clk.set(clock)
-        else:  # muda entrada 2/3 de chance
-            data = randint(0, 15)
+        else:  # inverte entrada 2/3 de chance
+            data = 1 - x.data
             x.set(data)
 
-        file.write("{:04b}_{:1b}_{:04b}\n".format(x, clk, acc.y))
+        file.write("{:1b}_{:1b}_{:1b}\n".format(x, clk, acc.y))
 
     file.close()
 
