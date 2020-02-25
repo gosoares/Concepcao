@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/Developer/Concepcao/mips/control_unit/main_controller/simulation/modelsim
 vmain_controller
-Z1 !s110 1582658242
+Z1 !s110 1582663384
 !i10b 1
 !s100 oJ4lj61DmNd9ID4HZ<^U@1
 IdboVYdF6m<L4TL9To9>Hk3
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1582658242.000000
+Z4 !s108 1582663384.000000
 !s107 main_controller_6_1200mv_85c_slow.vo|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|main_controller_6_1200mv_85c_slow.vo|
 !i113 1

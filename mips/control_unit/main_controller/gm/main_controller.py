@@ -4,69 +4,85 @@ from control_unit.gm.definitions import *
 class MainController:
     def __init__(self):
         self.state = S0
+        self.nextState = S1
+        self.MemtoReg = 0b0
+        self.RegDst = 0b0
+        self.IorD = 0b0
+        self.PCSrc = 0b0
+        self.ALUSrcB = 0b01
+        self.ALUSrcA = 0b0
+        self.IRWrite = 0b1
+        self.MemWrite = 0b0
+        self.PCWrite = 0b1
+        self.BranchEQ = 0b0
+        self.BranchNE = 0b0
+        self.RegWrite = 0b0
+        self.ALUOp = 0b00
 
-    def go_next_state(self, rst, opcode):
-        next_state = None
-        if rst:
-            next_state = S0
-        elif self.state == S0:
-            next_state = S1
+    def get_next_state(self, opcode):
+        if self.state == S0:
+            self.nextState = S1
         elif self.state == S1:
             if opcode in [SW, LW]:
-                next_state = S2
+                self.nextState = S2
             elif opcode in R_TYPE:
-                next_state = S6
+                self.nextState = S6
             elif opcode == BEQ:
-                next_state = S8
+                self.nextState = S8
             elif opcode in I_TYPE:
-                next_state = S9
+                self.nextState = S9
             elif opcode == J:
-                next_state = S11
+                self.nextState = S11
             elif opcode == BNE:
-                next_state = S12
+                self.nextState = S12
             else:
                 raise ValueError
         elif self.state == S2:
             if opcode == LW:
-                next_state = S3
+                self.nextState = S3
             elif opcode == SW:
-                next_state = S5
+                self.nextState = S5
 
         elif self.state == S3:
-            next_state = S4
+            self.nextState = S4
 
         elif self.state == S4:
-            next_state = S0
+            self.nextState = S0
 
         elif self.state == S5:
-            next_state = S0
+            self.nextState = S0
 
         elif self.state == S6:
-            next_state = S7
+            self.nextState = S7
 
         elif self.state == S7:
-            next_state = S0
+            self.nextState = S0
 
         elif self.state == S8:
-            next_state = S0
+            self.nextState = S0
 
         elif self.state == S9:
-            next_state = S10
+            self.nextState = S10
 
         elif self.state == S10:
-            next_state = S0
+            self.nextState = S0
 
         elif self.state == S11:
-            next_state = S0
+            self.nextState = S0
 
         elif self.state == S12:
-            next_state = S0
+            self.nextState = S0
 
         else:
             raise ValueError
 
-        self.state = next_state
-        return next_state
+        return self.nextState
+
+    def go_next_state(self, rst):
+        if rst == 1:
+            self.state = S0
+        else:
+            self.state = self.nextState
 
 
 def create_main_controller_tvs():
@@ -89,7 +105,8 @@ def create_main_controller_tvs():
             opcode = int(inp[2:8], 2)
 
         if clk == 1 or rst == 1:
-            main_controller.go_next_state(rst, opcode)
+            main_controller.go_next_state(rst)
+            main_controller.get_next_state(opcode)
             if main_controller.state == S0:
                 finished = True
 
