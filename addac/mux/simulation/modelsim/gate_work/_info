@@ -1,0 +1,57 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Developer/Concepcao/addac/mux/simulation/modelsim
+vmux
+Z1 !s110 1575730020
+!i10b 1
+!s100 dR3ohJ@fXSBncGLelB`GU1
+I6Qj8Ibo6Vd5TbGTG4HlBj0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1575325922
+8mux_6_1200mv_85c_slow.vo
+Fmux_6_1200mv_85c_slow.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1575730020.000000
+!s107 mux_6_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|mux_6_1200mv_85c_slow.vo|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+.
+Z5 tCvgOpt 0
+vmux_tb
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R1
+!i10b 1
+!s100 ]`M2<8M@5khnnNcCTPLU42
+IBo8cS=[3[@Uo7EWMNQPQz3
+R2
+!s105 mux_tb_sv_unit
+S1
+R0
+w1575730017
+8D:/Developer/Concepcao/addac/mux/testbench/mux_tb.sv
+FD:/Developer/Concepcao/addac/mux/testbench/mux_tb.sv
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Developer/Concepcao/addac/mux/testbench/mux_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Developer/Concepcao/addac/mux/testbench|D:/Developer/Concepcao/addac/mux/testbench/mux_tb.sv|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+D:/Developer/Concepcao/addac/mux/testbench
+R5

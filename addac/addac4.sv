@@ -1,8 +1,8 @@
 module addac4(
-    input logic [3:0] a;
-    input logic sel0, sel1, clk;
-    output logic [3:0] s;
-    output logic cout;
+    input logic [3:0] a,
+    input logic sel0, sel1, clk,
+    output logic [3:0] s,
+    output logic cout
 );
 
     logic [2:0] addacs_cout;

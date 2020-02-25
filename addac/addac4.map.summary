@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Dec 07 10:40:53 2019
+Quartus II Version : 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
+Revision Name : addac4
+Top-level Entity Name : addac4
+Family : Cyclone IV E
+Total logic elements : 11
+    Total combinational functions : 11
+    Dedicated logic registers : 4
+Total registers : 4
+Total pins : 12
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

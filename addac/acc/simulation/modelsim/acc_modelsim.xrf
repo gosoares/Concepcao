@@ -1,0 +1,8 @@
+vendor_name = ModelSim
+source_file = 1, D:/Developer/Concepcao/addac/acc/acc.sv
+source_file = 1, D:/Developer/Concepcao/addac/acc/db/acc.cbx.xml
+design_name = acc
+instance = comp, \y~output , y~output, acc, 1
+instance = comp, \clk~input , clk~input, acc, 1
+instance = comp, \a~input , a~input, acc, 1
+instance = comp, \y~reg0 , y~reg0, acc, 1

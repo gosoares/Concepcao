@@ -1,0 +1,57 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Developer/Concepcao/addac/acc/simulation/modelsim
+vacc
+Z1 !s110 1575752116
+!i10b 1
+!s100 ^P1AJX:^_E:hUl64RDSmg3
+IDk?Y@i0:M<kZTcKU06bOl1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1575325234
+8acc_6_1200mv_85c_slow.vo
+Facc_6_1200mv_85c_slow.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1575752116.000000
+!s107 acc_6_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|acc_6_1200mv_85c_slow.vo|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+.
+Z5 tCvgOpt 0
+vacc_tb
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R1
+!i10b 1
+!s100 ^KzPgIfK3B<Z6ND0e0:]I2
+Imf@GPU>7Z83NWGa5^2bAN1
+R2
+!s105 acc_tb_sv_unit
+S1
+R0
+w1575752114
+8D:/Developer/Concepcao/addac/acc/testbench/acc_tb.sv
+FD:/Developer/Concepcao/addac/acc/testbench/acc_tb.sv
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Developer/Concepcao/addac/acc/testbench/acc_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Developer/Concepcao/addac/acc/testbench|D:/Developer/Concepcao/addac/acc/testbench/acc_tb.sv|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+D:/Developer/Concepcao/addac/acc/testbench
+R5

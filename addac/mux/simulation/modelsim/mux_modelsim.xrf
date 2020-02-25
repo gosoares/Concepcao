@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, D:/Developer/Concepcao/addac/mux/mux.sv
+source_file = 1, D:/Developer/Concepcao/addac/mux/db/mux.cbx.xml
+design_name = mux
+instance = comp, \y~output , y~output, mux, 1
+instance = comp, \d1~input , d1~input, mux, 1
+instance = comp, \sel~input , sel~input, mux, 1
+instance = comp, \d0~input , d0~input, mux, 1
+instance = comp, \y~0 , y~0, mux, 1

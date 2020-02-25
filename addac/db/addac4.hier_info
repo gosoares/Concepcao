@@ -1,0 +1,199 @@
+|addac4
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+sel0 => sel0.IN5
+sel1 => sel1.IN4
+clk => clk.IN4
+s[0] <= addac:addac0.s
+s[1] <= addac:addac1.s
+s[2] <= addac:addac2.s
+s[3] <= addac:addac3.s
+cout <= addac:addac3.cout
+
+
+|addac4|addac:addac0
+a => a.IN2
+sel0 => sel0.IN1
+sel1 => sel1.IN1
+cin => cin.IN1
+clk => clk.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= adder:adder0.cout
+
+
+|addac4|addac:addac0|inv:inv0
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addac4|addac:addac0|mux:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addac4|addac:addac0|adder:adder0
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addac4|addac:addac0|mux:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addac4|addac:addac0|acc:acc0
+a => y~reg0.DATAIN
+clk => y~reg0.CLK
+y <= y~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addac4|addac:addac1
+a => a.IN2
+sel0 => sel0.IN1
+sel1 => sel1.IN1
+cin => cin.IN1
+clk => clk.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= adder:adder0.cout
+
+
+|addac4|addac:addac1|inv:inv0
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addac4|addac:addac1|mux:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addac4|addac:addac1|adder:adder0
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addac4|addac:addac1|mux:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addac4|addac:addac1|acc:acc0
+a => y~reg0.DATAIN
+clk => y~reg0.CLK
+y <= y~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addac4|addac:addac2
+a => a.IN2
+sel0 => sel0.IN1
+sel1 => sel1.IN1
+cin => cin.IN1
+clk => clk.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= adder:adder0.cout
+
+
+|addac4|addac:addac2|inv:inv0
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addac4|addac:addac2|mux:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addac4|addac:addac2|adder:adder0
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addac4|addac:addac2|mux:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addac4|addac:addac2|acc:acc0
+a => y~reg0.DATAIN
+clk => y~reg0.CLK
+y <= y~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addac4|addac:addac3
+a => a.IN2
+sel0 => sel0.IN1
+sel1 => sel1.IN1
+cin => cin.IN1
+clk => clk.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= adder:adder0.cout
+
+
+|addac4|addac:addac3|inv:inv0
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addac4|addac:addac3|mux:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addac4|addac:addac3|adder:adder0
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addac4|addac:addac3|mux:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addac4|addac:addac3|acc:acc0
+a => y~reg0.DATAIN
+clk => y~reg0.CLK
+y <= y~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

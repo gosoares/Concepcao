@@ -7,10 +7,9 @@ from gm.wire import Wire, WireListener
 
 
 class LogicBlock(WireListener):
-    def __init__(self, inputs: Dict[str, Wire], outputs: List[str]):
+    def __init__(self, inputs: Dict[str, Wire], outputs: Dict[str, Wire]):
         self.inputs = inputs
-        self.outputs: Dict[str, Wire] = {x: Wire() for x in outputs}
-        self.y = self.outputs[outputs[0]]  # first element in outputs is the main output
+        self.outputs = outputs
         for inp in inputs.values():
             inp.listen(self)
 

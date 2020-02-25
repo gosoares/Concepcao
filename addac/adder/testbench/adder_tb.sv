@@ -1,63 +1,78 @@
 `timescale 1ns/100ps
 module adder_tb;
     
-int counter, errors, aux_error;
-logic clk, rst;
-logic a, b, cin, s, s_esperado, cout, cout_esperado;
-logic [4:0] vectors[8];
+    int counter, errors, aux_error;
+    logic clk, rst;
+    integer file;
+    
+    logic a, b, cin, s, s_esperado, cout, cout_esperado;
+    
+    parameter max_vectors = 8;
+    logic [4:0] vectors[max_vectors];
 
-adder dut(a, b, cin, s, cout);
+    adder dut(a, b, cin, s, cout);
 
-initial begin
-    $display("Iniciando Testbench");
-    $display("| A | B | Cin | S |"); 
-    $display("---------------");
-    $readmemb("adder.tv", vectors);
-    counter = 0; errors = 0;
-    rst = 1; #33; rst = 0;		
-end
-	    
-always
-    begin
-    clk = 1; #10;
-    clk = 0; #5;
-    end
-
-always @(posedge clk)
-    if(~rst)
-    begin
-	    {a, b, cin, cout, y_esperado} = vectors[counter];	
-    end
-
-always @(negedge clk)	//Sempre (que o clock descer)
-    if(~rst)
-    begin
-        aux_error = errors;
-        assert (y === y_esperado)
-        else begin
-            errors = errors + 1;
-            $display("| %b | %b |  %b  | %b |  %b  | ERROR: S = %b", a, b, cin, s_esperado, cout_esperado, s);
-        end
+    initial begin
+        counter = 0; errors = 0;
+		rst = 1'b1; #12; rst = 0;
+		clk=0;
+		
+		if(~rst) begin
+			$readmemb("adder.tv", vectors);
+		end	
+		
+		file = $fopen("adder_out.txt");
+    
+        $display("Iniciando Testbench");
+        $display("---------------");
+        $display("| A | B | Cin | S |");
         
-        assert (y === y_esperado)
-        else begin
-            errors = errors + 1;
-            $display("| %b | %b |  %b  | %b |  %b  | ERROR: Cout = %b", a, b, cin, s_esperado, cout_esperado, cout);
+        $fwrite(file, "Iniciando Testbench");
+        $fwrite(file, "---------------");
+        $fwrite(file, "| A | B | Cin | S |"); 	
+    end
+	        
+    always begin
+        clk = 1; #7;
+        clk = 0; #5;
+    end
+
+    always @(posedge clk)
+        if(~rst) begin
+	        {a, b, cin, cout_esperado, s_esperado} = vectors[counter];	
         end
 
-        if(aux_error === errors)
-            $display("| %b | %b |  %b  | %b |  %b  | OK", a, b, cin, y, cout);
+    always @(negedge clk)	//Sempre (que o clock descer)
+        if(~rst && s_esperado !== 1'bx && cout_esperado !== 1'bx) begin
+            aux_error = errors;
+            
+            assert (s === s_esperado) else begin
+                errors++;
+                $error("| %b | %b |  %b  | %b |  %b  | ERROR: S = %b", a, b, cin, s_esperado, cout_esperado, s);
+                $fwrite(file, "| %b | %b |  %b  | %b |  %b  | ERROR: S = %b", a, b, cin, s_esperado, cout_esperado, s);
+            end
+            
+            assert (s === s_esperado) else begin
+                errors++;
+                $error("| %b | %b |  %b  | %b |  %b  | ERROR: Cout = %b", a, b, cin, s_esperado, cout_esperado, cout);
+                $fwrite(file, "| %b | %b |  %b  | %b |  %b  | ERROR: Cout = %b", a, b, cin, s_esperado, cout_esperado, cout);
+            end
 
-        counter++;	//Incrementa contador dos vertores de teste
-        
-        if(counter == $size(vectors)) //Quando os vetores de teste acabarem
-        begin
-	        $display("Testes Efetuados  = %0d", counter);
-	        $display("Erros Encontrados = %0d", errors);
-	        #10
-	        $stop;
-        end     
-    end
- endmodule
+            if(aux_error === errors) begin // Nao houve erro
+                $display("| %b | %b |  %b  | %b |  %b  | OK", a, b, cin, s, cout);
+                $fwrite(file, "| %b | %b |  %b  | %b |  %b  | OK", a, b, cin, s, cout);
+            end
+
+            counter++;	//Incrementa contador dos vertores de teste
+            if(counter == max_vectors) begin
+	            $display("Testes Efetuados  = %0d", counter);
+	            $display("Erros Encontrados = %0d", errors);
+	            $fwrite(file, "Testes Efetuados  = %0d", counter);
+	            $fwrite(file, "Erros Encontrados = %0d", errors);
+	            #10
+	            $stop;
+            end     
+        end
+endmodule
  
  

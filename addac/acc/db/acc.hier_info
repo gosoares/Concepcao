@@ -1,0 +1,6 @@
+|acc
+a => y~reg0.DATAIN
+clk => y~reg0.CLK
+y <= y~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

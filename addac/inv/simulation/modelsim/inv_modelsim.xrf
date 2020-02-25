@@ -1,0 +1,6 @@
+vendor_name = ModelSim
+source_file = 1, D:/Developer/Concepcao/addac/inv/inv.sv
+source_file = 1, D:/Developer/Concepcao/addac/inv/db/inv.cbx.xml
+design_name = inv
+instance = comp, \y~output , y~output, inv, 1
+instance = comp, \a~input , a~input, inv, 1

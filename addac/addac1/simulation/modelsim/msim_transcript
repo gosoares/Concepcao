@@ -1,0 +1,1246 @@
+# Reading C:/intelFPGA/16.1/modelsim_ase/tcl/vsim/pref.tcl
+# ERROR: No extended dataflow license exists
+# do addac_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Copying C:/intelFPGA/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {addac_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:58:38 on Dec 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." addac_6_1200mv_85c_slow.vo 
+# -- Compiling module addac
+# 
+# Top level modules:
+# 	addac
+# End time: 17:58:38 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/addac/addac1/testbench {D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:58:39 on Dec 07,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/addac/addac1/testbench" D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv 
+# -- Compiling module addac_tb
+# 
+# Top level modules:
+# 	addac_tb
+# End time: 17:58:39 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" addac_tb
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" addac_tb 
+# Start time: 17:58:39 on Dec 07,2019
+# Loading sv_std.std
+# Loading work.addac_tb
+# Loading work.addac
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# SDF 10.5b Compiler 2016.10 Oct  5 2016
+# 
+# Loading instances from addac_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from addac_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | Sel0 | Sel1 | Clk | S | Cout |
+# | 1 |  0   |  0   |  0  | 1 |  0   | OK
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 1 |  0   |  0   |  0  | 1 |  0   | OK
+# | 1 |  0   |  0   |  1  | 1 |  1   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 1 |  0   |  0   |  0  | 1 |  1   | OK
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 1 |  0   |  0   |  1  | 1 |  0   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 0 |  0   |  1   |  0  | 0 |  0   | OK
+# | 1 |  0   |  1   |  0  | 1 |  0   | OK
+# | 1 |  0   |  1   |  1  | 0 |  1   | OK
+# | 0 |  0   |  1   |  1  | 1 |  0   | OK
+# | 0 |  0   |  1   |  0  | 1 |  0   | OK
+# | 1 |  0   |  1   |  0  | 0 |  1   | OK
+# | 0 |  0   |  1   |  0  | 1 |  0   | OK
+# | 1 |  0   |  1   |  0  | 0 |  1   | OK
+# | 1 |  0   |  1   |  1  | 1 |  0   | OK
+# | 0 |  0   |  1   |  1  | 0 |  0   | OK
+# | 1 |  0   |  1   |  1  | 1 |  0   | OK
+# | 1 |  0   |  1   |  0  | 1 |  0   | OK
+# | 1 |  0   |  1   |  1  | 0 |  1   | OK
+# | 0 |  0   |  1   |  1  | 1 |  0   | OK
+# | 1 |  0   |  1   |  1  | 0 |  1   | OK
+# | 0 |  1   |  0   |  1  | 1 |  1   | OK
+# | 1 |  1   |  0   |  1  | 0 |  1   | OK
+# | 0 |  1   |  0   |  1  | 1 |  1   | OK
+# | 1 |  1   |  0   |  1  | 0 |  1   | OK
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# | 0 |  1   |  0   |  0  | 1 |  1   | OK
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# | 0 |  1   |  0   |  0  | 1 |  1   | OK
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# | 0 |  1   |  0   |  0  | 1 |  1   | OK
+# | 0 |  1   |  0   |  1  | 1 |  1   | OK
+# | 1 |  1   |  0   |  1  | 0 |  1   | OK
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# | 0 |  1   |  0   |  0  | 1 |  1   | OK
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# | 0 |  1   |  1   |  0  | 1 |  1   | OK
+# | 1 |  1   |  1   |  0  | 0 |  1   | OK
+# | 0 |  1   |  1   |  0  | 1 |  1   | OK
+# | 1 |  1   |  1   |  0  | 0 |  1   | OK
+# | 1 |  1   |  1   |  1  | 1 |  0   | OK
+# | 0 |  1   |  1   |  1  | 0 |  1   | OK
+# | 0 |  1   |  1   |  0  | 0 |  1   | OK
+# | 1 |  1   |  1   |  0  | 1 |  0   | OK
+# | 0 |  1   |  1   |  0  | 0 |  1   | OK
+# | 1 |  1   |  1   |  0  | 1 |  0   | OK
+# | 0 |  1   |  1   |  0  | 0 |  1   | OK
+# | 0 |  1   |  1   |  1  | 0 |  1   | OK
+# | 1 |  1   |  1   |  1  | 1 |  0   | OK
+# | 1 |  1   |  1   |  0  | 1 |  0   | OK
+# | 0 |  1   |  1   |  0  | 0 |  1   | OK
+# Testes Efetuados  = 63
+# Erros Encontrados = 0
+# ** Note: $stop    : D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv(77)
+#    Time: 950 ns  Iteration: 0  Instance: /addac_tb
+# Break in Module addac_tb at D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv line 77
+do addac_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# Error 31: Unable to unlink file "D:/Developer/Concepcao/addac/addac1/simulation/modelsim/gate_work/_lib.qdb".
+# Error 133: Unable to remove directory "D:/Developer/Concepcao/addac/addac1/simulation/modelsim/gate_work".
+# vlib gate_work
+# ** Error: (vlib-35) Failed to create directory "gate_work".
+# File exists. (errno = EEXIST)
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {addac_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:59:11 on Dec 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." addac_6_1200mv_85c_slow.vo 
+# -- Compiling module addac
+# 
+# Top level modules:
+# 	addac
+# End time: 17:59:12 on Dec 07,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/addac/addac1/testbench {D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:59:12 on Dec 07,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/addac/addac1/testbench" D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv 
+# -- Compiling module addac_tb
+# 
+# Top level modules:
+# 	addac_tb
+# End time: 17:59:12 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" addac_tb
+# End time: 17:59:14 on Dec 07,2019, Elapsed time: 0:00:35
+# Errors: 0, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" addac_tb 
+# Start time: 17:59:14 on Dec 07,2019
+# Loading sv_std.std
+# Loading work.addac_tb
+# Loading work.addac
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading instances from addac_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from addac_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | Sel0 | Sel1 | Clk | S | Cout |
+# ** Error: | 1 |  0   |  0   |  0  | 1 |  0   | ERROR: S = 0 Linha           4
+#    Time: 45 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  0   |  0   |  0  | 0 |  0   | ERROR: S = 1 Linha           5
+#    Time: 55 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  0   |  0  | 1 |  0   | ERROR: S = 0 Linha           6
+#    Time: 65 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  0   |  1  | 1 |  1   | ERROR: Cout = 0 Linha           7
+#    Time: 75 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 0 |  0   |  0   |  1  | 0 |  0   | ERROR: S = 1 Linha           8
+#    Time: 85 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  0   |  0   |  1  | 0 |  0   | ERROR: Cout = 1 Linha           8
+#    Time: 85 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# ** Error: | 1 |  0   |  0   |  0  | 1 |  1   | ERROR: S = 0 Linha          10
+#    Time: 105 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  0   |  0  | 1 |  1   | ERROR: Cout = 0 Linha          10
+#    Time: 105 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 0 |  0   |  0   |  0  | 0 |  0   | ERROR: S = 1 Linha          11
+#    Time: 115 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  0   |  0   |  0  | 0 |  0   | ERROR: Cout = 1 Linha          11
+#    Time: 115 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# ** Error: | 1 |  0   |  0   |  1  | 1 |  0   | ERROR: S = 0 Linha          13
+#    Time: 135 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  0   |  0   |  1  | 0 |  0   | ERROR: S = 1 Linha          14
+#    Time: 145 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 0 |  0   |  1   |  0  | 0 |  0   | OK
+# ** Error: | 1 |  0   |  1   |  0  | 1 |  0   | ERROR: S = 0 Linha          20
+#    Time: 205 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  1   |  1  | 0 |  1   | ERROR: S = 1 Linha          21
+#    Time: 215 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  1   |  1  | 0 |  1   | ERROR: Cout = 0 Linha          21
+#    Time: 215 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 0 |  0   |  1   |  1  | 1 |  0   | ERROR: S = 0 Linha          22
+#    Time: 225 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  0   |  1   |  1  | 1 |  0   | ERROR: Cout = 1 Linha          22
+#    Time: 225 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# | 0 |  0   |  1   |  0  | 1 |  0   | OK
+# ** Error: | 1 |  0   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          24
+#    Time: 245 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  1   |  0  | 0 |  1   | ERROR: Cout = 0 Linha          24
+#    Time: 245 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 0 |  0   |  1   |  0  | 1 |  0   | ERROR: S = 0 Linha          25
+#    Time: 255 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  0   |  1   |  0  | 1 |  0   | ERROR: Cout = 1 Linha          25
+#    Time: 255 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 1 |  0   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          26
+#    Time: 265 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  1   |  0  | 0 |  1   | ERROR: Cout = 0 Linha          26
+#    Time: 265 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 1 |  0   |  1   |  1  | 1 |  0   | ERROR: S = 0 Linha          27
+#    Time: 275 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  1   |  1  | 1 |  0   | ERROR: Cout = 1 Linha          27
+#    Time: 275 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 0 |  0   |  1   |  1  | 0 |  0   | ERROR: S = 1 Linha          28
+#    Time: 285 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  1   |  1  | 1 |  0   | ERROR: S = 0 Linha          29
+#    Time: 295 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  0   |  1   |  0  | 1 |  0   | OK
+# ** Error: | 1 |  0   |  1   |  1  | 0 |  1   | ERROR: S = 1 Linha          31
+#    Time: 315 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  1   |  1  | 0 |  1   | ERROR: Cout = 0 Linha          31
+#    Time: 315 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 0 |  0   |  1   |  1  | 1 |  0   | ERROR: S = 0 Linha          32
+#    Time: 325 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  0   |  1   |  1  | 1 |  0   | ERROR: Cout = 1 Linha          32
+#    Time: 325 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 1 |  0   |  1   |  1  | 0 |  1   | ERROR: S = 1 Linha          33
+#    Time: 335 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  1   |  1  | 0 |  1   | ERROR: Cout = 0 Linha          33
+#    Time: 335 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 0 |  1   |  0   |  1  | 1 |  1   | ERROR: S = 0 Linha          34
+#    Time: 345 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  0   |  1  | 0 |  1   | ERROR: S = 1 Linha          35
+#    Time: 355 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  0   |  1  | 1 |  1   | ERROR: S = 0 Linha          36
+#    Time: 365 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  0   |  1  | 0 |  1   | ERROR: S = 1 Linha          37
+#    Time: 375 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# ** Error: | 0 |  1   |  0   |  0  | 1 |  1   | ERROR: S = 0 Linha          39
+#    Time: 395 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  0   |  0  | 0 |  1   | ERROR: S = 1 Linha          40
+#    Time: 405 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  0   |  0  | 1 |  1   | ERROR: S = 0 Linha          41
+#    Time: 415 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  0   |  0  | 0 |  1   | ERROR: S = 1 Linha          42
+#    Time: 425 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  0   |  0  | 1 |  1   | ERROR: S = 0 Linha          43
+#    Time: 435 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  1   |  0   |  1  | 1 |  1   | OK
+# ** Error: | 1 |  1   |  0   |  1  | 0 |  1   | ERROR: S = 1 Linha          45
+#    Time: 455 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# ** Error: | 0 |  1   |  0   |  0  | 1 |  1   | ERROR: S = 0 Linha          47
+#    Time: 475 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  0   |  0  | 0 |  1   | ERROR: S = 1 Linha          48
+#    Time: 485 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  1   |  0  | 1 |  1   | ERROR: S = 0 Linha          49
+#    Time: 495 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          50
+#    Time: 505 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  1   |  0  | 1 |  1   | ERROR: S = 0 Linha          51
+#    Time: 515 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          52
+#    Time: 525 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  1   |  1  | 1 |  0   | ERROR: S = 0 Linha          53
+#    Time: 535 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  1   |  1  | 1 |  0   | ERROR: Cout = 1 Linha          53
+#    Time: 535 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 0 |  1   |  1   |  1  | 0 |  1   | ERROR: S = 1 Linha          54
+#    Time: 545 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  1   |  1  | 0 |  1   | ERROR: Cout = 0 Linha          54
+#    Time: 545 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# | 0 |  1   |  1   |  0  | 0 |  1   | OK
+# ** Error: | 1 |  1   |  1   |  0  | 1 |  0   | ERROR: S = 0 Linha          56
+#    Time: 565 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  1   |  0  | 1 |  0   | ERROR: Cout = 1 Linha          56
+#    Time: 565 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 0 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          57
+#    Time: 575 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  1   |  0  | 0 |  1   | ERROR: Cout = 0 Linha          57
+#    Time: 575 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 1 |  1   |  1   |  0  | 1 |  0   | ERROR: S = 0 Linha          58
+#    Time: 585 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  1   |  0  | 1 |  0   | ERROR: Cout = 1 Linha          58
+#    Time: 585 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 0 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          59
+#    Time: 595 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  1   |  0  | 0 |  1   | ERROR: Cout = 0 Linha          59
+#    Time: 595 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# | 0 |  1   |  1   |  1  | 0 |  1   | OK
+# ** Error: | 1 |  1   |  1   |  1  | 1 |  0   | ERROR: S = 0 Linha          61
+#    Time: 615 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  1   |  1  | 1 |  0   | ERROR: Cout = 1 Linha          61
+#    Time: 615 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# | 1 |  1   |  1   |  0  | 1 |  0   | OK
+# ** Error: | 0 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          63
+#    Time: 635 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  1   |  0  | 0 |  1   | ERROR: Cout = 0 Linha          63
+#    Time: 635 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# Testes Efetuados  = 63
+# Erros Encontrados = 65
+# ** Note: $stop    : D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv(77)
+#    Time: 645 ns  Iteration: 0  Instance: /addac_tb
+# Break in Module addac_tb at D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv line 77
+do addac_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {addac_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:59:33 on Dec 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." addac_6_1200mv_85c_slow.vo 
+# -- Compiling module addac
+# 
+# Top level modules:
+# 	addac
+# End time: 17:59:33 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/addac/addac1/testbench {D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:59:33 on Dec 07,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/addac/addac1/testbench" D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv 
+# -- Compiling module addac_tb
+# 
+# Top level modules:
+# 	addac_tb
+# End time: 17:59:33 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" addac_tb
+# End time: 17:59:35 on Dec 07,2019, Elapsed time: 0:00:21
+# Errors: 65, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" addac_tb 
+# Start time: 17:59:35 on Dec 07,2019
+# Loading sv_std.std
+# Loading work.addac_tb
+# Loading work.addac
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading instances from addac_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from addac_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | Sel0 | Sel1 | Clk | S | Cout |
+# | 1 |  0   |  0   |  0  | 1 |  0   | OK
+# ** Error: | 0 |  0   |  0   |  0  | 0 |  0   | ERROR: S = 1 Linha           5
+#    Time: 60 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  0   |  0   |  0  | 1 |  0   | OK
+# | 1 |  0   |  0   |  1  | 1 |  1   | OK
+# ** Error: | 0 |  0   |  0   |  1  | 0 |  0   | ERROR: S = 1 Linha           8
+#    Time: 99 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 1 |  0   |  0   |  0  | 1 |  1   | OK
+# ** Error: | 0 |  0   |  0   |  0  | 0 |  0   | ERROR: S = 1 Linha          11
+#    Time: 138 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 1 |  0   |  0   |  1  | 1 |  0   | OK
+# ** Error: | 0 |  0   |  0   |  1  | 0 |  0   | ERROR: S = 1 Linha          14
+#    Time: 177 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 0 |  0   |  1   |  0  | 0 |  0   | OK
+# | 1 |  0   |  1   |  0  | 1 |  0   | OK
+# | 1 |  0   |  1   |  1  | 0 |  1   | OK
+# ** Error: | 0 |  0   |  1   |  1  | 1 |  0   | ERROR: S = 0 Linha          22
+#    Time: 281 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  0   |  1   |  0  | 1 |  0   | OK
+# ** Error: | 1 |  0   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          24
+#    Time: 307 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  0   |  1   |  0  | 1 |  0   | ERROR: S = 0 Linha          25
+#    Time: 320 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          26
+#    Time: 333 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  0   |  1   |  1  | 1 |  0   | OK
+# ** Error: | 0 |  0   |  1   |  1  | 0 |  0   | ERROR: S = 1 Linha          28
+#    Time: 359 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  0   |  1   |  1  | 1 |  0   | OK
+# | 1 |  0   |  1   |  0  | 1 |  0   | OK
+# | 1 |  0   |  1   |  1  | 0 |  1   | OK
+# ** Error: | 0 |  0   |  1   |  1  | 1 |  0   | ERROR: S = 0 Linha          32
+#    Time: 411 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  1   |  1  | 0 |  1   | ERROR: S = 1 Linha          33
+#    Time: 424 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  0   |  1  | 1 |  1   | ERROR: S = 0 Linha          34
+#    Time: 437 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  0   |  1  | 0 |  1   | OK
+# ** Error: | 0 |  1   |  0   |  1  | 1 |  1   | ERROR: S = 0 Linha          36
+#    Time: 463 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  0   |  1  | 0 |  1   | OK
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# ** Error: | 0 |  1   |  0   |  0  | 1 |  1   | ERROR: S = 0 Linha          39
+#    Time: 502 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# ** Error: | 0 |  1   |  0   |  0  | 1 |  1   | ERROR: S = 0 Linha          41
+#    Time: 528 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# ** Error: | 0 |  1   |  0   |  0  | 1 |  1   | ERROR: S = 0 Linha          43
+#    Time: 554 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  1   |  0   |  1  | 1 |  1   | OK
+# | 1 |  1   |  0   |  1  | 0 |  1   | OK
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# ** Error: | 0 |  1   |  0   |  0  | 1 |  1   | ERROR: S = 0 Linha          47
+#    Time: 606 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# ** Error: | 0 |  1   |  1   |  0  | 1 |  1   | ERROR: S = 0 Linha          49
+#    Time: 632 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          50
+#    Time: 645 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  1   |  0  | 1 |  1   | ERROR: S = 0 Linha          51
+#    Time: 658 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          52
+#    Time: 671 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  1   |  1  | 1 |  0   | OK
+# ** Error: | 0 |  1   |  1   |  1  | 0 |  1   | ERROR: S = 1 Linha          54
+#    Time: 697 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  1   |  1   |  0  | 0 |  1   | OK
+# | 1 |  1   |  1   |  0  | 1 |  0   | OK
+# ** Error: | 0 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          57
+#    Time: 736 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  1   |  0  | 1 |  0   | OK
+# ** Error: | 0 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          59
+#    Time: 762 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  1   |  1   |  1  | 0 |  1   | OK
+# | 1 |  1   |  1   |  1  | 1 |  0   | OK
+# | 1 |  1   |  1   |  0  | 1 |  0   | OK
+# ** Error: | 0 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          63
+#    Time: 814 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# Testes Efetuados  = 63
+# Erros Encontrados = 25
+# ** Note: $stop    : D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv(77)
+#    Time: 824 ns  Iteration: 0  Instance: /addac_tb
+# Break in Module addac_tb at D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv line 77
+do addac_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {addac_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:59:51 on Dec 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." addac_6_1200mv_85c_slow.vo 
+# -- Compiling module addac
+# 
+# Top level modules:
+# 	addac
+# End time: 17:59:51 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/addac/addac1/testbench {D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:59:52 on Dec 07,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/addac/addac1/testbench" D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv 
+# -- Compiling module addac_tb
+# 
+# Top level modules:
+# 	addac_tb
+# End time: 17:59:52 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" addac_tb
+# End time: 17:59:54 on Dec 07,2019, Elapsed time: 0:00:19
+# Errors: 25, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" addac_tb 
+# Start time: 17:59:54 on Dec 07,2019
+# Loading sv_std.std
+# Loading work.addac_tb
+# Loading work.addac
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading instances from addac_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from addac_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | Sel0 | Sel1 | Clk | S | Cout |
+# | 1 |  0   |  0   |  0  | 1 |  0   | OK
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 1 |  0   |  0   |  0  | 1 |  0   | OK
+# | 1 |  0   |  0   |  1  | 1 |  1   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 1 |  0   |  0   |  0  | 1 |  1   | OK
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 1 |  0   |  0   |  1  | 1 |  0   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 0 |  0   |  1   |  0  | 0 |  0   | OK
+# | 1 |  0   |  1   |  0  | 1 |  0   | OK
+# | 1 |  0   |  1   |  1  | 0 |  1   | OK
+# | 0 |  0   |  1   |  1  | 1 |  0   | OK
+# | 0 |  0   |  1   |  0  | 1 |  0   | OK
+# | 1 |  0   |  1   |  0  | 0 |  1   | OK
+# | 0 |  0   |  1   |  0  | 1 |  0   | OK
+# | 1 |  0   |  1   |  0  | 0 |  1   | OK
+# | 1 |  0   |  1   |  1  | 1 |  0   | OK
+# | 0 |  0   |  1   |  1  | 0 |  0   | OK
+# | 1 |  0   |  1   |  1  | 1 |  0   | OK
+# | 1 |  0   |  1   |  0  | 1 |  0   | OK
+# | 1 |  0   |  1   |  1  | 0 |  1   | OK
+# | 0 |  0   |  1   |  1  | 1 |  0   | OK
+# | 1 |  0   |  1   |  1  | 0 |  1   | OK
+# | 0 |  1   |  0   |  1  | 1 |  1   | OK
+# | 1 |  1   |  0   |  1  | 0 |  1   | OK
+# | 0 |  1   |  0   |  1  | 1 |  1   | OK
+# | 1 |  1   |  0   |  1  | 0 |  1   | OK
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# | 0 |  1   |  0   |  0  | 1 |  1   | OK
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# | 0 |  1   |  0   |  0  | 1 |  1   | OK
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# | 0 |  1   |  0   |  0  | 1 |  1   | OK
+# | 0 |  1   |  0   |  1  | 1 |  1   | OK
+# | 1 |  1   |  0   |  1  | 0 |  1   | OK
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# | 0 |  1   |  0   |  0  | 1 |  1   | OK
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# | 0 |  1   |  1   |  0  | 1 |  1   | OK
+# | 1 |  1   |  1   |  0  | 0 |  1   | OK
+# | 0 |  1   |  1   |  0  | 1 |  1   | OK
+# | 1 |  1   |  1   |  0  | 0 |  1   | OK
+# | 1 |  1   |  1   |  1  | 1 |  0   | OK
+# | 0 |  1   |  1   |  1  | 0 |  1   | OK
+# | 0 |  1   |  1   |  0  | 0 |  1   | OK
+# | 1 |  1   |  1   |  0  | 1 |  0   | OK
+# | 0 |  1   |  1   |  0  | 0 |  1   | OK
+# | 1 |  1   |  1   |  0  | 1 |  0   | OK
+# | 0 |  1   |  1   |  0  | 0 |  1   | OK
+# | 0 |  1   |  1   |  1  | 0 |  1   | OK
+# | 1 |  1   |  1   |  1  | 1 |  0   | OK
+# | 1 |  1   |  1   |  0  | 1 |  0   | OK
+# | 0 |  1   |  1   |  0  | 0 |  1   | OK
+# Testes Efetuados  = 63
+# Erros Encontrados = 0
+# ** Note: $stop    : D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv(77)
+#    Time: 887 ns  Iteration: 0  Instance: /addac_tb
+# Break in Module addac_tb at D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv line 77
+do addac_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {addac_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:00:45 on Dec 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." addac_6_1200mv_85c_slow.vo 
+# -- Compiling module addac
+# 
+# Top level modules:
+# 	addac
+# End time: 18:00:45 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/addac/addac1/testbench {D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:00:45 on Dec 07,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/addac/addac1/testbench" D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv 
+# -- Compiling module addac_tb
+# 
+# Top level modules:
+# 	addac_tb
+# End time: 18:00:45 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" addac_tb
+# End time: 18:00:47 on Dec 07,2019, Elapsed time: 0:00:53
+# Errors: 0, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" addac_tb 
+# Start time: 18:00:47 on Dec 07,2019
+# Loading sv_std.std
+# Loading work.addac_tb
+# Loading work.addac
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading instances from addac_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from addac_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | Sel0 | Sel1 | Clk | S | Cout |
+# ** Error: | 1 |  0   |  0   |  0  | 1 |  0   | ERROR: S = 0 Linha           4
+#    Time: 45 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  0   |  0   |  0  | 0 |  0   | ERROR: S = 1 Linha           5
+#    Time: 55 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  0   |  0  | 1 |  0   | ERROR: S = 0 Linha           6
+#    Time: 65 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  0   |  1  | 1 |  1   | ERROR: Cout = 0 Linha           7
+#    Time: 75 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 0 |  0   |  0   |  1  | 0 |  0   | ERROR: S = 1 Linha           8
+#    Time: 85 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  0   |  0   |  1  | 0 |  0   | ERROR: Cout = 1 Linha           8
+#    Time: 85 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# ** Error: | 1 |  0   |  0   |  0  | 1 |  1   | ERROR: S = 0 Linha          10
+#    Time: 105 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  0   |  0  | 1 |  1   | ERROR: Cout = 0 Linha          10
+#    Time: 105 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 0 |  0   |  0   |  0  | 0 |  0   | ERROR: S = 1 Linha          11
+#    Time: 115 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  0   |  0   |  0  | 0 |  0   | ERROR: Cout = 1 Linha          11
+#    Time: 115 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# ** Error: | 1 |  0   |  0   |  1  | 1 |  0   | ERROR: S = 0 Linha          13
+#    Time: 135 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  0   |  0   |  1  | 0 |  0   | ERROR: S = 1 Linha          14
+#    Time: 145 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 0 |  0   |  1   |  0  | 0 |  0   | OK
+# ** Error: | 1 |  0   |  1   |  0  | 1 |  0   | ERROR: S = 0 Linha          20
+#    Time: 205 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  1   |  1  | 0 |  1   | ERROR: S = 1 Linha          21
+#    Time: 215 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  1   |  1  | 0 |  1   | ERROR: Cout = 0 Linha          21
+#    Time: 215 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 0 |  0   |  1   |  1  | 1 |  0   | ERROR: S = 0 Linha          22
+#    Time: 225 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  0   |  1   |  1  | 1 |  0   | ERROR: Cout = 1 Linha          22
+#    Time: 225 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# | 0 |  0   |  1   |  0  | 1 |  0   | OK
+# ** Error: | 1 |  0   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          24
+#    Time: 245 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  1   |  0  | 0 |  1   | ERROR: Cout = 0 Linha          24
+#    Time: 245 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 0 |  0   |  1   |  0  | 1 |  0   | ERROR: S = 0 Linha          25
+#    Time: 255 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  0   |  1   |  0  | 1 |  0   | ERROR: Cout = 1 Linha          25
+#    Time: 255 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 1 |  0   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          26
+#    Time: 265 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  1   |  0  | 0 |  1   | ERROR: Cout = 0 Linha          26
+#    Time: 265 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 1 |  0   |  1   |  1  | 1 |  0   | ERROR: S = 0 Linha          27
+#    Time: 275 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  1   |  1  | 1 |  0   | ERROR: Cout = 1 Linha          27
+#    Time: 275 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 0 |  0   |  1   |  1  | 0 |  0   | ERROR: S = 1 Linha          28
+#    Time: 285 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  1   |  1  | 1 |  0   | ERROR: S = 0 Linha          29
+#    Time: 295 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  0   |  1   |  0  | 1 |  0   | OK
+# ** Error: | 1 |  0   |  1   |  1  | 0 |  1   | ERROR: S = 1 Linha          31
+#    Time: 315 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  1   |  1  | 0 |  1   | ERROR: Cout = 0 Linha          31
+#    Time: 315 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 0 |  0   |  1   |  1  | 1 |  0   | ERROR: S = 0 Linha          32
+#    Time: 325 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  0   |  1   |  1  | 1 |  0   | ERROR: Cout = 1 Linha          32
+#    Time: 325 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 1 |  0   |  1   |  1  | 0 |  1   | ERROR: S = 1 Linha          33
+#    Time: 335 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  1   |  1  | 0 |  1   | ERROR: Cout = 0 Linha          33
+#    Time: 335 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 0 |  1   |  0   |  1  | 1 |  1   | ERROR: S = 0 Linha          34
+#    Time: 345 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  0   |  1  | 0 |  1   | ERROR: S = 1 Linha          35
+#    Time: 355 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  0   |  1  | 1 |  1   | ERROR: S = 0 Linha          36
+#    Time: 365 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  0   |  1  | 0 |  1   | ERROR: S = 1 Linha          37
+#    Time: 375 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# ** Error: | 0 |  1   |  0   |  0  | 1 |  1   | ERROR: S = 0 Linha          39
+#    Time: 395 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  0   |  0  | 0 |  1   | ERROR: S = 1 Linha          40
+#    Time: 405 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  0   |  0  | 1 |  1   | ERROR: S = 0 Linha          41
+#    Time: 415 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  0   |  0  | 0 |  1   | ERROR: S = 1 Linha          42
+#    Time: 425 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  0   |  0  | 1 |  1   | ERROR: S = 0 Linha          43
+#    Time: 435 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  1   |  0   |  1  | 1 |  1   | OK
+# ** Error: | 1 |  1   |  0   |  1  | 0 |  1   | ERROR: S = 1 Linha          45
+#    Time: 455 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# ** Error: | 0 |  1   |  0   |  0  | 1 |  1   | ERROR: S = 0 Linha          47
+#    Time: 475 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  0   |  0  | 0 |  1   | ERROR: S = 1 Linha          48
+#    Time: 485 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  1   |  0  | 1 |  1   | ERROR: S = 0 Linha          49
+#    Time: 495 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          50
+#    Time: 505 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  1   |  0  | 1 |  1   | ERROR: S = 0 Linha          51
+#    Time: 515 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          52
+#    Time: 525 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  1   |  1  | 1 |  0   | ERROR: S = 0 Linha          53
+#    Time: 535 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  1   |  1  | 1 |  0   | ERROR: Cout = 1 Linha          53
+#    Time: 535 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 0 |  1   |  1   |  1  | 0 |  1   | ERROR: S = 1 Linha          54
+#    Time: 545 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  1   |  1  | 0 |  1   | ERROR: Cout = 0 Linha          54
+#    Time: 545 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# | 0 |  1   |  1   |  0  | 0 |  1   | OK
+# ** Error: | 1 |  1   |  1   |  0  | 1 |  0   | ERROR: S = 0 Linha          56
+#    Time: 565 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  1   |  0  | 1 |  0   | ERROR: Cout = 1 Linha          56
+#    Time: 565 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 0 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          57
+#    Time: 575 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  1   |  0  | 0 |  1   | ERROR: Cout = 0 Linha          57
+#    Time: 575 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 1 |  1   |  1   |  0  | 1 |  0   | ERROR: S = 0 Linha          58
+#    Time: 585 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  1   |  0  | 1 |  0   | ERROR: Cout = 1 Linha          58
+#    Time: 585 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# ** Error: | 0 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          59
+#    Time: 595 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  1   |  0  | 0 |  1   | ERROR: Cout = 0 Linha          59
+#    Time: 595 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# | 0 |  1   |  1   |  1  | 0 |  1   | OK
+# ** Error: | 1 |  1   |  1   |  1  | 1 |  0   | ERROR: S = 0 Linha          61
+#    Time: 615 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  1   |  1  | 1 |  0   | ERROR: Cout = 1 Linha          61
+#    Time: 615 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# | 1 |  1   |  1   |  0  | 1 |  0   | OK
+# ** Error: | 0 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          63
+#    Time: 635 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  1   |  0  | 0 |  1   | ERROR: Cout = 0 Linha          63
+#    Time: 635 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 60
+# Testes Efetuados  = 63
+# Erros Encontrados = 65
+# ** Note: $stop    : D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv(77)
+#    Time: 645 ns  Iteration: 0  Instance: /addac_tb
+# Break in Module addac_tb at D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv line 77
+do addac_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {addac_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:02:49 on Dec 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." addac_6_1200mv_85c_slow.vo 
+# -- Compiling module addac
+# 
+# Top level modules:
+# 	addac
+# End time: 18:02:49 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/addac/addac1/testbench {D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:02:49 on Dec 07,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/addac/addac1/testbench" D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv 
+# -- Compiling module addac_tb
+# 
+# Top level modules:
+# 	addac_tb
+# End time: 18:02:49 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" addac_tb
+# End time: 18:02:51 on Dec 07,2019, Elapsed time: 0:02:04
+# Errors: 65, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" addac_tb 
+# Start time: 18:02:51 on Dec 07,2019
+# Loading sv_std.std
+# Loading work.addac_tb
+# Loading work.addac
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading instances from addac_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from addac_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | Sel0 | Sel1 | Clk | S | Cout |
+# | 1 |  0   |  0   |  0  | 1 |  0   | OK
+# ** Error: | 0 |  0   |  0   |  0  | 0 |  0   | ERROR: S = 1 Linha           5
+#    Time: 60 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  0   |  0   |  0  | 1 |  0   | OK
+# | 1 |  0   |  0   |  1  | 1 |  1   | OK
+# ** Error: | 0 |  0   |  0   |  1  | 0 |  0   | ERROR: S = 1 Linha           8
+#    Time: 99 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 1 |  0   |  0   |  0  | 1 |  1   | OK
+# ** Error: | 0 |  0   |  0   |  0  | 0 |  0   | ERROR: S = 1 Linha          11
+#    Time: 138 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 1 |  0   |  0   |  1  | 1 |  0   | OK
+# ** Error: | 0 |  0   |  0   |  1  | 0 |  0   | ERROR: S = 1 Linha          14
+#    Time: 177 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 0 |  0   |  1   |  0  | 0 |  0   | OK
+# | 1 |  0   |  1   |  0  | 1 |  0   | OK
+# | 1 |  0   |  1   |  1  | 0 |  1   | OK
+# ** Error: | 0 |  0   |  1   |  1  | 1 |  0   | ERROR: S = 0 Linha          22
+#    Time: 281 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  0   |  1   |  0  | 1 |  0   | OK
+# ** Error: | 1 |  0   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          24
+#    Time: 307 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  0   |  1   |  0  | 1 |  0   | ERROR: S = 0 Linha          25
+#    Time: 320 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          26
+#    Time: 333 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  0   |  1   |  1  | 1 |  0   | OK
+# ** Error: | 0 |  0   |  1   |  1  | 0 |  0   | ERROR: S = 1 Linha          28
+#    Time: 359 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  0   |  1   |  1  | 1 |  0   | OK
+# | 1 |  0   |  1   |  0  | 1 |  0   | OK
+# | 1 |  0   |  1   |  1  | 0 |  1   | OK
+# ** Error: | 0 |  0   |  1   |  1  | 1 |  0   | ERROR: S = 0 Linha          32
+#    Time: 411 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  1   |  1  | 0 |  1   | ERROR: S = 1 Linha          33
+#    Time: 424 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  0   |  1  | 1 |  1   | ERROR: S = 0 Linha          34
+#    Time: 437 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  0   |  1  | 0 |  1   | OK
+# ** Error: | 0 |  1   |  0   |  1  | 1 |  1   | ERROR: S = 0 Linha          36
+#    Time: 463 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  0   |  1  | 0 |  1   | OK
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# ** Error: | 0 |  1   |  0   |  0  | 1 |  1   | ERROR: S = 0 Linha          39
+#    Time: 502 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# ** Error: | 0 |  1   |  0   |  0  | 1 |  1   | ERROR: S = 0 Linha          41
+#    Time: 528 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# ** Error: | 0 |  1   |  0   |  0  | 1 |  1   | ERROR: S = 0 Linha          43
+#    Time: 554 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  1   |  0   |  1  | 1 |  1   | OK
+# | 1 |  1   |  0   |  1  | 0 |  1   | OK
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# ** Error: | 0 |  1   |  0   |  0  | 1 |  1   | ERROR: S = 0 Linha          47
+#    Time: 606 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# ** Error: | 0 |  1   |  1   |  0  | 1 |  1   | ERROR: S = 0 Linha          49
+#    Time: 632 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          50
+#    Time: 645 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  1   |  0  | 1 |  1   | ERROR: S = 0 Linha          51
+#    Time: 658 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          52
+#    Time: 671 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  1   |  1  | 1 |  0   | OK
+# ** Error: | 0 |  1   |  1   |  1  | 0 |  1   | ERROR: S = 1 Linha          54
+#    Time: 697 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  1   |  1   |  0  | 0 |  1   | OK
+# | 1 |  1   |  1   |  0  | 1 |  0   | OK
+# ** Error: | 0 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          57
+#    Time: 736 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  1   |  0  | 1 |  0   | OK
+# ** Error: | 0 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          59
+#    Time: 762 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  1   |  1   |  1  | 0 |  1   | OK
+# | 1 |  1   |  1   |  1  | 1 |  0   | OK
+# | 1 |  1   |  1   |  0  | 1 |  0   | OK
+# ** Error: | 0 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          63
+#    Time: 814 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# Testes Efetuados  = 63
+# Erros Encontrados = 25
+# ** Note: $stop    : D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv(77)
+#    Time: 824 ns  Iteration: 0  Instance: /addac_tb
+# Break in Module addac_tb at D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv line 77
+do addac_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {addac_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:03:51 on Dec 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." addac_6_1200mv_85c_slow.vo 
+# -- Compiling module addac
+# 
+# Top level modules:
+# 	addac
+# End time: 18:03:51 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/addac/addac1/testbench {D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:03:51 on Dec 07,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/addac/addac1/testbench" D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv 
+# -- Compiling module addac_tb
+# 
+# Top level modules:
+# 	addac_tb
+# End time: 18:03:51 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" addac_tb
+# End time: 18:03:53 on Dec 07,2019, Elapsed time: 0:01:02
+# Errors: 25, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" addac_tb 
+# Start time: 18:03:53 on Dec 07,2019
+# Loading sv_std.std
+# Loading work.addac_tb
+# Loading work.addac
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading instances from addac_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from addac_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | Sel0 | Sel1 | Clk | S | Cout |
+# | 1 |  0   |  0   |  0  | 1 |  0   | OK
+# ** Error: | 0 |  0   |  0   |  0  | 0 |  0   | ERROR: S = 1 Linha           5
+#    Time: 60 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  0   |  0   |  0  | 1 |  0   | OK
+# | 1 |  0   |  0   |  1  | 1 |  1   | OK
+# ** Error: | 0 |  0   |  0   |  1  | 0 |  0   | ERROR: S = 1 Linha           8
+#    Time: 99 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 1 |  0   |  0   |  0  | 1 |  1   | OK
+# ** Error: | 0 |  0   |  0   |  0  | 0 |  0   | ERROR: S = 1 Linha          11
+#    Time: 138 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 1 |  0   |  0   |  1  | 1 |  0   | OK
+# ** Error: | 0 |  0   |  0   |  1  | 0 |  0   | ERROR: S = 1 Linha          14
+#    Time: 177 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 0 |  0   |  1   |  0  | 0 |  0   | OK
+# | 1 |  0   |  1   |  0  | 1 |  0   | OK
+# | 1 |  0   |  1   |  1  | 0 |  1   | OK
+# ** Error: | 0 |  0   |  1   |  1  | 1 |  0   | ERROR: S = 0 Linha          22
+#    Time: 281 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  0   |  1   |  0  | 1 |  0   | OK
+# ** Error: | 1 |  0   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          24
+#    Time: 307 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  0   |  1   |  0  | 1 |  0   | ERROR: S = 0 Linha          25
+#    Time: 320 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          26
+#    Time: 333 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  0   |  1   |  1  | 1 |  0   | OK
+# ** Error: | 0 |  0   |  1   |  1  | 0 |  0   | ERROR: S = 1 Linha          28
+#    Time: 359 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  0   |  1   |  1  | 1 |  0   | OK
+# | 1 |  0   |  1   |  0  | 1 |  0   | OK
+# | 1 |  0   |  1   |  1  | 0 |  1   | OK
+# ** Error: | 0 |  0   |  1   |  1  | 1 |  0   | ERROR: S = 0 Linha          32
+#    Time: 411 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  0   |  1   |  1  | 0 |  1   | ERROR: S = 1 Linha          33
+#    Time: 424 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  0   |  1  | 1 |  1   | ERROR: S = 0 Linha          34
+#    Time: 437 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  0   |  1  | 0 |  1   | OK
+# ** Error: | 0 |  1   |  0   |  1  | 1 |  1   | ERROR: S = 0 Linha          36
+#    Time: 463 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  0   |  1  | 0 |  1   | OK
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# ** Error: | 0 |  1   |  0   |  0  | 1 |  1   | ERROR: S = 0 Linha          39
+#    Time: 502 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# ** Error: | 0 |  1   |  0   |  0  | 1 |  1   | ERROR: S = 0 Linha          41
+#    Time: 528 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# ** Error: | 0 |  1   |  0   |  0  | 1 |  1   | ERROR: S = 0 Linha          43
+#    Time: 554 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  1   |  0   |  1  | 1 |  1   | OK
+# | 1 |  1   |  0   |  1  | 0 |  1   | OK
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# ** Error: | 0 |  1   |  0   |  0  | 1 |  1   | ERROR: S = 0 Linha          47
+#    Time: 606 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# ** Error: | 0 |  1   |  1   |  0  | 1 |  1   | ERROR: S = 0 Linha          49
+#    Time: 632 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          50
+#    Time: 645 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 0 |  1   |  1   |  0  | 1 |  1   | ERROR: S = 0 Linha          51
+#    Time: 658 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# ** Error: | 1 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          52
+#    Time: 671 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  1   |  1  | 1 |  0   | OK
+# ** Error: | 0 |  1   |  1   |  1  | 0 |  1   | ERROR: S = 1 Linha          54
+#    Time: 697 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  1   |  1   |  0  | 0 |  1   | OK
+# | 1 |  1   |  1   |  0  | 1 |  0   | OK
+# ** Error: | 0 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          57
+#    Time: 736 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 1 |  1   |  1   |  0  | 1 |  0   | OK
+# ** Error: | 0 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          59
+#    Time: 762 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# | 0 |  1   |  1   |  1  | 0 |  1   | OK
+# | 1 |  1   |  1   |  1  | 1 |  0   | OK
+# | 1 |  1   |  1   |  0  | 1 |  0   | OK
+# ** Error: | 0 |  1   |  1   |  0  | 0 |  1   | ERROR: S = 1 Linha          63
+#    Time: 814 ns  Scope: addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv Line: 52
+# Testes Efetuados  = 63
+# Erros Encontrados = 25
+# ** Note: $stop    : D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv(77)
+#    Time: 824 ns  Iteration: 0  Instance: /addac_tb
+# Break in Module addac_tb at D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv line 77
+do addac_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {addac_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:04:37 on Dec 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." addac_6_1200mv_85c_slow.vo 
+# -- Compiling module addac
+# 
+# Top level modules:
+# 	addac
+# End time: 18:04:37 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/addac/addac1/testbench {D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:04:37 on Dec 07,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/addac/addac1/testbench" D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv 
+# -- Compiling module addac_tb
+# 
+# Top level modules:
+# 	addac_tb
+# End time: 18:04:37 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" addac_tb
+# End time: 18:04:38 on Dec 07,2019, Elapsed time: 0:00:45
+# Errors: 25, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" addac_tb 
+# Start time: 18:04:38 on Dec 07,2019
+# Loading sv_std.std
+# Loading work.addac_tb
+# Loading work.addac
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading instances from addac_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from addac_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /addac_tb File: D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | Sel0 | Sel1 | Clk | S | Cout |
+# | 1 |  0   |  0   |  0  | 1 |  0   | OK
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 1 |  0   |  0   |  0  | 1 |  0   | OK
+# | 1 |  0   |  0   |  1  | 1 |  1   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 1 |  0   |  0   |  0  | 1 |  1   | OK
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 1 |  0   |  0   |  1  | 1 |  0   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 0 |  0   |  0   |  0  | 0 |  0   | OK
+# | 0 |  0   |  0   |  1  | 0 |  0   | OK
+# | 0 |  0   |  1   |  0  | 0 |  0   | OK
+# | 1 |  0   |  1   |  0  | 1 |  0   | OK
+# | 1 |  0   |  1   |  1  | 0 |  1   | OK
+# | 0 |  0   |  1   |  1  | 1 |  0   | OK
+# | 0 |  0   |  1   |  0  | 1 |  0   | OK
+# | 1 |  0   |  1   |  0  | 0 |  1   | OK
+# | 0 |  0   |  1   |  0  | 1 |  0   | OK
+# | 1 |  0   |  1   |  0  | 0 |  1   | OK
+# | 1 |  0   |  1   |  1  | 1 |  0   | OK
+# | 0 |  0   |  1   |  1  | 0 |  0   | OK
+# | 1 |  0   |  1   |  1  | 1 |  0   | OK
+# | 1 |  0   |  1   |  0  | 1 |  0   | OK
+# | 1 |  0   |  1   |  1  | 0 |  1   | OK
+# | 0 |  0   |  1   |  1  | 1 |  0   | OK
+# | 1 |  0   |  1   |  1  | 0 |  1   | OK
+# | 0 |  1   |  0   |  1  | 1 |  1   | OK
+# | 1 |  1   |  0   |  1  | 0 |  1   | OK
+# | 0 |  1   |  0   |  1  | 1 |  1   | OK
+# | 1 |  1   |  0   |  1  | 0 |  1   | OK
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# | 0 |  1   |  0   |  0  | 1 |  1   | OK
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# | 0 |  1   |  0   |  0  | 1 |  1   | OK
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# | 0 |  1   |  0   |  0  | 1 |  1   | OK
+# | 0 |  1   |  0   |  1  | 1 |  1   | OK
+# | 1 |  1   |  0   |  1  | 0 |  1   | OK
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# | 0 |  1   |  0   |  0  | 1 |  1   | OK
+# | 1 |  1   |  0   |  0  | 0 |  1   | OK
+# | 0 |  1   |  1   |  0  | 1 |  1   | OK
+# | 1 |  1   |  1   |  0  | 0 |  1   | OK
+# | 0 |  1   |  1   |  0  | 1 |  1   | OK
+# | 1 |  1   |  1   |  0  | 0 |  1   | OK
+# | 1 |  1   |  1   |  1  | 1 |  0   | OK
+# | 0 |  1   |  1   |  1  | 0 |  1   | OK
+# | 0 |  1   |  1   |  0  | 0 |  1   | OK
+# | 1 |  1   |  1   |  0  | 1 |  0   | OK
+# | 0 |  1   |  1   |  0  | 0 |  1   | OK
+# | 1 |  1   |  1   |  0  | 1 |  0   | OK
+# | 0 |  1   |  1   |  0  | 0 |  1   | OK
+# | 0 |  1   |  1   |  1  | 0 |  1   | OK
+# | 1 |  1   |  1   |  1  | 1 |  0   | OK
+# | 1 |  1   |  1   |  0  | 1 |  0   | OK
+# | 0 |  1   |  1   |  0  | 0 |  1   | OK
+# Testes Efetuados  = 63
+# Erros Encontrados = 0
+# ** Note: $stop    : D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv(77)
+#    Time: 887 ns  Iteration: 0  Instance: /addac_tb
+# Break in Module addac_tb at D:/Developer/Concepcao/addac/addac1/testbench/addac_tb.sv line 77
+# End time: 18:06:07 on Dec 07,2019, Elapsed time: 0:01:29
+# Errors: 0, Warnings: 0

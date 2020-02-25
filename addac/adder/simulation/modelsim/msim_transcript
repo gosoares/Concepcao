@@ -1,0 +1,554 @@
+# Reading C:/intelFPGA/16.1/modelsim_ase/tcl/vsim/pref.tcl
+# do adder_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Copying C:/intelFPGA/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {adder_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:21:37 on Dec 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." adder_6_1200mv_85c_slow.vo 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 17:21:37 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/addac/adder/testbench {D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:21:37 on Dec 07,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/addac/adder/testbench" D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv 
+# -- Compiling module adder_tb
+# 
+# Top level modules:
+# 	adder_tb
+# End time: 17:21:37 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" adder_tb
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" adder_tb 
+# Start time: 17:21:38 on Dec 07,2019
+# Loading sv_std.std
+# Loading work.adder_tb
+# Loading work.adder
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# SDF 10.5b Compiler 2016.10 Oct  5 2016
+# 
+# Loading instances from adder_6_1200mv_85c_v_slow.sdo
+# Loading timing data from adder_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | B | Cin | S |
+# | 0 | 0 |  0  | 0 |  0  | OK
+# | 0 | 0 |  1  | 1 |  0  | OK
+# | 0 | 1 |  0  | 1 |  0  | OK
+# | 0 | 1 |  1  | 0 |  1  | OK
+# | 1 | 0 |  0  | 1 |  0  | OK
+# | 1 | 0 |  1  | 0 |  1  | OK
+# | 1 | 1 |  0  | 0 |  1  | OK
+# | 1 | 1 |  1  | 1 |  1  | OK
+# Testes Efetuados  = 8
+# Erros Encontrados = 0
+# ** Note: $stop    : D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv(73)
+#    Time: 140 ns  Iteration: 0  Instance: /adder_tb
+# Break in Module adder_tb at D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv line 73
+do adder_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# Error 31: Unable to unlink file "D:/Developer/Concepcao/addac/adder/simulation/modelsim/gate_work/_lib.qdb".
+# Error 133: Unable to remove directory "D:/Developer/Concepcao/addac/adder/simulation/modelsim/gate_work".
+# vlib gate_work
+# ** Error: (vlib-35) Failed to create directory "gate_work".
+# File exists. (errno = EEXIST)
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {adder_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:22:04 on Dec 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." adder_6_1200mv_85c_slow.vo 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 17:22:04 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/addac/adder/testbench {D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:22:04 on Dec 07,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/addac/adder/testbench" D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv 
+# -- Compiling module adder_tb
+# 
+# Top level modules:
+# 	adder_tb
+# End time: 17:22:04 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" adder_tb
+# End time: 17:22:06 on Dec 07,2019, Elapsed time: 0:00:28
+# Errors: 0, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" adder_tb 
+# Start time: 17:22:06 on Dec 07,2019
+# Loading sv_std.std
+# Loading work.adder_tb
+# Loading work.adder
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading instances from adder_6_1200mv_85c_v_slow.sdo
+# Loading timing data from adder_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | B | Cin | S |
+# | 0 | 0 |  0  | 0 |  0  | ERROR: S = x
+# | 0 | 0 |  0  | 0 |  0  | ERROR: Cout = x
+# | 0 | 0 |  1  | 1 |  0  | ERROR: S = x
+# | 0 | 0 |  1  | 1 |  0  | ERROR: Cout = x
+# | 0 | 1 |  0  | 1 |  0  | OK
+# | 0 | 1 |  1  | 0 |  1  | ERROR: S = 1
+# | 0 | 1 |  1  | 0 |  1  | ERROR: Cout = 0
+# | 1 | 0 |  0  | 1 |  0  | ERROR: S = 0
+# | 1 | 0 |  0  | 1 |  0  | ERROR: Cout = 0
+# | 1 | 0 |  1  | 0 |  1  | OK
+# | 1 | 1 |  0  | 0 |  0  | OK
+# | 1 | 1 |  1  | 1 |  1  | ERROR: S = 0
+# | 1 | 1 |  1  | 1 |  1  | ERROR: Cout = 1
+# Testes Efetuados  = 8
+# Erros Encontrados = 10
+# ** Note: $stop    : D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv(73)
+#    Time: 65 ns  Iteration: 0  Instance: /adder_tb
+# Break in Module adder_tb at D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv line 73
+do adder_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {adder_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:23:30 on Dec 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." adder_6_1200mv_85c_slow.vo 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 17:23:30 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/addac/adder/testbench {D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:23:30 on Dec 07,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/addac/adder/testbench" D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv 
+# -- Compiling module adder_tb
+# 
+# Top level modules:
+# 	adder_tb
+# End time: 17:23:30 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" adder_tb
+# End time: 17:23:32 on Dec 07,2019, Elapsed time: 0:01:26
+# Errors: 0, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" adder_tb 
+# Start time: 17:23:32 on Dec 07,2019
+# Loading sv_std.std
+# Loading work.adder_tb
+# Loading work.adder
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading instances from adder_6_1200mv_85c_v_slow.sdo
+# Loading timing data from adder_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | B | Cin | S |
+# ** Error: | 0 | 0 |  0  | 0 |  0  | ERROR: S = x
+#    Time: 13 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 51
+# ** Error: | 0 | 0 |  0  | 0 |  0  | ERROR: Cout = x
+#    Time: 13 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 57
+# ** Error: | 0 | 0 |  1  | 1 |  0  | ERROR: S = x
+#    Time: 19 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 51
+# ** Error: | 0 | 0 |  1  | 1 |  0  | ERROR: Cout = x
+#    Time: 19 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 57
+# | 0 | 1 |  0  | 1 |  0  | OK
+# ** Error: | 0 | 1 |  1  | 0 |  1  | ERROR: S = 1
+#    Time: 31 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 51
+# ** Error: | 0 | 1 |  1  | 0 |  1  | ERROR: Cout = 0
+#    Time: 31 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 57
+# ** Error: | 1 | 0 |  0  | 1 |  0  | ERROR: S = 0
+#    Time: 37 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 51
+# ** Error: | 1 | 0 |  0  | 1 |  0  | ERROR: Cout = 0
+#    Time: 37 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 57
+# | 1 | 0 |  1  | 0 |  1  | OK
+# | 1 | 1 |  0  | 0 |  0  | OK
+# ** Error: | 1 | 1 |  1  | 1 |  1  | ERROR: S = 0
+#    Time: 55 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 51
+# ** Error: | 1 | 1 |  1  | 1 |  1  | ERROR: Cout = 1
+#    Time: 55 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 57
+# Testes Efetuados  = 8
+# Erros Encontrados = 10
+# ** Note: $stop    : D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv(73)
+#    Time: 65 ns  Iteration: 0  Instance: /adder_tb
+# Break in Module adder_tb at D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv line 73
+do adder_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {adder_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:25:21 on Dec 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." adder_6_1200mv_85c_slow.vo 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 17:25:21 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/addac/adder/testbench {D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:25:21 on Dec 07,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/addac/adder/testbench" D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv 
+# -- Compiling module adder_tb
+# 
+# Top level modules:
+# 	adder_tb
+# End time: 17:25:21 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" adder_tb
+# End time: 17:25:23 on Dec 07,2019, Elapsed time: 0:01:51
+# Errors: 10, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" adder_tb 
+# Start time: 17:25:23 on Dec 07,2019
+# Loading sv_std.std
+# Loading work.adder_tb
+# Loading work.adder
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading instances from adder_6_1200mv_85c_v_slow.sdo
+# Loading timing data from adder_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | B | Cin | S |
+# ** Error: | 0 | 0 |  0  | 0 |  0  | ERROR: S = x
+#    Time: 13 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 51
+# ** Error: | 0 | 0 |  0  | 0 |  0  | ERROR: Cout = x
+#    Time: 13 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 57
+# ** Error: | 0 | 0 |  1  | 1 |  0  | ERROR: S = x
+#    Time: 19 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 51
+# ** Error: | 0 | 0 |  1  | 1 |  0  | ERROR: Cout = x
+#    Time: 19 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 57
+# | 0 | 1 |  0  | 1 |  0  | OK
+# ** Error: | 0 | 1 |  1  | 0 |  1  | ERROR: S = 1
+#    Time: 31 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 51
+# ** Error: | 0 | 1 |  1  | 0 |  1  | ERROR: Cout = 0
+#    Time: 31 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 57
+# ** Error: | 1 | 0 |  0  | 1 |  0  | ERROR: S = 0
+#    Time: 37 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 51
+# ** Error: | 1 | 0 |  0  | 1 |  0  | ERROR: Cout = 0
+#    Time: 37 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 57
+# | 1 | 0 |  1  | 0 |  1  | OK
+# | 1 | 1 |  0  | 0 |  0  | OK
+# ** Error: | 1 | 1 |  1  | 1 |  1  | ERROR: S = 0
+#    Time: 55 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 51
+# ** Error: | 1 | 1 |  1  | 1 |  1  | ERROR: Cout = 1
+#    Time: 55 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 57
+# Testes Efetuados  = 8
+# Erros Encontrados = 10
+# ** Note: $stop    : D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv(73)
+#    Time: 65 ns  Iteration: 0  Instance: /adder_tb
+# Break in Module adder_tb at D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv line 73
+do adder_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {adder_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:27:06 on Dec 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." adder_6_1200mv_85c_slow.vo 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 17:27:06 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/addac/adder/testbench {D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:27:06 on Dec 07,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/addac/adder/testbench" D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv 
+# -- Compiling module adder_tb
+# 
+# Top level modules:
+# 	adder_tb
+# End time: 17:27:06 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" adder_tb
+# End time: 17:27:07 on Dec 07,2019, Elapsed time: 0:01:44
+# Errors: 10, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" adder_tb 
+# Start time: 17:27:07 on Dec 07,2019
+# Loading sv_std.std
+# Loading work.adder_tb
+# Loading work.adder
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading instances from adder_6_1200mv_85c_v_slow.sdo
+# Loading timing data from adder_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | B | Cin | S |
+# ** Error: | 0 | 0 |  0  | 0 |  0  | ERROR: S = x
+#    Time: 13 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 51
+# ** Error: | 0 | 0 |  0  | 0 |  0  | ERROR: Cout = x
+#    Time: 13 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 57
+# ** Error: | 0 | 0 |  1  | 1 |  0  | ERROR: S = x
+#    Time: 19 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 51
+# ** Error: | 0 | 0 |  1  | 1 |  0  | ERROR: Cout = x
+#    Time: 19 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 57
+# | 0 | 1 |  0  | 1 |  0  | OK
+# ** Error: | 0 | 1 |  1  | 0 |  1  | ERROR: S = 1
+#    Time: 31 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 51
+# ** Error: | 0 | 1 |  1  | 0 |  1  | ERROR: Cout = 0
+#    Time: 31 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 57
+# ** Error: | 1 | 0 |  0  | 1 |  0  | ERROR: S = 0
+#    Time: 37 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 51
+# ** Error: | 1 | 0 |  0  | 1 |  0  | ERROR: Cout = 0
+#    Time: 37 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 57
+# | 1 | 0 |  1  | 0 |  1  | OK
+# | 1 | 1 |  0  | 0 |  0  | OK
+# ** Error: | 1 | 1 |  1  | 1 |  1  | ERROR: S = 0
+#    Time: 55 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 51
+# ** Error: | 1 | 1 |  1  | 1 |  1  | ERROR: Cout = 1
+#    Time: 55 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 57
+# Testes Efetuados  = 8
+# Erros Encontrados = 10
+# ** Note: $stop    : D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv(73)
+#    Time: 65 ns  Iteration: 0  Instance: /adder_tb
+# Break in Module adder_tb at D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv line 73
+do adder_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {adder_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:27:58 on Dec 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." adder_6_1200mv_85c_slow.vo 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 17:27:58 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/addac/adder/testbench {D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:27:58 on Dec 07,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/addac/adder/testbench" D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv 
+# -- Compiling module adder_tb
+# 
+# Top level modules:
+# 	adder_tb
+# End time: 17:27:58 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" adder_tb
+# End time: 17:28:00 on Dec 07,2019, Elapsed time: 0:00:53
+# Errors: 10, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" adder_tb 
+# Start time: 17:28:00 on Dec 07,2019
+# Loading sv_std.std
+# Loading work.adder_tb
+# Loading work.adder
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading instances from adder_6_1200mv_85c_v_slow.sdo
+# Loading timing data from adder_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | B | Cin | S |
+# | 0 | 0 |  0  | 0 |  x  | OK
+# | 0 | 0 |  1  | 1 |  0  | OK
+# | 0 | 1 |  0  | 1 |  0  | OK
+# | 0 | 1 |  1  | 0 |  1  | OK
+# | 1 | 0 |  0  | 1 |  1  | OK
+# | 1 | 0 |  1  | 0 |  1  | OK
+# | 1 | 1 |  0  | 0 |  1  | OK
+# | 1 | 1 |  1  | 1 |  1  | OK
+# Testes Efetuados  = 8
+# Erros Encontrados = 0
+# ** Note: $stop    : D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv(73)
+#    Time: 122 ns  Iteration: 0  Instance: /adder_tb
+# Break in Module adder_tb at D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv line 73
+do adder_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {adder_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:29:11 on Dec 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." adder_6_1200mv_85c_slow.vo 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 17:29:11 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/addac/adder/testbench {D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:29:11 on Dec 07,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/addac/adder/testbench" D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv 
+# -- Compiling module adder_tb
+# 
+# Top level modules:
+# 	adder_tb
+# End time: 17:29:11 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" adder_tb
+# End time: 17:29:14 on Dec 07,2019, Elapsed time: 0:01:14
+# Errors: 0, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" adder_tb 
+# Start time: 17:29:14 on Dec 07,2019
+# Loading sv_std.std
+# Loading work.adder_tb
+# Loading work.adder
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading instances from adder_6_1200mv_85c_v_slow.sdo
+# Loading timing data from adder_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | B | Cin | S |
+# ** Error: | 0 | 0 |  0  | 0 |  0  | ERROR: S = x
+#    Time: 19 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 51
+# ** Error: | 0 | 0 |  0  | 0 |  0  | ERROR: Cout = x
+#    Time: 19 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 57
+# | 0 | 0 |  1  | 1 |  0  | OK
+# | 0 | 1 |  0  | 1 |  0  | OK
+# | 0 | 1 |  1  | 0 |  0  | OK
+# ** Error: | 1 | 0 |  0  | 1 |  0  | ERROR: S = 0
+#    Time: 67 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 51
+# ** Error: | 1 | 0 |  0  | 1 |  0  | ERROR: Cout = 1
+#    Time: 67 ns  Scope: adder_tb File: D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv Line: 57
+# | 1 | 0 |  1  | 0 |  0  | OK
+# | 1 | 1 |  0  | 0 |  1  | OK
+# | 1 | 1 |  1  | 1 |  1  | OK
+# Testes Efetuados  = 8
+# Erros Encontrados = 4
+# ** Note: $stop    : D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv(73)
+#    Time: 113 ns  Iteration: 0  Instance: /adder_tb
+# Break in Module adder_tb at D:/Developer/Concepcao/addac/adder/testbench/adder_tb.sv line 73
+# End time: 17:31:59 on Dec 07,2019, Elapsed time: 0:02:45
+# Errors: 4, Warnings: 0

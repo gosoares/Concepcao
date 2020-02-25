@@ -5,14 +5,10 @@ from gm.wire import Wire
 
 
 class Adder(LogicBlock):
-    def __init__(self, a: Wire, b: Wire, cin: Wire):
-        inputs = {
-            'a': a,
-            'b': b,
-            'cin': cin
-        }
-        super().__init__(inputs, ['y', 'cout'])
-        self.cout = self.outputs['cout']
+    def __init__(self, a: Wire, b: Wire, cin: Wire, s: Wire, cout: Wire):
+        inputs = {'a': a, 'b': b, 'cin': cin}
+        outputs = {'y': s, 'cout': cout}
+        super().__init__(inputs, outputs)
 
     def operation(self, inputs: Dict[str, int]) -> Dict[str, int]:
         a, b, cin = inputs['a'], inputs['b'], inputs['cin']
@@ -31,17 +27,19 @@ def create_adder_tvs():
     a = Wire()
     b = Wire()
     cin = Wire()
-    adder = Adder(a=a, b=b, cin=cin)
+    y = Wire()
+    cout = Wire()
+    Adder(a=a, b=b, cin=cin, s=y, cout=cout)
 
-    file = open('../simulation_modelsim/adder.tv', 'w')
-    file.write("# a_b_cin_cout_y\n")
+    file = open('../simulation/modelsim/adder.tv', 'w')
     for i1 in [0, 1]:
         a.set(i1)
         for i2 in [0, 1]:
             b.set(i2)
             for c in [0, 1]:
                 cin.set(c)
-                file.write("{:1b}_{:1b}_{:1b}_{:1b}_{:1b}\n".format(a, b, cin, adder.cout, adder.y))
+                # a_b_cin_cout_y
+                file.write("{:1b}_{:1b}_{:1b}_{:1b}_{:1b}\n".format(a, b, cin, cout, y))
     file.close()
 
 

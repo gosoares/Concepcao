@@ -1,0 +1,1 @@
+Iniciando Testbench---------------| A | Clk | Y || 0 |  1  | 0 | OK| 1 |  1  | 0 | OK| 0 |  1  | 0 | OK| 0 |  0  | 0 | OK| 1 |  0  | 0 | OK| 0 |  0  | 0 | OK| 1 |  0  | 0 | OK| 0 |  0  | 0 | OK| 1 |  0  | 0 | OK| 1 |  1  | 1 | OK| 0 |  1  | 1 | OK| 1 |  1  | 1 | OK| 1 |  0  | 1 | OK| 1 |  1  | 1 | OK| 0 |  1  | 1 | OKTestes Efetuados  = 15Erros Encontrados = 0

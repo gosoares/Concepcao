@@ -1,0 +1,8 @@
+Iniciando Testbench
+-------------
+|linha | A | Y |
+|  1   | 0 | 1 | OK 
+|  2   | 1 | 0 | OK 
+
+Testes Efetuados = 2 
+Erros Encontrados = 0 

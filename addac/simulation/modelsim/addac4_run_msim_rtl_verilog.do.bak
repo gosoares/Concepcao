@@ -1,0 +1,14 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+D:/Developer/Concepcao/addac/mux {D:/Developer/Concepcao/addac/mux/mux.sv}
+vlog -sv -work work +incdir+D:/Developer/Concepcao/addac/inv {D:/Developer/Concepcao/addac/inv/inv.sv}
+vlog -sv -work work +incdir+D:/Developer/Concepcao/addac/adder {D:/Developer/Concepcao/addac/adder/adder.sv}
+vlog -sv -work work +incdir+D:/Developer/Concepcao/addac/acc {D:/Developer/Concepcao/addac/acc/acc.sv}
+vlog -sv -work work +incdir+D:/Developer/Concepcao/addac/addac1 {D:/Developer/Concepcao/addac/addac1/addac.sv}
+vlog -sv -work work +incdir+D:/Developer/Concepcao/addac {D:/Developer/Concepcao/addac/addac4.sv}
+

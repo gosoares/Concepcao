@@ -6,8 +6,8 @@ from gm.wire import Wire
 
 
 class WireJoiner(LogicBlock):
-    def __init__(self, bits: List[Wire]):
-        super(WireJoiner, self).__init__({'bit{}'.format(i): bits[i] for i in range(4)}, ['y'])
+    def __init__(self, bits: List[Wire], y: Wire):
+        super(WireJoiner, self).__init__({'bit{}'.format(i): bits[i] for i in range(4)}, {'y': y})
 
     def operation(self, inputs: Dict[str, int]) -> Dict[str, int]:
         bits = [inputs['bit{}'.format(i)] for i in range(4)]
