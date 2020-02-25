@@ -1,0 +1,689 @@
+# Reading C:/intelFPGA/16.1/modelsim_ase/tcl/vsim/pref.tcl
+# do main_controller_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Copying C:/intelFPGA/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {main_controller_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:16:17 on Feb 25,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." main_controller_6_1200mv_85c_slow.vo 
+# -- Compiling module main_controller
+# 
+# Top level modules:
+# 	main_controller
+# End time: 16:16:17 on Feb 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/control_unit/main_controller/testbench {D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:16:17 on Feb 25,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/control_unit/main_controller/testbench" D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv 
+# -- Compiling module main_controller_tb
+# 
+# Top level modules:
+# 	main_controller_tb
+# End time: 16:16:17 on Feb 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" main_controller_tb
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" main_controller_tb 
+# Start time: 16:16:17 on Feb 25,2020
+# Loading sv_std.std
+# Loading work.main_controller_tb
+# Loading work.main_controller
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_io_obuf
+# SDF 10.5b Compiler 2016.10 Oct  5 2016
+# 
+# Loading instances from main_controller_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from main_controller_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | clk | rst | opcode | state |
+# |  0  |  1  | 100011 | 0000  | OK
+# |  1  |  1  | 100011 | 0000  | OK
+# |  0  |  0  | 100011 | 0000  | OK
+# |  1  |  0  | 100011 | 0001  | OK
+# |  0  |  0  | 100011 | 0001  | OK
+# |  1  |  0  | 100011 | 0010  | OK
+# |  0  |  0  | 100011 | 0010  | OK
+# |  1  |  0  | 100011 | 0011  | OK
+# |  0  |  0  | 100011 | 0011  | OK
+# |  1  |  0  | 100011 | 0100  | OK
+# |  0  |  0  | 100011 | 0100  | OK
+# |  1  |  0  | 100011 | 0000  | OK
+# |  0  |  0  | 101011 | 0000  | OK
+# |  1  |  0  | 101011 | 0001  | OK
+# |  0  |  0  | 101011 | 0001  | OK
+# |  1  |  0  | 101011 | 0010  | OK
+# |  0  |  0  | 101011 | 0010  | OK
+# |  1  |  0  | 101011 | 0101  | OK
+# |  0  |  0  | 101011 | 0101  | OK
+# |  1  |  0  | 101011 | 0000  | OK
+# |  0  |  0  | 000000 | 0000  | OK
+# |  1  |  0  | 000000 | 0001  | OK
+# |  0  |  0  | 000000 | 0001  | OK
+# |  1  |  0  | 000000 | 0110  | OK
+# |  0  |  0  | 000000 | 0110  | OK
+# |  1  |  0  | 000000 | 0111  | OK
+# |  0  |  0  | 000000 | 0111  | OK
+# |  1  |  0  | 000000 | 0000  | OK
+# |  0  |  0  | 000100 | 0000  | OK
+# |  1  |  0  | 000100 | 0001  | OK
+# |  0  |  0  | 000100 | 0001  | OK
+# |  1  |  0  | 000100 | 1000  | OK
+# |  0  |  0  | 000100 | 1000  | OK
+# |  1  |  0  | 000100 | 0000  | OK
+# |  0  |  0  | 000101 | 0000  | OK
+# |  1  |  0  | 000101 | 0001  | OK
+# |  0  |  0  | 000101 | 0001  | OK
+# |  1  |  0  | 000101 | 1100  | OK
+# |  0  |  0  | 000101 | 1100  | OK
+# |  1  |  0  | 000101 | 0000  | OK
+# |  0  |  0  | 000010 | 0000  | OK
+# |  1  |  0  | 000010 | 0001  | OK
+# |  0  |  0  | 000010 | 0001  | OK
+# |  1  |  0  | 000010 | 1011  | OK
+# |  0  |  0  | 000010 | 1011  | OK
+# |  1  |  0  | 000010 | 0000  | OK
+# |  0  |  0  | 001000 | 0000  | OK
+# |  1  |  0  | 001000 | 0001  | OK
+# |  0  |  0  | 001000 | 0001  | OK
+# |  1  |  0  | 001000 | 1001  | OK
+# |  0  |  0  | 001000 | 1001  | OK
+# |  1  |  0  | 001000 | 1010  | OK
+# |  0  |  0  | 001000 | 1010  | OK
+# |  1  |  0  | 001000 | 0000  | OK
+# |  0  |  0  | 001101 | 0000  | OK
+# |  1  |  0  | 001101 | 0001  | OK
+# |  0  |  0  | 001101 | 0001  | OK
+# |  1  |  0  | 001101 | 1001  | OK
+# |  0  |  0  | 001101 | 1001  | OK
+# |  1  |  0  | 001101 | 1010  | OK
+# |  0  |  0  | 001101 | 1010  | OK
+# |  1  |  0  | 001101 | 0000  | OK
+# |  0  |  0  | 001110 | 0000  | OK
+# |  1  |  0  | 001110 | 0001  | OK
+# |  0  |  0  | 001110 | 0001  | OK
+# |  1  |  0  | 001110 | 1001  | OK
+# |  0  |  0  | 001110 | 1001  | OK
+# |  1  |  0  | 001110 | 1010  | OK
+# |  0  |  0  | 001110 | 1010  | OK
+# |  1  |  0  | 001110 | 0000  | OK
+# |  0  |  0  | 001010 | 0000  | OK
+# |  1  |  0  | 001010 | 0001  | OK
+# |  0  |  0  | 001010 | 0001  | OK
+# |  1  |  0  | 001010 | 1001  | OK
+# |  0  |  0  | 001010 | 1001  | OK
+# |  1  |  0  | 001010 | 1010  | OK
+# |  0  |  0  | 001010 | 1010  | OK
+# |  1  |  0  | 001010 | 0000  | OK
+# Testes Efetuados  = 78
+# Erros Encontrados = 0
+# ** Note: $stop    : D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv(73)
+#    Time: 1190 ns  Iteration: 0  Instance: /main_controller_tb
+# Break in Module main_controller_tb at D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv line 73
+do main_controller_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# Error 31: Unable to unlink file "D:/Developer/Concepcao/mips/control_unit/main_controller/simulation/modelsim/gate_work/_lib.qdb".
+# Error 133: Unable to remove directory "D:/Developer/Concepcao/mips/control_unit/main_controller/simulation/modelsim/gate_work".
+# vlib gate_work
+# ** Error: (vlib-35) Failed to create directory "gate_work".
+# File exists. (errno = EEXIST)
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {main_controller_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:16:44 on Feb 25,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." main_controller_6_1200mv_85c_slow.vo 
+# -- Compiling module main_controller
+# 
+# Top level modules:
+# 	main_controller
+# End time: 16:16:44 on Feb 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/control_unit/main_controller/testbench {D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:16:44 on Feb 25,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/control_unit/main_controller/testbench" D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv 
+# -- Compiling module main_controller_tb
+# 
+# Top level modules:
+# 	main_controller_tb
+# End time: 16:16:44 on Feb 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" main_controller_tb
+# End time: 16:16:46 on Feb 25,2020, Elapsed time: 0:00:29
+# Errors: 0, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" main_controller_tb 
+# Start time: 16:16:46 on Feb 25,2020
+# Loading sv_std.std
+# Loading work.main_controller_tb
+# Loading work.main_controller
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading instances from main_controller_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from main_controller_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | clk | rst | opcode | state |
+# ** Error: Erro S na linha           1 bit           0, saida = 0, (x esperado)
+#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha           1 bit           1, saida = 0, (x esperado)
+#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha           1 bit           2, saida = 0, (x esperado)
+#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha           1 bit           3, saida = 0, (x esperado)
+#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  1  |  1  | 100011 | 0000  | OK
+# |  0  |  0  | 100011 | 0000  | OK
+# ** Error: Erro S na linha           4 bit           0, saida = 0, (1 esperado)
+#    Time: 45 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 100011 | 0001  | OK
+# ** Error: Erro S na linha           6 bit           0, saida = 1, (0 esperado)
+#    Time: 65 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha           6 bit           1, saida = 0, (1 esperado)
+#    Time: 65 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 100011 | 0010  | OK
+# ** Error: Erro S na linha           8 bit           0, saida = 0, (1 esperado)
+#    Time: 85 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 100011 | 0011  | OK
+# ** Error: Erro S na linha          10 bit           0, saida = 1, (0 esperado)
+#    Time: 105 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          10 bit           1, saida = 1, (0 esperado)
+#    Time: 105 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          10 bit           2, saida = 0, (1 esperado)
+#    Time: 105 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 100011 | 0100  | OK
+# ** Error: Erro S na linha          12 bit           2, saida = 1, (0 esperado)
+#    Time: 125 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 101011 | 0000  | OK
+# ** Error: Erro S na linha          14 bit           0, saida = 0, (1 esperado)
+#    Time: 145 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 101011 | 0001  | OK
+# ** Error: Erro S na linha          16 bit           0, saida = 1, (0 esperado)
+#    Time: 165 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          16 bit           1, saida = 0, (1 esperado)
+#    Time: 165 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 101011 | 0010  | OK
+# ** Error: Erro S na linha          18 bit           0, saida = 0, (1 esperado)
+#    Time: 185 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          18 bit           1, saida = 1, (0 esperado)
+#    Time: 185 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          18 bit           2, saida = 0, (1 esperado)
+#    Time: 185 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 101011 | 0101  | OK
+# ** Error: Erro S na linha          20 bit           0, saida = 1, (0 esperado)
+#    Time: 205 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          20 bit           2, saida = 1, (0 esperado)
+#    Time: 205 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 000000 | 0000  | OK
+# ** Error: Erro S na linha          22 bit           0, saida = 0, (1 esperado)
+#    Time: 225 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 000000 | 0001  | OK
+# ** Error: Erro S na linha          24 bit           0, saida = 1, (0 esperado)
+#    Time: 245 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          24 bit           1, saida = 0, (1 esperado)
+#    Time: 245 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          24 bit           2, saida = 0, (1 esperado)
+#    Time: 245 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 000000 | 0110  | OK
+# ** Error: Erro S na linha          26 bit           0, saida = 0, (1 esperado)
+#    Time: 265 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 000000 | 0111  | OK
+# ** Error: Erro S na linha          28 bit           0, saida = 1, (0 esperado)
+#    Time: 285 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          28 bit           1, saida = 1, (0 esperado)
+#    Time: 285 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          28 bit           2, saida = 1, (0 esperado)
+#    Time: 285 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 000100 | 0000  | OK
+# ** Error: Erro S na linha          30 bit           0, saida = 0, (1 esperado)
+#    Time: 305 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 000100 | 0001  | OK
+# ** Error: Erro S na linha          32 bit           0, saida = 1, (0 esperado)
+#    Time: 325 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          32 bit           3, saida = 0, (1 esperado)
+#    Time: 325 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 000100 | 1000  | OK
+# ** Error: Erro S na linha          34 bit           3, saida = 1, (0 esperado)
+#    Time: 345 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 000101 | 0000  | OK
+# ** Error: Erro S na linha          36 bit           0, saida = 0, (1 esperado)
+#    Time: 365 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 000101 | 0001  | OK
+# ** Error: Erro S na linha          38 bit           0, saida = 1, (0 esperado)
+#    Time: 385 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          38 bit           2, saida = 0, (1 esperado)
+#    Time: 385 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          38 bit           3, saida = 0, (1 esperado)
+#    Time: 385 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 000101 | 1100  | OK
+# ** Error: Erro S na linha          40 bit           2, saida = 1, (0 esperado)
+#    Time: 405 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          40 bit           3, saida = 1, (0 esperado)
+#    Time: 405 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 000010 | 0000  | OK
+# ** Error: Erro S na linha          42 bit           0, saida = 0, (1 esperado)
+#    Time: 425 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 000010 | 0001  | OK
+# ** Error: Erro S na linha          44 bit           1, saida = 0, (1 esperado)
+#    Time: 445 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          44 bit           3, saida = 0, (1 esperado)
+#    Time: 445 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 000010 | 1011  | OK
+# ** Error: Erro S na linha          46 bit           0, saida = 1, (0 esperado)
+#    Time: 465 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          46 bit           1, saida = 1, (0 esperado)
+#    Time: 465 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          46 bit           3, saida = 1, (0 esperado)
+#    Time: 465 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 001000 | 0000  | OK
+# ** Error: Erro S na linha          48 bit           0, saida = 0, (1 esperado)
+#    Time: 485 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 001000 | 0001  | OK
+# ** Error: Erro S na linha          50 bit           3, saida = 0, (1 esperado)
+#    Time: 505 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 001000 | 1001  | OK
+# ** Error: Erro S na linha          52 bit           0, saida = 1, (0 esperado)
+#    Time: 525 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          52 bit           1, saida = 0, (1 esperado)
+#    Time: 525 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 001000 | 1010  | OK
+# ** Error: Erro S na linha          54 bit           1, saida = 1, (0 esperado)
+#    Time: 545 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          54 bit           3, saida = 1, (0 esperado)
+#    Time: 545 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 001101 | 0000  | OK
+# ** Error: Erro S na linha          56 bit           0, saida = 0, (1 esperado)
+#    Time: 565 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 001101 | 0001  | OK
+# ** Error: Erro S na linha          58 bit           3, saida = 0, (1 esperado)
+#    Time: 585 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 001101 | 1001  | OK
+# ** Error: Erro S na linha          60 bit           0, saida = 1, (0 esperado)
+#    Time: 605 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          60 bit           1, saida = 0, (1 esperado)
+#    Time: 605 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 001101 | 1010  | OK
+# ** Error: Erro S na linha          62 bit           1, saida = 1, (0 esperado)
+#    Time: 625 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          62 bit           3, saida = 1, (0 esperado)
+#    Time: 625 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 001110 | 0000  | OK
+# ** Error: Erro S na linha          64 bit           0, saida = 0, (1 esperado)
+#    Time: 645 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 001110 | 0001  | OK
+# ** Error: Erro S na linha          66 bit           3, saida = 0, (1 esperado)
+#    Time: 665 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 001110 | 1001  | OK
+# ** Error: Erro S na linha          68 bit           0, saida = 1, (0 esperado)
+#    Time: 685 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          68 bit           1, saida = 0, (1 esperado)
+#    Time: 685 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 001110 | 1010  | OK
+# ** Error: Erro S na linha          70 bit           1, saida = 1, (0 esperado)
+#    Time: 705 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          70 bit           3, saida = 1, (0 esperado)
+#    Time: 705 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 001010 | 0000  | OK
+# ** Error: Erro S na linha          72 bit           0, saida = 0, (1 esperado)
+#    Time: 725 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 001010 | 0001  | OK
+# ** Error: Erro S na linha          74 bit           3, saida = 0, (1 esperado)
+#    Time: 745 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 001010 | 1001  | OK
+# ** Error: Erro S na linha          76 bit           0, saida = 1, (0 esperado)
+#    Time: 765 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          76 bit           1, saida = 0, (1 esperado)
+#    Time: 765 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 001010 | 1010  | OK
+# ** Error: Erro S na linha          78 bit           1, saida = 1, (0 esperado)
+#    Time: 785 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# ** Error: Erro S na linha          78 bit           3, saida = 1, (0 esperado)
+#    Time: 785 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# Testes Efetuados  = 78
+# Erros Encontrados = 68
+# ** Note: $stop    : D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv(73)
+#    Time: 795 ns  Iteration: 0  Instance: /main_controller_tb
+# Break in Module main_controller_tb at D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv line 73
+do main_controller_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {main_controller_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:17:06 on Feb 25,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." main_controller_6_1200mv_85c_slow.vo 
+# -- Compiling module main_controller
+# 
+# Top level modules:
+# 	main_controller
+# End time: 16:17:06 on Feb 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/control_unit/main_controller/testbench {D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:17:06 on Feb 25,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/control_unit/main_controller/testbench" D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv 
+# -- Compiling module main_controller_tb
+# 
+# Top level modules:
+# 	main_controller_tb
+# End time: 16:17:06 on Feb 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" main_controller_tb
+# End time: 16:17:08 on Feb 25,2020, Elapsed time: 0:00:22
+# Errors: 68, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" main_controller_tb 
+# Start time: 16:17:08 on Feb 25,2020
+# Loading sv_std.std
+# Loading work.main_controller_tb
+# Loading work.main_controller
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading instances from main_controller_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from main_controller_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | clk | rst | opcode | state |
+# |  0  |  1  | 100011 | 0000  | OK
+# |  1  |  1  | 100011 | 0000  | OK
+# |  0  |  0  | 100011 | 0000  | OK
+# |  1  |  0  | 100011 | 0001  | OK
+# |  0  |  0  | 100011 | 0001  | OK
+# |  1  |  0  | 100011 | 0010  | OK
+# |  0  |  0  | 100011 | 0010  | OK
+# ** Error: Erro S na linha           8 bit           0, saida = 0, (1 esperado)
+#    Time: 112 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 100011 | 0011  | OK
+# ** Error: Erro S na linha          10 bit           0, saida = 1, (0 esperado)
+#    Time: 138 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 100011 | 0100  | OK
+# |  1  |  0  | 100011 | 0000  | OK
+# |  0  |  0  | 101011 | 0000  | OK
+# |  1  |  0  | 101011 | 0001  | OK
+# |  0  |  0  | 101011 | 0001  | OK
+# |  1  |  0  | 101011 | 0010  | OK
+# |  0  |  0  | 101011 | 0010  | OK
+# |  1  |  0  | 101011 | 0101  | OK
+# |  0  |  0  | 101011 | 0101  | OK
+# |  1  |  0  | 101011 | 0000  | OK
+# |  0  |  0  | 000000 | 0000  | OK
+# |  1  |  0  | 000000 | 0001  | OK
+# |  0  |  0  | 000000 | 0001  | OK
+# |  1  |  0  | 000000 | 0110  | OK
+# |  0  |  0  | 000000 | 0110  | OK
+# |  1  |  0  | 000000 | 0111  | OK
+# |  0  |  0  | 000000 | 0111  | OK
+# |  1  |  0  | 000000 | 0000  | OK
+# |  0  |  0  | 000100 | 0000  | OK
+# |  1  |  0  | 000100 | 0001  | OK
+# |  0  |  0  | 000100 | 0001  | OK
+# |  1  |  0  | 000100 | 1000  | OK
+# |  0  |  0  | 000100 | 1000  | OK
+# |  1  |  0  | 000100 | 0000  | OK
+# |  0  |  0  | 000101 | 0000  | OK
+# |  1  |  0  | 000101 | 0001  | OK
+# |  0  |  0  | 000101 | 0001  | OK
+# |  1  |  0  | 000101 | 1100  | OK
+# |  0  |  0  | 000101 | 1100  | OK
+# |  1  |  0  | 000101 | 0000  | OK
+# |  0  |  0  | 000010 | 0000  | OK
+# |  1  |  0  | 000010 | 0001  | OK
+# |  0  |  0  | 000010 | 0001  | OK
+# |  1  |  0  | 000010 | 1011  | OK
+# |  0  |  0  | 000010 | 1011  | OK
+# |  1  |  0  | 000010 | 0000  | OK
+# |  0  |  0  | 001000 | 0000  | OK
+# |  1  |  0  | 001000 | 0001  | OK
+# |  0  |  0  | 001000 | 0001  | OK
+# |  1  |  0  | 001000 | 1001  | OK
+# |  0  |  0  | 001000 | 1001  | OK
+# ** Error: Erro S na linha          52 bit           0, saida = 1, (0 esperado)
+#    Time: 684 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 001000 | 1010  | OK
+# |  1  |  0  | 001000 | 0000  | OK
+# |  0  |  0  | 001101 | 0000  | OK
+# |  1  |  0  | 001101 | 0001  | OK
+# |  0  |  0  | 001101 | 0001  | OK
+# |  1  |  0  | 001101 | 1001  | OK
+# |  0  |  0  | 001101 | 1001  | OK
+# ** Error: Erro S na linha          60 bit           0, saida = 1, (0 esperado)
+#    Time: 788 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 001101 | 1010  | OK
+# |  1  |  0  | 001101 | 0000  | OK
+# |  0  |  0  | 001110 | 0000  | OK
+# |  1  |  0  | 001110 | 0001  | OK
+# |  0  |  0  | 001110 | 0001  | OK
+# |  1  |  0  | 001110 | 1001  | OK
+# |  0  |  0  | 001110 | 1001  | OK
+# ** Error: Erro S na linha          68 bit           0, saida = 1, (0 esperado)
+#    Time: 892 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 001110 | 1010  | OK
+# |  1  |  0  | 001110 | 0000  | OK
+# |  0  |  0  | 001010 | 0000  | OK
+# |  1  |  0  | 001010 | 0001  | OK
+# |  0  |  0  | 001010 | 0001  | OK
+# |  1  |  0  | 001010 | 1001  | OK
+# |  0  |  0  | 001010 | 1001  | OK
+# ** Error: Erro S na linha          76 bit           0, saida = 1, (0 esperado)
+#    Time: 996 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 56
+# |  0  |  0  | 001010 | 1010  | OK
+# |  1  |  0  | 001010 | 0000  | OK
+# Testes Efetuados  = 78
+# Erros Encontrados = 6
+# ** Note: $stop    : D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv(73)
+#    Time: 1032 ns  Iteration: 0  Instance: /main_controller_tb
+# Break in Module main_controller_tb at D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv line 73
+do main_controller_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {main_controller_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:17:22 on Feb 25,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." main_controller_6_1200mv_85c_slow.vo 
+# -- Compiling module main_controller
+# 
+# Top level modules:
+# 	main_controller
+# End time: 16:17:22 on Feb 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/control_unit/main_controller/testbench {D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:17:22 on Feb 25,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/control_unit/main_controller/testbench" D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv 
+# -- Compiling module main_controller_tb
+# 
+# Top level modules:
+# 	main_controller_tb
+# End time: 16:17:22 on Feb 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" main_controller_tb
+# End time: 16:17:25 on Feb 25,2020, Elapsed time: 0:00:17
+# Errors: 6, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" main_controller_tb 
+# Start time: 16:17:25 on Feb 25,2020
+# Loading sv_std.std
+# Loading work.main_controller_tb
+# Loading work.main_controller
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading instances from main_controller_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from main_controller_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | clk | rst | opcode | state |
+# |  0  |  1  | 100011 | 0000  | OK
+# |  1  |  1  | 100011 | 0000  | OK
+# |  0  |  0  | 100011 | 0000  | OK
+# |  1  |  0  | 100011 | 0001  | OK
+# |  0  |  0  | 100011 | 0001  | OK
+# |  1  |  0  | 100011 | 0010  | OK
+# |  0  |  0  | 100011 | 0010  | OK
+# |  1  |  0  | 100011 | 0011  | OK
+# |  0  |  0  | 100011 | 0011  | OK
+# |  1  |  0  | 100011 | 0100  | OK
+# |  0  |  0  | 100011 | 0100  | OK
+# |  1  |  0  | 100011 | 0000  | OK
+# |  0  |  0  | 101011 | 0000  | OK
+# |  1  |  0  | 101011 | 0001  | OK
+# |  0  |  0  | 101011 | 0001  | OK
+# |  1  |  0  | 101011 | 0010  | OK
+# |  0  |  0  | 101011 | 0010  | OK
+# |  1  |  0  | 101011 | 0101  | OK
+# |  0  |  0  | 101011 | 0101  | OK
+# |  1  |  0  | 101011 | 0000  | OK
+# |  0  |  0  | 000000 | 0000  | OK
+# |  1  |  0  | 000000 | 0001  | OK
+# |  0  |  0  | 000000 | 0001  | OK
+# |  1  |  0  | 000000 | 0110  | OK
+# |  0  |  0  | 000000 | 0110  | OK
+# |  1  |  0  | 000000 | 0111  | OK
+# |  0  |  0  | 000000 | 0111  | OK
+# |  1  |  0  | 000000 | 0000  | OK
+# |  0  |  0  | 000100 | 0000  | OK
+# |  1  |  0  | 000100 | 0001  | OK
+# |  0  |  0  | 000100 | 0001  | OK
+# |  1  |  0  | 000100 | 1000  | OK
+# |  0  |  0  | 000100 | 1000  | OK
+# |  1  |  0  | 000100 | 0000  | OK
+# |  0  |  0  | 000101 | 0000  | OK
+# |  1  |  0  | 000101 | 0001  | OK
+# |  0  |  0  | 000101 | 0001  | OK
+# |  1  |  0  | 000101 | 1100  | OK
+# |  0  |  0  | 000101 | 1100  | OK
+# |  1  |  0  | 000101 | 0000  | OK
+# |  0  |  0  | 000010 | 0000  | OK
+# |  1  |  0  | 000010 | 0001  | OK
+# |  0  |  0  | 000010 | 0001  | OK
+# |  1  |  0  | 000010 | 1011  | OK
+# |  0  |  0  | 000010 | 1011  | OK
+# |  1  |  0  | 000010 | 0000  | OK
+# |  0  |  0  | 001000 | 0000  | OK
+# |  1  |  0  | 001000 | 0001  | OK
+# |  0  |  0  | 001000 | 0001  | OK
+# |  1  |  0  | 001000 | 1001  | OK
+# |  0  |  0  | 001000 | 1001  | OK
+# |  1  |  0  | 001000 | 1010  | OK
+# |  0  |  0  | 001000 | 1010  | OK
+# |  1  |  0  | 001000 | 0000  | OK
+# |  0  |  0  | 001101 | 0000  | OK
+# |  1  |  0  | 001101 | 0001  | OK
+# |  0  |  0  | 001101 | 0001  | OK
+# |  1  |  0  | 001101 | 1001  | OK
+# |  0  |  0  | 001101 | 1001  | OK
+# |  1  |  0  | 001101 | 1010  | OK
+# |  0  |  0  | 001101 | 1010  | OK
+# |  1  |  0  | 001101 | 0000  | OK
+# |  0  |  0  | 001110 | 0000  | OK
+# |  1  |  0  | 001110 | 0001  | OK
+# |  0  |  0  | 001110 | 0001  | OK
+# |  1  |  0  | 001110 | 1001  | OK
+# |  0  |  0  | 001110 | 1001  | OK
+# |  1  |  0  | 001110 | 1010  | OK
+# |  0  |  0  | 001110 | 1010  | OK
+# |  1  |  0  | 001110 | 0000  | OK
+# |  0  |  0  | 001010 | 0000  | OK
+# |  1  |  0  | 001010 | 0001  | OK
+# |  0  |  0  | 001010 | 0001  | OK
+# |  1  |  0  | 001010 | 1001  | OK
+# |  0  |  0  | 001010 | 1001  | OK
+# |  1  |  0  | 001010 | 1010  | OK
+# |  0  |  0  | 001010 | 1010  | OK
+# |  1  |  0  | 001010 | 0000  | OK
+# Testes Efetuados  = 78
+# Erros Encontrados = 0
+# ** Note: $stop    : D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv(73)
+#    Time: 1111 ns  Iteration: 0  Instance: /main_controller_tb
+# Break in Module main_controller_tb at D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv line 73

@@ -1,0 +1,80 @@
+`timescale 1ns/100ps
+module main_controller_tb;
+    
+    int counter, errors, aux_error;
+    logic clk, rst;
+    integer file;
+    
+    logic clock, reset;
+	logic [5:0] opcode;
+	logic [3:0] state, state_esperado;
+    
+    parameter max_vectors = 78;
+    logic [11:0] vectors[max_vectors];
+
+    main_controller dut(clock, reset, opcode, state);
+
+    initial begin
+        counter = 0; errors = 0;
+		rst = 1'b1; #12; rst = 0;
+		clk=0;
+		
+		if(~rst) begin
+			$readmemb("main_controller.tv", vectors);
+		end	
+		
+		file = $fopen("main_controller_out.txt");
+    
+        $display("Iniciando Testbench");
+        $display("---------------");
+        $display("| clk | rst | opcode | state |");
+        
+        $fwrite(file, "Iniciando Testbench");
+        $fwrite(file, "---------------");
+        $fwrite(file, "| clk | rst | opcode | state |"); 	
+    end
+	        
+    always begin
+        clk = 1; #9;
+        clk = 0; #5;
+    end
+
+    always @(posedge clk) begin
+        if(~rst) begin
+	        {clock, reset, opcode, state_esperado} = vectors[counter];	
+        end
+	end
+
+    always @(negedge clk)	//Sempre (que o clock descer)
+        if(~rst) begin
+			if(state_esperado !== 6'bx) begin
+				aux_error = errors;
+				
+				for(int i = 0; i < 6; i++) begin
+					assert (state[i] === state_esperado[i]) else begin
+						//Mostra mensagem de erro se a saída do DUT for diferente da saída esperada
+						$error("Erro S na linha %d bit %d, saida = %b, (%b esperado)", counter+1, i, state[i], state_esperado[i]);
+									
+						errors = errors + 1; //Incrementa contador de erros a cada bit errado encontrado
+					end
+				end
+
+				if(aux_error === errors) begin // Nao houve erro
+					$display("|  %b  |  %b  | %b | %b  | OK", clock, reset, opcode, state);
+					$fwrite(file, "|  %b  |  %b  | %b | %b  | OK", clock, reset, opcode, state);
+				end
+	
+				if(counter+1 == max_vectors) begin
+					$display("Testes Efetuados  = %0d", counter+1);
+					$display("Erros Encontrados = %0d", errors);
+					$fwrite(file, "Testes Efetuados  = %0d", counter+1);
+					$fwrite(file, "Erros Encontrados = %0d", errors);
+					#10
+					$stop;
+				end    
+			end
+			counter++; //Incrementa contador dos vertores de teste
+        end
+endmodule
+ 
+ 
