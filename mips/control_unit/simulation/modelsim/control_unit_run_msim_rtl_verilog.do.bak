@@ -1,0 +1,11 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/control_unit/main_controller {D:/Developer/Concepcao/mips/control_unit/main_controller/main_controller.sv}
+vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/control_unit/alu_decoder {D:/Developer/Concepcao/mips/control_unit/alu_decoder/alu_decoder.sv}
+vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/control_unit {D:/Developer/Concepcao/mips/control_unit/control_unit.sv}
+

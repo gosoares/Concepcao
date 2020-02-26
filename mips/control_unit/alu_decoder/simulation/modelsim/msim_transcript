@@ -73,3 +73,5 @@
 # ** Note: $stop    : D:/Developer/Concepcao/mips/control_unit/alu_decoder/testbench/alu_decoder_tb.sv(74)
 #    Time: 229 ns  Iteration: 0  Instance: /alu_decoder_tb
 # Break in Module alu_decoder_tb at D:/Developer/Concepcao/mips/control_unit/alu_decoder/testbench/alu_decoder_tb.sv line 74
+# End time: 12:38:13 on Feb 26,2020, Elapsed time: 7:23:51
+# Errors: 0, Warnings: 0
