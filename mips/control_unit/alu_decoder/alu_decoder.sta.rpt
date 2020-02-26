@@ -1,0 +1,789 @@
+TimeQuest Timing Analyzer report for alu_decoder
+Wed Feb 26 04:44:44 2020
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Slow 1200mV 85C Model Setup Summary
+  7. Slow 1200mV 85C Model Hold Summary
+  8. Slow 1200mV 85C Model Recovery Summary
+  9. Slow 1200mV 85C Model Removal Summary
+ 10. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Slow 1200mV 85C Model Metastability Report
+ 14. Slow 1200mV 0C Model Fmax Summary
+ 15. Slow 1200mV 0C Model Setup Summary
+ 16. Slow 1200mV 0C Model Hold Summary
+ 17. Slow 1200mV 0C Model Recovery Summary
+ 18. Slow 1200mV 0C Model Removal Summary
+ 19. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 20. Propagation Delay
+ 21. Minimum Propagation Delay
+ 22. Slow 1200mV 0C Model Metastability Report
+ 23. Fast 1200mV 0C Model Setup Summary
+ 24. Fast 1200mV 0C Model Hold Summary
+ 25. Fast 1200mV 0C Model Recovery Summary
+ 26. Fast 1200mV 0C Model Removal Summary
+ 27. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 28. Propagation Delay
+ 29. Minimum Propagation Delay
+ 30. Fast 1200mV 0C Model Metastability Report
+ 31. Multicorner Timing Analysis Summary
+ 32. Progagation Delay
+ 33. Minimum Progagation Delay
+ 34. Board Trace Model Assignments
+ 35. Input Transition Times
+ 36. Slow Corner Signal Integrity Metrics
+ 37. Fast Corner Signal Integrity Metrics
+ 38. Clock Transfers
+ 39. Report TCCS
+ 40. Report RSKM
+ 41. Unconstrained Paths
+ 42. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                   ;
++--------------------+----------------------------------------------------------------+
+; Quartus II Version ; Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition ;
+; Revision Name      ; alu_decoder                                                    ;
+; Device Family      ; Cyclone IV E                                                   ;
+; Device Name        ; EP4CE6E22C6                                                    ;
+; Timing Models      ; Preliminary                                                    ;
+; Delay Model        ; Combined                                                       ;
+; Rise/Fall Delays   ; Enabled                                                        ;
++--------------------+----------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Fmax Summary ;
+--------------------------------------
+No paths to report.
+
+
+---------------------------------------
+; Slow 1200mV 85C Model Setup Summary ;
+---------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Hold Summary ;
+--------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
+-----------------------------------------------------
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
+-----------------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------------------+
+; Propagation Delay                                              ;
++------------+---------------+--------+--------+--------+--------+
+; Input Port ; Output Port   ; RR     ; RF     ; FR     ; FF     ;
++------------+---------------+--------+--------+--------+--------+
+; ALUOp[0]   ; ALUControl[0] ; 8.106  ; 7.880  ; 8.258  ; 8.561  ;
+; ALUOp[0]   ; ALUControl[1] ; 9.315  ; 9.259  ; 9.569  ; 9.850  ;
+; ALUOp[0]   ; ALUControl[2] ; 9.222  ; 10.095 ; 10.320 ; 9.758  ;
+; ALUOp[1]   ; ALUControl[0] ; 8.099  ;        ;        ; 8.643  ;
+; ALUOp[1]   ; ALUControl[1] ;        ; 8.825  ; 9.224  ;        ;
+; ALUOp[1]   ; ALUControl[2] ; 10.145 ; 9.902  ; 10.294 ; 10.806 ;
+; Funct[0]   ; ALUControl[0] ; 7.561  ; 7.630  ; 8.061  ; 7.981  ;
+; Funct[0]   ; ALUControl[1] ;        ; 9.393  ; 9.745  ;        ;
+; Funct[0]   ; ALUControl[2] ; 9.586  ; 9.839  ; 10.084 ; 10.185 ;
+; Funct[1]   ; ALUControl[0] ; 7.747  ;        ;        ; 8.210  ;
+; Funct[1]   ; ALUControl[1] ; 9.506  ;        ;        ; 10.017 ;
+; Funct[1]   ; ALUControl[2] ; 9.772  ;        ;        ; 10.420 ;
+; Funct[2]   ; ALUControl[0] ; 7.687  ; 7.677  ; 8.133  ; 8.114  ;
+; Funct[2]   ; ALUControl[1] ;        ; 9.518  ; 9.886  ;        ;
+; Funct[2]   ; ALUControl[2] ; 9.720  ; 9.896  ; 10.166 ; 10.333 ;
+; Funct[3]   ; ALUControl[0] ; 7.919  ; 7.906  ; 8.358  ; 8.352  ;
+; Funct[3]   ; ALUControl[1] ; 9.678  ;        ;        ; 10.189 ;
+; Funct[3]   ; ALUControl[2] ;        ; 10.125 ; 10.390 ;        ;
+; Funct[4]   ; ALUControl[0] ;        ; 8.331  ; 8.779  ;        ;
+; Funct[4]   ; ALUControl[1] ; 9.581  ;        ;        ; 10.158 ;
+; Funct[4]   ; ALUControl[2] ;        ; 10.546 ; 10.841 ;        ;
+; Funct[5]   ; ALUControl[0] ; 5.698  ;        ;        ; 5.862  ;
+; Funct[5]   ; ALUControl[1] ;        ; 7.322  ; 7.363  ;        ;
+; Funct[5]   ; ALUControl[2] ; 7.760  ;        ;        ; 8.077  ;
+; Opcode[0]  ; ALUControl[0] ; 8.184  ; 8.238  ; 8.642  ; 8.728  ;
+; Opcode[0]  ; ALUControl[1] ;        ; 9.785  ; 10.155 ;        ;
+; Opcode[0]  ; ALUControl[2] ;        ; 10.565 ; 10.898 ;        ;
+; Opcode[1]  ; ALUControl[0] ; 7.665  ; 7.721  ; 8.113  ; 8.160  ;
+; Opcode[1]  ; ALUControl[1] ; 9.174  ;        ;        ; 9.708  ;
+; Opcode[1]  ; ALUControl[2] ; 9.917  ;        ;        ; 10.482 ;
+; Opcode[2]  ; ALUControl[0] ; 7.922  ;        ;        ; 8.445  ;
+; Opcode[2]  ; ALUControl[1] ;        ; 9.088  ; 9.427  ;        ;
+; Opcode[2]  ; ALUControl[2] ;        ; 10.309 ; 10.623 ;        ;
+; Opcode[3]  ; ALUControl[0] ; 7.823  ;        ;        ; 8.371  ;
+; Opcode[3]  ; ALUControl[1] ;        ; 9.166  ; 9.514  ;        ;
+; Opcode[3]  ; ALUControl[2] ; 10.047 ;        ;        ; 10.630 ;
+; Opcode[4]  ; ALUControl[0] ;        ; 7.674  ; 8.069  ;        ;
+; Opcode[4]  ; ALUControl[1] ; 9.371  ;        ;        ; 9.908  ;
+; Opcode[4]  ; ALUControl[2] ;        ; 9.657  ; 10.025 ;        ;
+; Opcode[5]  ; ALUControl[0] ;        ; 6.156  ; 6.224  ;        ;
+; Opcode[5]  ; ALUControl[1] ; 7.576  ;        ;        ; 7.798  ;
+; Opcode[5]  ; ALUControl[2] ;        ; 7.614  ; 7.655  ;        ;
++------------+---------------+--------+--------+--------+--------+
+
+
++---------------------------------------------------------------+
+; Minimum Propagation Delay                                     ;
++------------+---------------+-------+--------+--------+--------+
+; Input Port ; Output Port   ; RR    ; RF     ; FR     ; FF     ;
++------------+---------------+-------+--------+--------+--------+
+; ALUOp[0]   ; ALUControl[0] ; 7.781 ; 7.615  ; 7.983  ; 8.216  ;
+; ALUOp[0]   ; ALUControl[1] ; 8.943 ; 8.952  ; 9.252  ; 9.440  ;
+; ALUOp[0]   ; ALUControl[2] ; 8.951 ; 9.735  ; 9.961  ; 9.474  ;
+; ALUOp[1]   ; ALUControl[0] ; 7.772 ;        ;        ; 8.294  ;
+; ALUOp[1]   ; ALUControl[1] ;       ; 8.568  ; 8.957  ;        ;
+; ALUOp[1]   ; ALUControl[2] ; 9.785 ; 9.602  ; 9.983  ; 10.422 ;
+; Funct[0]   ; ALUControl[0] ; 7.305 ; 7.371  ; 7.794  ; 7.716  ;
+; Funct[0]   ; ALUControl[1] ;       ; 9.079  ; 9.422  ;        ;
+; Funct[0]   ; ALUControl[2] ; 9.247 ; 9.458  ; 9.706  ; 9.822  ;
+; Funct[1]   ; ALUControl[0] ; 7.482 ;        ;        ; 7.934  ;
+; Funct[1]   ; ALUControl[1] ; 9.185 ;        ;        ; 9.686  ;
+; Funct[1]   ; ALUControl[2] ; 9.424 ;        ;        ; 10.046 ;
+; Funct[2]   ; ALUControl[0] ; 7.427 ; 7.416  ; 7.862  ; 7.842  ;
+; Funct[2]   ; ALUControl[1] ;       ; 9.200  ; 9.557  ;        ;
+; Funct[2]   ; ALUControl[2] ; 9.377 ; 9.537  ; 9.812  ; 9.963  ;
+; Funct[3]   ; ALUControl[0] ; 7.649 ; 7.609  ; 8.056  ; 8.071  ;
+; Funct[3]   ; ALUControl[1] ; 9.329 ;        ;        ; 9.828  ;
+; Funct[3]   ; ALUControl[2] ;       ; 9.757  ; 10.028 ;        ;
+; Funct[4]   ; ALUControl[0] ;       ; 8.047  ; 8.484  ;        ;
+; Funct[4]   ; ALUControl[1] ; 9.260 ;        ;        ; 9.822  ;
+; Funct[4]   ; ALUControl[2] ;       ; 10.167 ; 10.462 ;        ;
+; Funct[5]   ; ALUControl[0] ; 5.527 ;        ;        ; 5.688  ;
+; Funct[5]   ; ALUControl[1] ;       ; 7.099  ; 7.143  ;        ;
+; Funct[5]   ; ALUControl[2] ; 7.505 ;        ;        ; 7.808  ;
+; Opcode[0]  ; ALUControl[0] ; 7.857 ; 7.901  ; 8.302  ; 8.376  ;
+; Opcode[0]  ; ALUControl[1] ;       ; 9.458  ; 9.816  ;        ;
+; Opcode[0]  ; ALUControl[2] ;       ; 10.243 ; 10.565 ;        ;
+; Opcode[1]  ; ALUControl[0] ; 7.356 ; 7.401  ; 7.794  ; 7.830  ;
+; Opcode[1]  ; ALUControl[1] ; 8.866 ;        ;        ; 9.388  ;
+; Opcode[1]  ; ALUControl[2] ; 9.615 ;        ;        ; 10.167 ;
+; Opcode[2]  ; ALUControl[0] ; 7.603 ;        ;        ; 8.104  ;
+; Opcode[2]  ; ALUControl[1] ;       ; 8.786  ; 9.117  ;        ;
+; Opcode[2]  ; ALUControl[2] ;       ; 9.994  ; 10.301 ;        ;
+; Opcode[3]  ; ALUControl[0] ; 7.469 ;        ;        ; 7.975  ;
+; Opcode[3]  ; ALUControl[1] ;       ; 8.861  ; 9.200  ;        ;
+; Opcode[3]  ; ALUControl[2] ; 9.740 ;        ;        ; 10.310 ;
+; Opcode[4]  ; ALUControl[0] ;       ; 7.357  ; 7.751  ;        ;
+; Opcode[4]  ; ALUControl[1] ; 9.055 ;        ;        ; 9.580  ;
+; Opcode[4]  ; ALUControl[2] ;       ; 9.369  ; 9.727  ;        ;
+; Opcode[5]  ; ALUControl[0] ;       ; 5.909  ; 5.987  ;        ;
+; Opcode[5]  ; ALUControl[1] ; 7.340 ;        ;        ; 7.562  ;
+; Opcode[5]  ; ALUControl[2] ;       ; 7.416  ; 7.458  ;        ;
++------------+---------------+-------+--------+--------+--------+
+
+
+----------------------------------------------
+; Slow 1200mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Fmax Summary ;
+-------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++-------------------------------------------------------------+
+; Propagation Delay                                           ;
++------------+---------------+-------+-------+--------+-------+
+; Input Port ; Output Port   ; RR    ; RF    ; FR     ; FF    ;
++------------+---------------+-------+-------+--------+-------+
+; ALUOp[0]   ; ALUControl[0] ; 7.500 ; 7.284 ; 7.596  ; 7.839 ;
+; ALUOp[0]   ; ALUControl[1] ; 8.712 ; 8.631 ; 8.896  ; 9.108 ;
+; ALUOp[0]   ; ALUControl[2] ; 8.642 ; 9.376 ; 9.594  ; 9.040 ;
+; ALUOp[1]   ; ALUControl[0] ; 7.500 ;       ;        ; 7.943 ;
+; ALUOp[1]   ; ALUControl[1] ;       ; 8.251 ; 8.609  ;       ;
+; ALUOp[1]   ; ALUControl[2] ; 9.485 ; 9.239 ; 9.580  ; 9.988 ;
+; Funct[0]   ; ALUControl[0] ; 7.009 ; 7.049 ; 7.428  ; 7.334 ;
+; Funct[0]   ; ALUControl[1] ;       ; 8.750 ; 9.058  ;       ;
+; Funct[0]   ; ALUControl[2] ; 8.963 ; 9.144 ; 9.378  ; 9.423 ;
+; Funct[1]   ; ALUControl[0] ; 7.184 ;       ;        ; 7.531 ;
+; Funct[1]   ; ALUControl[1] ; 8.882 ;       ;        ; 9.270 ;
+; Funct[1]   ; ALUControl[2] ; 9.139 ;       ;        ; 9.627 ;
+; Funct[2]   ; ALUControl[0] ; 7.138 ; 7.106 ; 7.506  ; 7.466 ;
+; Funct[2]   ; ALUControl[1] ;       ; 8.877 ; 9.198  ;       ;
+; Funct[2]   ; ALUControl[2] ; 9.099 ; 9.210 ; 9.467  ; 9.570 ;
+; Funct[3]   ; ALUControl[0] ; 7.335 ; 7.298 ; 7.687  ; 7.661 ;
+; Funct[3]   ; ALUControl[1] ; 9.030 ;       ;        ; 9.426 ;
+; Funct[3]   ; ALUControl[2] ;       ; 9.402 ; 9.649  ;       ;
+; Funct[4]   ; ALUControl[0] ;       ; 7.684 ; 8.053  ;       ;
+; Funct[4]   ; ALUControl[1] ; 8.947 ;       ;        ; 9.386 ;
+; Funct[4]   ; ALUControl[2] ;       ; 9.776 ; 10.051 ;       ;
+; Funct[5]   ; ALUControl[0] ; 5.419 ;       ;        ; 5.605 ;
+; Funct[5]   ; ALUControl[1] ;       ; 6.966 ; 7.086  ;       ;
+; Funct[5]   ; ALUControl[2] ; 7.417 ;       ;        ; 7.697 ;
+; Opcode[0]  ; ALUControl[0] ; 7.575 ; 7.604 ; 7.939  ; 7.998 ;
+; Opcode[0]  ; ALUControl[1] ;       ; 9.107 ; 9.432  ;       ;
+; Opcode[0]  ; ALUControl[2] ;       ; 9.828 ; 10.110 ;       ;
+; Opcode[1]  ; ALUControl[0] ; 7.096 ; 7.127 ; 7.471  ; 7.494 ;
+; Opcode[1]  ; ALUControl[1] ; 8.584 ;       ;        ; 8.997 ;
+; Opcode[1]  ; ALUControl[2] ; 9.262 ;       ;        ; 9.712 ;
+; Opcode[2]  ; ALUControl[0] ; 7.328 ;       ;        ; 7.757 ;
+; Opcode[2]  ; ALUControl[1] ;       ; 8.475 ; 8.794  ;       ;
+; Opcode[2]  ; ALUControl[2] ;       ; 9.586 ; 9.873  ;       ;
+; Opcode[3]  ; ALUControl[0] ; 7.237 ;       ;        ; 7.682 ;
+; Opcode[3]  ; ALUControl[1] ;       ; 8.543 ; 8.856  ;       ;
+; Opcode[3]  ; ALUControl[2] ; 9.384 ;       ;        ; 9.842 ;
+; Opcode[4]  ; ALUControl[0] ;       ; 7.079 ; 7.423  ;       ;
+; Opcode[4]  ; ALUControl[1] ; 8.755 ;       ;        ; 9.164 ;
+; Opcode[4]  ; ALUControl[2] ;       ; 8.997 ; 9.310  ;       ;
+; Opcode[5]  ; ALUControl[0] ;       ; 5.802 ; 5.944  ;       ;
+; Opcode[5]  ; ALUControl[1] ; 7.230 ;       ;        ; 7.448 ;
+; Opcode[5]  ; ALUControl[2] ;       ; 7.254 ; 7.365  ;       ;
++------------+---------------+-------+-------+--------+-------+
+
+
++------------------------------------------------------------+
+; Minimum Propagation Delay                                  ;
++------------+---------------+-------+-------+-------+-------+
+; Input Port ; Output Port   ; RR    ; RF    ; FR    ; FF    ;
++------------+---------------+-------+-------+-------+-------+
+; ALUOp[0]   ; ALUControl[0] ; 7.205 ; 7.038 ; 7.346 ; 7.527 ;
+; ALUOp[0]   ; ALUControl[1] ; 8.370 ; 8.349 ; 8.609 ; 8.739 ;
+; ALUOp[0]   ; ALUControl[2] ; 8.392 ; 9.047 ; 9.270 ; 8.782 ;
+; ALUOp[1]   ; ALUControl[0] ; 7.203 ;       ;       ; 7.626 ;
+; ALUOp[1]   ; ALUControl[1] ;       ; 8.015 ; 8.364 ;       ;
+; ALUOp[1]   ; ALUControl[2] ; 9.157 ; 8.963 ; 9.295 ; 9.640 ;
+; Funct[0]   ; ALUControl[0] ; 6.774 ; 6.813 ; 7.182 ; 7.092 ;
+; Funct[0]   ; ALUControl[1] ;       ; 8.464 ; 8.764 ;       ;
+; Funct[0]   ; ALUControl[2] ; 8.655 ; 8.801 ; 9.037 ; 9.095 ;
+; Funct[1]   ; ALUControl[0] ; 6.940 ;       ;       ; 7.280 ;
+; Funct[1]   ; ALUControl[1] ; 8.587 ;       ;       ; 8.971 ;
+; Funct[1]   ; ALUControl[2] ; 8.822 ;       ;       ; 9.289 ;
+; Funct[2]   ; ALUControl[0] ; 6.898 ; 6.867 ; 7.257 ; 7.220 ;
+; Funct[2]   ; ALUControl[1] ;       ; 8.586 ; 8.899 ;       ;
+; Funct[2]   ; ALUControl[2] ; 8.785 ; 8.883 ; 9.145 ; 9.237 ;
+; Funct[3]   ; ALUControl[0] ; 7.086 ; 7.032 ; 7.413 ; 7.407 ;
+; Funct[3]   ; ALUControl[1] ; 8.715 ;       ;       ; 9.099 ;
+; Funct[3]   ; ALUControl[2] ;       ; 9.069 ; 9.320 ;       ;
+; Funct[4]   ; ALUControl[0] ;       ; 7.424 ; 7.784 ;       ;
+; Funct[4]   ; ALUControl[1] ; 8.655 ;       ;       ; 9.081 ;
+; Funct[4]   ; ALUControl[2] ;       ; 9.433 ; 9.708 ;       ;
+; Funct[5]   ; ALUControl[0] ; 5.252 ;       ;       ; 5.437 ;
+; Funct[5]   ; ALUControl[1] ;       ; 6.756 ; 6.878 ;       ;
+; Funct[5]   ; ALUControl[2] ; 7.176 ;       ;       ; 7.446 ;
+; Opcode[0]  ; ALUControl[0] ; 7.279 ; 7.295 ; 7.634 ; 7.678 ;
+; Opcode[0]  ; ALUControl[1] ;       ; 8.809 ; 9.123 ;       ;
+; Opcode[0]  ; ALUControl[2] ;       ; 9.533 ; 9.805 ;       ;
+; Opcode[1]  ; ALUControl[0] ; 6.816 ; 6.834 ; 7.183 ; 7.195 ;
+; Opcode[1]  ; ALUControl[1] ; 8.302 ;       ;       ; 8.708 ;
+; Opcode[1]  ; ALUControl[2] ; 8.984 ;       ;       ; 9.428 ;
+; Opcode[2]  ; ALUControl[0] ; 7.041 ;       ;       ; 7.447 ;
+; Opcode[2]  ; ALUControl[1] ;       ; 8.199 ; 8.510 ;       ;
+; Opcode[2]  ; ALUControl[2] ;       ; 9.300 ; 9.577 ;       ;
+; Opcode[3]  ; ALUControl[0] ; 6.920 ;       ;       ; 7.320 ;
+; Opcode[3]  ; ALUControl[1] ;       ; 8.265 ; 8.568 ;       ;
+; Opcode[3]  ; ALUControl[2] ; 9.101 ;       ;       ; 9.552 ;
+; Opcode[4]  ; ALUControl[0] ;       ; 6.789 ; 7.135 ;       ;
+; Opcode[4]  ; ALUControl[1] ; 8.466 ;       ;       ; 8.869 ;
+; Opcode[4]  ; ALUControl[2] ;       ; 8.734 ; 9.038 ;       ;
+; Opcode[5]  ; ALUControl[0] ;       ; 5.569 ; 5.720 ;       ;
+; Opcode[5]  ; ALUControl[1] ; 7.006 ;       ;       ; 7.226 ;
+; Opcode[5]  ; ALUControl[2] ;       ; 7.064 ; 7.176 ;       ;
++------------+---------------+-------+-------+-------+-------+
+
+
+---------------------------------------------
+; Slow 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
+--------------------------------------
+; Fast 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Fast 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++------------------------------------------------------------+
+; Propagation Delay                                          ;
++------------+---------------+-------+-------+-------+-------+
+; Input Port ; Output Port   ; RR    ; RF    ; FR    ; FF    ;
++------------+---------------+-------+-------+-------+-------+
+; ALUOp[0]   ; ALUControl[0] ; 4.709 ; 4.675 ; 5.135 ; 5.409 ;
+; ALUOp[0]   ; ALUControl[1] ; 5.577 ; 5.641 ; 6.062 ; 6.320 ;
+; ALUOp[0]   ; ALUControl[2] ; 5.558 ; 6.163 ; 6.495 ; 6.319 ;
+; ALUOp[1]   ; ALUControl[0] ; 4.733 ;       ;       ; 5.506 ;
+; ALUOp[1]   ; ALUControl[1] ;       ; 5.431 ; 5.940 ;       ;
+; ALUOp[1]   ; ALUControl[2] ; 6.081 ; 6.066 ; 6.559 ; 6.961 ;
+; Funct[0]   ; ALUControl[0] ; 4.408 ; 4.544 ; 5.048 ; 5.092 ;
+; Funct[0]   ; ALUControl[1] ;       ; 5.710 ; 6.169 ;       ;
+; Funct[0]   ; ALUControl[2] ; 5.751 ; 6.019 ; 6.389 ; 6.564 ;
+; Funct[1]   ; ALUControl[0] ; 4.526 ;       ;       ; 5.229 ;
+; Funct[1]   ; ALUControl[1] ; 5.698 ;       ;       ; 6.419 ;
+; Funct[1]   ; ALUControl[2] ; 5.870 ;       ;       ; 6.705 ;
+; Funct[2]   ; ALUControl[0] ; 4.491 ; 4.586 ; 5.112 ; 5.200 ;
+; Funct[2]   ; ALUControl[1] ;       ; 5.795 ; 6.282 ;       ;
+; Funct[2]   ; ALUControl[2] ; 5.842 ; 6.070 ; 6.463 ; 6.684 ;
+; Funct[3]   ; ALUControl[0] ; 4.597 ; 4.686 ; 5.226 ; 5.316 ;
+; Funct[3]   ; ALUControl[1] ; 5.768 ;       ;       ; 6.532 ;
+; Funct[3]   ; ALUControl[2] ;       ; 6.170 ; 6.579 ;       ;
+; Funct[4]   ; ALUControl[0] ;       ; 4.927 ; 5.464 ;       ;
+; Funct[4]   ; ALUControl[1] ; 5.729 ;       ;       ; 6.522 ;
+; Funct[4]   ; ALUControl[2] ;       ; 6.415 ; 6.824 ;       ;
+; Funct[5]   ; ALUControl[0] ; 3.365 ;       ;       ; 3.787 ;
+; Funct[5]   ; ALUControl[1] ;       ; 4.563 ; 4.726 ;       ;
+; Funct[5]   ; ALUControl[2] ; 4.725 ;       ;       ; 5.275 ;
+; Opcode[0]  ; ALUControl[0] ; 4.779 ; 4.907 ; 5.383 ; 5.530 ;
+; Opcode[0]  ; ALUControl[1] ;       ; 5.963 ; 6.411 ;       ;
+; Opcode[0]  ; ALUControl[2] ;       ; 6.440 ; 6.859 ;       ;
+; Opcode[1]  ; ALUControl[0] ; 4.461 ; 4.592 ; 5.074 ; 5.198 ;
+; Opcode[1]  ; ALUControl[1] ; 5.484 ;       ;       ; 6.249 ;
+; Opcode[1]  ; ALUControl[2] ; 5.932 ;       ;       ; 6.726 ;
+; Opcode[2]  ; ALUControl[0] ; 4.616 ;       ;       ; 5.365 ;
+; Opcode[2]  ; ALUControl[1] ;       ; 5.556 ; 6.005 ;       ;
+; Opcode[2]  ; ALUControl[2] ;       ; 6.275 ; 6.705 ;       ;
+; Opcode[3]  ; ALUControl[0] ; 4.563 ;       ;       ; 5.308 ;
+; Opcode[3]  ; ALUControl[1] ;       ; 5.601 ; 6.052 ;       ;
+; Opcode[3]  ; ALUControl[2] ; 6.016 ;       ;       ; 6.799 ;
+; Opcode[4]  ; ALUControl[0] ;       ; 4.579 ; 5.034 ;       ;
+; Opcode[4]  ; ALUControl[1] ; 5.607 ;       ;       ; 6.347 ;
+; Opcode[4]  ; ALUControl[2] ;       ; 5.911 ; 6.360 ;       ;
+; Opcode[5]  ; ALUControl[0] ;       ; 3.730 ; 3.892 ;       ;
+; Opcode[5]  ; ALUControl[1] ; 4.608 ;       ;       ; 5.050 ;
+; Opcode[5]  ; ALUControl[2] ;       ; 4.765 ; 4.914 ;       ;
++------------+---------------+-------+-------+-------+-------+
+
+
++------------------------------------------------------------+
+; Minimum Propagation Delay                                  ;
++------------+---------------+-------+-------+-------+-------+
+; Input Port ; Output Port   ; RR    ; RF    ; FR    ; FF    ;
++------------+---------------+-------+-------+-------+-------+
+; ALUOp[0]   ; ALUControl[0] ; 4.524 ; 4.520 ; 4.977 ; 5.211 ;
+; ALUOp[0]   ; ALUControl[1] ; 5.365 ; 5.462 ; 5.881 ; 6.082 ;
+; ALUOp[0]   ; ALUControl[2] ; 5.400 ; 5.955 ; 6.288 ; 6.151 ;
+; ALUOp[1]   ; ALUControl[0] ; 4.548 ;       ;       ; 5.304 ;
+; ALUOp[1]   ; ALUControl[1] ;       ; 5.282 ; 5.784 ;       ;
+; ALUOp[1]   ; ALUControl[2] ; 5.877 ; 5.895 ; 6.379 ; 6.739 ;
+; Funct[0]   ; ALUControl[0] ; 4.264 ; 4.395 ; 4.893 ; 4.938 ;
+; Funct[0]   ; ALUControl[1] ;       ; 5.532 ; 5.986 ;       ;
+; Funct[0]   ; ALUControl[2] ; 5.559 ; 5.800 ; 6.167 ; 6.354 ;
+; Funct[1]   ; ALUControl[0] ; 4.378 ;       ;       ; 5.070 ;
+; Funct[1]   ; ALUControl[1] ; 5.519 ;       ;       ; 6.227 ;
+; Funct[1]   ; ALUControl[2] ; 5.672 ;       ;       ; 6.489 ;
+; Funct[2]   ; ALUControl[0] ; 4.344 ; 4.438 ; 4.955 ; 5.042 ;
+; Funct[2]   ; ALUControl[1] ;       ; 5.613 ; 6.095 ;       ;
+; Funct[2]   ; ALUControl[2] ; 5.645 ; 5.865 ; 6.256 ; 6.469 ;
+; Funct[3]   ; ALUControl[0] ; 4.446 ; 4.517 ; 5.051 ; 5.153 ;
+; Funct[3]   ; ALUControl[1] ; 5.572 ;       ;       ; 6.319 ;
+; Funct[3]   ; ALUControl[2] ;       ; 5.961 ; 6.369 ;       ;
+; Funct[4]   ; ALUControl[0] ;       ; 4.762 ; 5.294 ;       ;
+; Funct[4]   ; ALUControl[1] ; 5.547 ;       ;       ; 6.325 ;
+; Funct[4]   ; ALUControl[2] ;       ; 6.197 ; 6.605 ;       ;
+; Funct[5]   ; ALUControl[0] ; 3.267 ;       ;       ; 3.688 ;
+; Funct[5]   ; ALUControl[1] ;       ; 4.434 ; 4.603 ;       ;
+; Funct[5]   ; ALUControl[2] ; 4.578 ;       ;       ; 5.123 ;
+; Opcode[0]  ; ALUControl[0] ; 4.591 ; 4.713 ; 5.186 ; 5.327 ;
+; Opcode[0]  ; ALUControl[1] ;       ; 5.772 ; 6.216 ;       ;
+; Opcode[0]  ; ALUControl[2] ;       ; 6.253 ; 6.666 ;       ;
+; Opcode[1]  ; ALUControl[0] ; 4.287 ; 4.413 ; 4.890 ; 5.009 ;
+; Opcode[1]  ; ALUControl[1] ; 5.311 ;       ;       ; 6.065 ;
+; Opcode[1]  ; ALUControl[2] ; 5.762 ;       ;       ; 6.544 ;
+; Opcode[2]  ; ALUControl[0] ; 4.436 ;       ;       ; 5.170 ;
+; Opcode[2]  ; ALUControl[1] ;       ; 5.383 ; 5.827 ;       ;
+; Opcode[2]  ; ALUControl[2] ;       ; 6.096 ; 6.520 ;       ;
+; Opcode[3]  ; ALUControl[0] ; 4.363 ;       ;       ; 5.082 ;
+; Opcode[3]  ; ALUControl[1] ;       ; 5.425 ; 5.872 ;       ;
+; Opcode[3]  ; ALUControl[2] ; 5.844 ;       ;       ; 6.615 ;
+; Opcode[4]  ; ALUControl[0] ;       ; 4.400 ; 4.852 ;       ;
+; Opcode[4]  ; ALUControl[1] ; 5.430 ;       ;       ; 6.159 ;
+; Opcode[4]  ; ALUControl[2] ;       ; 5.746 ; 6.188 ;       ;
+; Opcode[5]  ; ALUControl[0] ;       ; 3.587 ; 3.758 ;       ;
+; Opcode[5]  ; ALUControl[1] ; 4.474 ;       ;       ; 4.917 ;
+; Opcode[5]  ; ALUControl[2] ;       ; 4.648 ; 4.803 ;       ;
++------------+---------------+-------+-------+-------+-------+
+
+
+---------------------------------------------
+; Fast 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++----------------------------------------------------------------+
+; Progagation Delay                                              ;
++------------+---------------+--------+--------+--------+--------+
+; Input Port ; Output Port   ; RR     ; RF     ; FR     ; FF     ;
++------------+---------------+--------+--------+--------+--------+
+; ALUOp[0]   ; ALUControl[0] ; 8.106  ; 7.880  ; 8.258  ; 8.561  ;
+; ALUOp[0]   ; ALUControl[1] ; 9.315  ; 9.259  ; 9.569  ; 9.850  ;
+; ALUOp[0]   ; ALUControl[2] ; 9.222  ; 10.095 ; 10.320 ; 9.758  ;
+; ALUOp[1]   ; ALUControl[0] ; 8.099  ;        ;        ; 8.643  ;
+; ALUOp[1]   ; ALUControl[1] ;        ; 8.825  ; 9.224  ;        ;
+; ALUOp[1]   ; ALUControl[2] ; 10.145 ; 9.902  ; 10.294 ; 10.806 ;
+; Funct[0]   ; ALUControl[0] ; 7.561  ; 7.630  ; 8.061  ; 7.981  ;
+; Funct[0]   ; ALUControl[1] ;        ; 9.393  ; 9.745  ;        ;
+; Funct[0]   ; ALUControl[2] ; 9.586  ; 9.839  ; 10.084 ; 10.185 ;
+; Funct[1]   ; ALUControl[0] ; 7.747  ;        ;        ; 8.210  ;
+; Funct[1]   ; ALUControl[1] ; 9.506  ;        ;        ; 10.017 ;
+; Funct[1]   ; ALUControl[2] ; 9.772  ;        ;        ; 10.420 ;
+; Funct[2]   ; ALUControl[0] ; 7.687  ; 7.677  ; 8.133  ; 8.114  ;
+; Funct[2]   ; ALUControl[1] ;        ; 9.518  ; 9.886  ;        ;
+; Funct[2]   ; ALUControl[2] ; 9.720  ; 9.896  ; 10.166 ; 10.333 ;
+; Funct[3]   ; ALUControl[0] ; 7.919  ; 7.906  ; 8.358  ; 8.352  ;
+; Funct[3]   ; ALUControl[1] ; 9.678  ;        ;        ; 10.189 ;
+; Funct[3]   ; ALUControl[2] ;        ; 10.125 ; 10.390 ;        ;
+; Funct[4]   ; ALUControl[0] ;        ; 8.331  ; 8.779  ;        ;
+; Funct[4]   ; ALUControl[1] ; 9.581  ;        ;        ; 10.158 ;
+; Funct[4]   ; ALUControl[2] ;        ; 10.546 ; 10.841 ;        ;
+; Funct[5]   ; ALUControl[0] ; 5.698  ;        ;        ; 5.862  ;
+; Funct[5]   ; ALUControl[1] ;        ; 7.322  ; 7.363  ;        ;
+; Funct[5]   ; ALUControl[2] ; 7.760  ;        ;        ; 8.077  ;
+; Opcode[0]  ; ALUControl[0] ; 8.184  ; 8.238  ; 8.642  ; 8.728  ;
+; Opcode[0]  ; ALUControl[1] ;        ; 9.785  ; 10.155 ;        ;
+; Opcode[0]  ; ALUControl[2] ;        ; 10.565 ; 10.898 ;        ;
+; Opcode[1]  ; ALUControl[0] ; 7.665  ; 7.721  ; 8.113  ; 8.160  ;
+; Opcode[1]  ; ALUControl[1] ; 9.174  ;        ;        ; 9.708  ;
+; Opcode[1]  ; ALUControl[2] ; 9.917  ;        ;        ; 10.482 ;
+; Opcode[2]  ; ALUControl[0] ; 7.922  ;        ;        ; 8.445  ;
+; Opcode[2]  ; ALUControl[1] ;        ; 9.088  ; 9.427  ;        ;
+; Opcode[2]  ; ALUControl[2] ;        ; 10.309 ; 10.623 ;        ;
+; Opcode[3]  ; ALUControl[0] ; 7.823  ;        ;        ; 8.371  ;
+; Opcode[3]  ; ALUControl[1] ;        ; 9.166  ; 9.514  ;        ;
+; Opcode[3]  ; ALUControl[2] ; 10.047 ;        ;        ; 10.630 ;
+; Opcode[4]  ; ALUControl[0] ;        ; 7.674  ; 8.069  ;        ;
+; Opcode[4]  ; ALUControl[1] ; 9.371  ;        ;        ; 9.908  ;
+; Opcode[4]  ; ALUControl[2] ;        ; 9.657  ; 10.025 ;        ;
+; Opcode[5]  ; ALUControl[0] ;        ; 6.156  ; 6.224  ;        ;
+; Opcode[5]  ; ALUControl[1] ; 7.576  ;        ;        ; 7.798  ;
+; Opcode[5]  ; ALUControl[2] ;        ; 7.614  ; 7.655  ;        ;
++------------+---------------+--------+--------+--------+--------+
+
+
++------------------------------------------------------------+
+; Minimum Progagation Delay                                  ;
++------------+---------------+-------+-------+-------+-------+
+; Input Port ; Output Port   ; RR    ; RF    ; FR    ; FF    ;
++------------+---------------+-------+-------+-------+-------+
+; ALUOp[0]   ; ALUControl[0] ; 4.524 ; 4.520 ; 4.977 ; 5.211 ;
+; ALUOp[0]   ; ALUControl[1] ; 5.365 ; 5.462 ; 5.881 ; 6.082 ;
+; ALUOp[0]   ; ALUControl[2] ; 5.400 ; 5.955 ; 6.288 ; 6.151 ;
+; ALUOp[1]   ; ALUControl[0] ; 4.548 ;       ;       ; 5.304 ;
+; ALUOp[1]   ; ALUControl[1] ;       ; 5.282 ; 5.784 ;       ;
+; ALUOp[1]   ; ALUControl[2] ; 5.877 ; 5.895 ; 6.379 ; 6.739 ;
+; Funct[0]   ; ALUControl[0] ; 4.264 ; 4.395 ; 4.893 ; 4.938 ;
+; Funct[0]   ; ALUControl[1] ;       ; 5.532 ; 5.986 ;       ;
+; Funct[0]   ; ALUControl[2] ; 5.559 ; 5.800 ; 6.167 ; 6.354 ;
+; Funct[1]   ; ALUControl[0] ; 4.378 ;       ;       ; 5.070 ;
+; Funct[1]   ; ALUControl[1] ; 5.519 ;       ;       ; 6.227 ;
+; Funct[1]   ; ALUControl[2] ; 5.672 ;       ;       ; 6.489 ;
+; Funct[2]   ; ALUControl[0] ; 4.344 ; 4.438 ; 4.955 ; 5.042 ;
+; Funct[2]   ; ALUControl[1] ;       ; 5.613 ; 6.095 ;       ;
+; Funct[2]   ; ALUControl[2] ; 5.645 ; 5.865 ; 6.256 ; 6.469 ;
+; Funct[3]   ; ALUControl[0] ; 4.446 ; 4.517 ; 5.051 ; 5.153 ;
+; Funct[3]   ; ALUControl[1] ; 5.572 ;       ;       ; 6.319 ;
+; Funct[3]   ; ALUControl[2] ;       ; 5.961 ; 6.369 ;       ;
+; Funct[4]   ; ALUControl[0] ;       ; 4.762 ; 5.294 ;       ;
+; Funct[4]   ; ALUControl[1] ; 5.547 ;       ;       ; 6.325 ;
+; Funct[4]   ; ALUControl[2] ;       ; 6.197 ; 6.605 ;       ;
+; Funct[5]   ; ALUControl[0] ; 3.267 ;       ;       ; 3.688 ;
+; Funct[5]   ; ALUControl[1] ;       ; 4.434 ; 4.603 ;       ;
+; Funct[5]   ; ALUControl[2] ; 4.578 ;       ;       ; 5.123 ;
+; Opcode[0]  ; ALUControl[0] ; 4.591 ; 4.713 ; 5.186 ; 5.327 ;
+; Opcode[0]  ; ALUControl[1] ;       ; 5.772 ; 6.216 ;       ;
+; Opcode[0]  ; ALUControl[2] ;       ; 6.253 ; 6.666 ;       ;
+; Opcode[1]  ; ALUControl[0] ; 4.287 ; 4.413 ; 4.890 ; 5.009 ;
+; Opcode[1]  ; ALUControl[1] ; 5.311 ;       ;       ; 6.065 ;
+; Opcode[1]  ; ALUControl[2] ; 5.762 ;       ;       ; 6.544 ;
+; Opcode[2]  ; ALUControl[0] ; 4.436 ;       ;       ; 5.170 ;
+; Opcode[2]  ; ALUControl[1] ;       ; 5.383 ; 5.827 ;       ;
+; Opcode[2]  ; ALUControl[2] ;       ; 6.096 ; 6.520 ;       ;
+; Opcode[3]  ; ALUControl[0] ; 4.363 ;       ;       ; 5.082 ;
+; Opcode[3]  ; ALUControl[1] ;       ; 5.425 ; 5.872 ;       ;
+; Opcode[3]  ; ALUControl[2] ; 5.844 ;       ;       ; 6.615 ;
+; Opcode[4]  ; ALUControl[0] ;       ; 4.400 ; 4.852 ;       ;
+; Opcode[4]  ; ALUControl[1] ; 5.430 ;       ;       ; 6.159 ;
+; Opcode[4]  ; ALUControl[2] ;       ; 5.746 ; 6.188 ;       ;
+; Opcode[5]  ; ALUControl[0] ;       ; 3.587 ; 3.758 ;       ;
+; Opcode[5]  ; ALUControl[1] ; 4.474 ;       ;       ; 4.917 ;
+; Opcode[5]  ; ALUControl[2] ;       ; 4.648 ; 4.803 ;       ;
++------------+---------------+-------+-------+-------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                    ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+
+; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+
+; ALUControl[0] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; ALUControl[1] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; ALUControl[2] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+
+
+
++----------------------------------------------------------------------------+
+; Input Transition Times                                                     ;
++-------------------------+--------------+-----------------+-----------------+
+; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-------------------------+--------------+-----------------+-----------------+
+; Funct[0]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Funct[1]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Funct[2]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Funct[3]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Opcode[0]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Opcode[1]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Opcode[2]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Opcode[3]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ALUOp[0]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ALUOp[1]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Opcode[4]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Opcode[5]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Funct[5]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Funct[4]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-------------------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Corner Signal Integrity Metrics                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; ALUControl[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.11e-007 V                  ; 2.35 V              ; -0.00823 V          ; 0.102 V                              ; 0.022 V                              ; 6.39e-010 s                 ; 5.99e-010 s                 ; Yes                        ; Yes                        ; 2.32 V                      ; 7.11e-007 V                 ; 2.35 V             ; -0.00823 V         ; 0.102 V                             ; 0.022 V                             ; 6.39e-010 s                ; 5.99e-010 s                ; Yes                       ; Yes                       ;
+; ALUControl[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.11e-007 V                  ; 2.33 V              ; -0.00353 V          ; 0.131 V                              ; 0.073 V                              ; 3.33e-009 s                 ; 3.13e-009 s                 ; Yes                        ; Yes                        ; 2.32 V                      ; 7.11e-007 V                 ; 2.33 V             ; -0.00353 V         ; 0.131 V                             ; 0.073 V                             ; 3.33e-009 s                ; 3.13e-009 s                ; Yes                       ; Yes                       ;
+; ALUControl[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.11e-007 V                  ; 2.33 V              ; -0.00353 V          ; 0.131 V                              ; 0.073 V                              ; 3.33e-009 s                 ; 3.13e-009 s                 ; Yes                        ; Yes                        ; 2.32 V                      ; 7.11e-007 V                 ; 2.33 V             ; -0.00353 V         ; 0.131 V                             ; 0.073 V                             ; 3.33e-009 s                ; 3.13e-009 s                ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.68e-007 V                  ; 2.36 V              ; -0.0226 V           ; 0.073 V                              ; 0.034 V                              ; 3.97e-010 s                 ; 3.26e-010 s                 ; Yes                        ; Yes                        ; 2.32 V                      ; 5.68e-007 V                 ; 2.36 V             ; -0.0226 V          ; 0.073 V                             ; 0.034 V                             ; 3.97e-010 s                ; 3.26e-010 s                ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.36e-007 V                  ; 2.35 V              ; -0.00575 V          ; 0.081 V                              ; 0.032 V                              ; 5.3e-010 s                  ; 7.56e-010 s                 ; Yes                        ; Yes                        ; 2.32 V                      ; 9.36e-007 V                 ; 2.35 V             ; -0.00575 V         ; 0.081 V                             ; 0.032 V                             ; 5.3e-010 s                 ; 7.56e-010 s                ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Corner Signal Integrity Metrics                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; ALUControl[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.7e-008 V                   ; 2.71 V              ; -0.0352 V           ; 0.147 V                              ; 0.066 V                              ; 4.51e-010 s                 ; 4.15e-010 s                 ; No                         ; Yes                        ; 2.62 V                      ; 2.7e-008 V                  ; 2.71 V             ; -0.0352 V          ; 0.147 V                             ; 0.066 V                             ; 4.51e-010 s                ; 4.15e-010 s                ; No                        ; Yes                       ;
+; ALUControl[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.7e-008 V                   ; 2.64 V              ; -0.0118 V           ; 0.201 V                              ; 0.173 V                              ; 2.38e-009 s                 ; 2.19e-009 s                 ; No                         ; Yes                        ; 2.62 V                      ; 2.7e-008 V                  ; 2.64 V             ; -0.0118 V          ; 0.201 V                             ; 0.173 V                             ; 2.38e-009 s                ; 2.19e-009 s                ; No                        ; Yes                       ;
+; ALUControl[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.7e-008 V                   ; 2.64 V              ; -0.0118 V           ; 0.201 V                              ; 0.173 V                              ; 2.38e-009 s                 ; 2.19e-009 s                 ; No                         ; Yes                        ; 2.62 V                      ; 2.7e-008 V                  ; 2.64 V             ; -0.0118 V          ; 0.201 V                             ; 0.173 V                             ; 2.38e-009 s                ; 2.19e-009 s                ; No                        ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.2e-008 V                   ; 2.74 V              ; -0.061 V            ; 0.159 V                              ; 0.078 V                              ; 2.7e-010 s                  ; 2.2e-010 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.2e-008 V                  ; 2.74 V             ; -0.061 V           ; 0.159 V                             ; 0.078 V                             ; 2.7e-010 s                 ; 2.2e-010 s                 ; No                        ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.52e-008 V                  ; 2.7 V               ; -0.012 V            ; 0.274 V                              ; 0.034 V                              ; 3.18e-010 s                 ; 4.96e-010 s                 ; No                         ; Yes                        ; 2.62 V                      ; 3.52e-008 V                 ; 2.7 V              ; -0.012 V           ; 0.274 V                             ; 0.034 V                             ; 3.18e-010 s                ; 4.96e-010 s                ; No                        ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 14    ; 14   ;
+; Unconstrained Input Port Paths  ; 42    ; 42   ;
+; Unconstrained Output Ports      ; 3     ; 3    ;
+; Unconstrained Output Port Paths ; 42    ; 42   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II TimeQuest Timing Analyzer
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Wed Feb 26 04:44:43 2020
+Info: Command: quartus_sta alu_decoder -c alu_decoder
+Info: qsta_default_script.tcl version: #1
+Info: high junction temperature operating condition is not set. Assuming a default value of '85'.
+Info: low junction temperature operating condition is not set. Assuming a default value of '0'.
+Critical Warning: Synopsys Design Constraints File file not found: 'alu_decoder.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info: No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info: The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning: No clocks defined in design.
+Info: No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info: The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info: No clocks to report
+Info: Analyzing Slow 1200mV 85C Model
+Info: No fmax paths to report
+Info: No Setup paths to report
+Info: No Hold paths to report
+Info: No Recovery paths to report
+Info: No Removal paths to report
+Info: No Minimum Pulse Width paths to report
+Info: Analyzing Slow 1200mV 0C Model
+Info: Started post-fitting delay annotation
+Warning: Timing characteristics of device EP4CE6E22C6 are preliminary
+Info: Delay annotation completed successfully
+Info: No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info: The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning: No clocks defined in design.
+Info: The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info: No fmax paths to report
+Info: No Setup paths to report
+Info: No Hold paths to report
+Info: No Recovery paths to report
+Info: No Removal paths to report
+Info: No Minimum Pulse Width paths to report
+Info: Analyzing Fast 1200mV 0C Model
+Info: Started post-fitting delay annotation
+Warning: Timing characteristics of device EP4CE6E22C6 are preliminary
+Info: Delay annotation completed successfully
+Info: No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info: The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning: No clocks defined in design.
+Info: The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info: No Setup paths to report
+Info: No Hold paths to report
+Info: No Recovery paths to report
+Info: No Removal paths to report
+Info: No Minimum Pulse Width paths to report
+Info: Design is not fully constrained for setup requirements
+Info: Design is not fully constrained for hold requirements
+Info: Quartus II TimeQuest Timing Analyzer was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 259 megabytes
+    Info: Processing ended: Wed Feb 26 04:44:44 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

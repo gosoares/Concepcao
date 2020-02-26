@@ -19,7 +19,7 @@ module main_controller_tb;
     logic [1:0] PCSrc_esperado, ALUSrcB_esperado, ALUOp_esperado;
     
     parameter max_vectors = 78;
-    logic [11:0] vectors[max_vectors];
+    logic [30:0] vectors[max_vectors];
 
     main_controller dut(clock, reset, opcode, state, MemtoReg, RegDst, IorD,
 	ALUSrcA, IRWrite, MemWrite, PCWrite, BranchEQ, BranchNE, RegWrite, PCSrc,
@@ -27,7 +27,7 @@ module main_controller_tb;
 
     initial begin
         counter = 0; errors = 0;
-		rst = 1'b1; #12; rst = 0;
+		rst = 1'b1; #100; rst = 0;
 		clk=0;
 		
 		if(~rst) begin
@@ -46,15 +46,15 @@ module main_controller_tb;
     end
 	        
     always begin
-        clk = 1; #9;
-        clk = 0; #5;
+        clk = 1; #1000;
+        clk = 0; #100;
     end
 
     always @(posedge clk) begin
         if(~rst) begin
 	        {clock, reset, opcode, state_esperado, MemtoReg_esperado, RegDst_esperado,IorD_esperado,
 			PCSrc_esperado, ALUSrcB_esperado, ALUSrcA_esperado, IRWrite_esperado, MemWrite_esperado,
-			PCWrite_esperado, BranchEQ_esperado, BranchNE_esperado, RegWrite_esperado, ALUOp_esperado} = vectors[counter];	
+			PCWrite_esperado, BranchEQ_esperado, BranchNE_esperado, RegWrite_esperado, ALUOp_esperado} = vectors[counter];
         end
 	end
 
@@ -66,7 +66,7 @@ module main_controller_tb;
 				for(int i = 0; i < 6; i++) begin
 					assert (state[i] === state_esperado[i]) else begin
 						//Mostra mensagem de erro se a saída do DUT for diferente da saída esperada
-						$error("Erro S na linha %d bit %d, saida = %b, (%b esperado)", counter+1, i, state[i], state_esperado[i]);
+						$error("s[%d] = %b (%b esperado) {Linha %d}", i, state[i], state_esperado[i], counter+1);
 									
 						errors = errors + 1; //Incrementa contador de erros a cada bit errado encontrado
 					end

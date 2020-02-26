@@ -46,7 +46,7 @@ module main_controller_tb;
     end
 	        
     always begin
-        clk = 1; #9;
+        clk = 1; #30;
         clk = 0; #5;
     end
 
@@ -56,7 +56,7 @@ module main_controller_tb;
 			PCSrc_esperado, ALUSrcB_esperado, ALUSrcA_esperado, IRWrite_esperado, MemWrite_esperado,
 			PCWrite_esperado, BranchEQ_esperado, BranchNE_esperado, RegWrite_esperado, ALUOp_esperado} = vectors[counter];
         end
-	end
+    end
 
     always @(negedge clk)	//Sempre (que o clock descer)
         if(~rst) begin

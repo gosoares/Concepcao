@@ -1,0 +1,24 @@
+|alu_decoder
+ALUOp[0] => Mux0.IN5
+ALUOp[0] => Mux1.IN5
+ALUOp[0] => Mux2.IN5
+ALUOp[1] => Mux0.IN4
+ALUOp[1] => Mux1.IN4
+ALUOp[1] => Mux2.IN4
+Opcode[0] => Decoder1.IN5
+Opcode[1] => Decoder1.IN4
+Opcode[2] => Decoder1.IN3
+Opcode[3] => Decoder1.IN2
+Opcode[4] => Decoder1.IN1
+Opcode[5] => Decoder1.IN0
+Funct[0] => Decoder0.IN5
+Funct[1] => Decoder0.IN4
+Funct[2] => Decoder0.IN3
+Funct[3] => Decoder0.IN2
+Funct[4] => Decoder0.IN1
+Funct[5] => Decoder0.IN0
+ALUControl[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+ALUControl[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+ALUControl[2] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
