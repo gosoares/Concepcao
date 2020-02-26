@@ -10,51 +10,51 @@ cModel Technology
 Z0 dD:/Developer/Concepcao/mips/control_unit/main_controller/simulation/modelsim
 vmain_controller
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1582657892
+!s110 1582692911
 !i10b 1
-!s100 ^Sk9JnNZN_GG<Sa;5B[Ti3
-Il60?IZSlF^N@iGK@kdIhM3
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s100 XmEeeemJDJ]95ncHBVC?N0
+I?R>1K8?@YY0I>L:QjT]gC0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 !s105 main_controller_sv_unit
 S1
 R0
-w1582654255
+w1582692846
 8D:/Developer/Concepcao/mips/control_unit/main_controller/main_controller.sv
 FD:/Developer/Concepcao/mips/control_unit/main_controller/main_controller.sv
 L0 1
-Z4 OV;L;10.5b;63
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1582657891.000000
+!s108 1582692911.000000
 !s107 D:/Developer/Concepcao/mips/control_unit/main_controller/main_controller.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Developer/Concepcao/mips/control_unit/main_controller|D:/Developer/Concepcao/mips/control_unit/main_controller/main_controller.sv|
 !i113 1
-Z5 o-sv -work work
+Z4 o-sv -work work
 !s92 -sv -work work +incdir+D:/Developer/Concepcao/mips/control_unit/main_controller
-Z6 tCvgOpt 0
+Z5 tCvgOpt 0
 vmain_controller_tb
 R1
-R2
+!s110 1582692912
 !i10b 1
-!s100 U<:_MOQ906?oW7F0QMO:B1
-IfFTIR<=e<_n><M7_K]`2F3
-R3
+!s100 ?2<eilcjRFNfPneoccSQ80
+I`c7dK6kPD>eoHQ_7EkJO[0
+R2
 !s105 main_controller_tb_sv_unit
 S1
 R0
-w1582657589
+w1582692905
 8D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv
 FD:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv
 L0 2
-R4
+R3
 r1
 !s85 0
 31
-!s108 1582657892.000000
+!s108 1582692912.000000
 !s107 D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Developer/Concepcao/mips/control_unit/main_controller/testbench|D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv|
 !i113 1
-R5
+R4
 !s92 -sv -work work +incdir+D:/Developer/Concepcao/mips/control_unit/main_controller/testbench
-R6
+R5

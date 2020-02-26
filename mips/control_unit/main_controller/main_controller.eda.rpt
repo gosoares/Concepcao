@@ -1,5 +1,5 @@
 EDA Netlist Writer report for main_controller
-Tue Feb 25 13:54:27 2020
+Wed Feb 26 01:52:36 2020
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Feb 25 13:54:27 2020 ;
+; EDA Netlist Writer Status ; Successful - Wed Feb 26 01:52:36 2020 ;
 ; Revision Name             ; main_controller                       ;
 ; Top-level Entity Name     ; main_controller                       ;
 ; Family                    ; Cyclone IV E                          ;
@@ -88,7 +88,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II EDA Netlist Writer
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Feb 25 13:54:26 2020
+    Info: Processing started: Wed Feb 26 01:52:35 2020
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off main_controller -c main_controller
 Info: Generated file main_controller_6_1200mv_85c_slow.vo in folder "D:/Developer/Concepcao/mips/control_unit/main_controller/simulation/modelsim/" for EDA simulation tool
 Info: Generated file main_controller_6_1200mv_0c_slow.vo in folder "D:/Developer/Concepcao/mips/control_unit/main_controller/simulation/modelsim/" for EDA simulation tool
@@ -100,7 +100,7 @@ Info: Generated file main_controller_min_1200mv_0c_v_fast.sdo in folder "D:/Deve
 Info: Generated file main_controller_v.sdo in folder "D:/Developer/Concepcao/mips/control_unit/main_controller/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 210 megabytes
-    Info: Processing ended: Tue Feb 25 13:54:27 2020
+    Info: Processing ended: Wed Feb 26 01:52:36 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

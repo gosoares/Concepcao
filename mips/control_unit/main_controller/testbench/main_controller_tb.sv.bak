@@ -6,13 +6,24 @@ module main_controller_tb;
     integer file;
     
     logic clock, reset;
-	logic [5:0] opcode;
-	logic [3:0] state, state_esperado;
+    logic [5:0] opcode;
+    logic [3:0] state, state_esperado;
+
+    logic MemtoReg, RegDst, IorD, ALUSrcA,
+    IRWrite, MemWrite, PCWrite, BranchEQ, BranchNE, RegWrite;
+    logic [1:0] PCSrc, ALUSrcB, ALUOp;
+
+    logic MemtoReg_esperado, RegDst_esperado, IorD_esperado, ALUSrcA_esperado,
+    IRWrite_esperado, MemWrite_esperado, PCWrite_esperado, BranchEQ_esperado,
+    BranchNE_esperado, RegWrite_esperado;
+    logic [1:0] PCSrc_esperado, ALUSrcB_esperado, ALUOp_esperado;
     
     parameter max_vectors = 78;
     logic [11:0] vectors[max_vectors];
 
-    main_controller dut(clock, reset, opcode, state);
+    main_controller dut(clock, reset, opcode, state, MemtoReg, RegDst, IorD,
+	ALUSrcA, IRWrite, MemWrite, PCWrite, BranchEQ, BranchNE, RegWrite, PCSrc,
+	ALUSrcB, ALUOp);
 
     initial begin
         counter = 0; errors = 0;
@@ -27,21 +38,23 @@ module main_controller_tb;
     
         $display("Iniciando Testbench");
         $display("---------------");
-        $display("| clk | rst | opcode | state |");
+        $display("| clk | rst | opcode | state | MemtoReg | RegDst | IorD | PCSrc | ALUSrcB | ALUSrcA | IRWrite | MemWrite | PCWrite | BranchEQ | BranchNE | RegWrite | ALUOp |");
         
         $fwrite(file, "Iniciando Testbench");
         $fwrite(file, "---------------");
-        $fwrite(file, "| clk | rst | opcode | state |"); 	
+        $fwrite(file, "| clk | rst | opcode | state | MemtoReg | RegDst | IorD | PCSrc | ALUSrcB | ALUSrcA | IRWrite | MemWrite | PCWrite | BranchEQ | BranchNE | RegWrite | ALUOp |"); 	
     end
 	        
     always begin
-        clk = 1; #8;
+        clk = 1; #9;
         clk = 0; #5;
     end
 
     always @(posedge clk) begin
         if(~rst) begin
-	        {clock, reset, opcode, state_esperado} = vectors[counter];	
+	        {clock, reset, opcode, state_esperado, MemtoReg_esperado, RegDst_esperado,IorD_esperado,
+			PCSrc_esperado, ALUSrcB_esperado, ALUSrcA_esperado, IRWrite_esperado, MemWrite_esperado,
+			PCWrite_esperado, BranchEQ_esperado, BranchNE_esperado, RegWrite_esperado, ALUOp_esperado} = vectors[counter];	
         end
 	end
 
@@ -58,10 +71,75 @@ module main_controller_tb;
 						errors = errors + 1; //Incrementa contador de erros a cada bit errado encontrado
 					end
 				end
-
+				
+				assert(MemtoReg === MemtoReg_esperado) else begin
+					$error("MemtoReg = %b na linha %d", MemtoReg, counter+1);
+				end
+				
+				assert(RegDst === RegDst_esperado) else begin
+					$error("RegDst = %b na linha %d", RegDst, counter+1);
+				end
+				
+				assert(IorD === IorD_esperado) else begin
+					$error("IorD = %b na linha %d", IorD, counter+1);
+				end
+				
+				assert(ALUSrcA === ALUSrcA_esperado) else begin
+					$error("ALUSrcA = %b na linha %d", ALUSrcA, counter+1);
+				end
+				
+				assert(IRWrite === IRWrite_esperado) else begin
+					$error("IRWrite = %b na linha %d", IRWrite, counter+1);
+				end
+				
+				assert(MemWrite === MemWrite_esperado) else begin
+					$error("MemWrite = %b na linha %d", MemWrite, counter+1);
+				end
+				
+				assert(PCWrite === PCWrite_esperado) else begin
+					$error("PCWrite = %b na linha %d", PCWrite, counter+1);
+				end
+				
+				assert(BranchEQ === BranchEQ_esperado) else begin
+					$error("BranchEQ = %b na linha %d", BranchEQ, counter+1);
+				end
+				
+				assert(BranchNE === BranchNE_esperado) else begin
+					$error("BranchNE = %b na linha %d", BranchNE, counter+1);
+				end
+				
+				assert(RegWrite === RegWrite_esperado) else begin
+					$error("RegWrite = %b na linha %d", RegWrite, counter+1);
+				end
+				
+				for(int i = 0; i < 2; i++) begin
+					assert (PCSrc[i] === PCSrc_esperado[i]) else begin
+						$error("Erro PCSrc na linha %d bit %d, saida = %b, (%b esperado)", counter+1, i, PCSrc[i], PCSrc_esperado[i]);
+						errors = errors + 1;
+					end
+				end
+				
+				for(int i = 0; i < 2; i++) begin
+					assert (ALUSrcB[i] === ALUSrcB_esperado[i]) else begin
+						$error("Erro ALUSrcB na linha %d bit %d, saida = %b, (%b esperado)", counter+1, i, ALUSrcB[i], ALUSrcB_esperado[i]);
+						errors = errors + 1;
+					end
+				end
+				
+				for(int i = 0; i < 2; i++) begin
+					assert (ALUOp[i] === ALUOp_esperado[i]) else begin
+						$error("Erro ALUOp na linha %d bit %d, saida = %b, (%b esperado)", counter+1, i, ALUOp[i], ALUOp_esperado[i]);
+						errors = errors + 1;
+					end
+				end
+				
 				if(aux_error === errors) begin // Nao houve erro
-					$display("|  %b  |  %b  | %b | %b  | OK", clock, reset, opcode, state);
-					$fwrite(file, "|  %b  |  %b  | %b | %b  | OK", clock, reset, opcode, state);
+					$display("|  %b  |  %b  | %b | %b  | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | OK",
+						clock, reset, opcode, state, MemtoReg, RegDst,IorD, PCSrc, ALUSrcB,
+						ALUSrcA, IRWrite, MemWrite, PCWrite, BranchEQ, BranchNE ,RegWrite, ALUOp);
+					$fwrite(file, "|  %b  |  %b  | %b | %b  | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | OK",
+						clock, reset, opcode, state, MemtoReg, RegDst,IorD, PCSrc, ALUSrcB,
+						ALUSrcA, IRWrite, MemWrite, PCWrite, BranchEQ, BranchNE ,RegWrite, ALUOp);
 				end
 	
 				if(counter+1 == max_vectors) begin
