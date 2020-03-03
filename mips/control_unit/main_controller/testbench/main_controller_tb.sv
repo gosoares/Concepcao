@@ -46,7 +46,7 @@ module main_controller_tb;
     end
 	        
     always begin
-        clk = 1; #30;
+        clk = 1; #10;
         clk = 0; #5;
     end
 
@@ -60,56 +60,68 @@ module main_controller_tb;
 
     always @(negedge clk)	//Sempre (que o clock descer)
         if(~rst) begin
-			if(state_esperado !== 6'bx) begin
+			if(state_esperado !== 4'bx) begin
 				aux_error = errors;
 				
-				for(int i = 0; i < 6; i++) begin
-					assert (state[i] === state_esperado[i]) else begin
-						//Mostra mensagem de erro se a saída do DUT for diferente da saída esperada
-						$error("s[%d] = %b (%b esperado) {Linha %d}", i, state[i], state_esperado[i], counter+1);
-									
-						errors = errors + 1; //Incrementa contador de erros a cada bit errado encontrado
+				assert(state === state_esperado) else begin 
+					for(int i = 0; i < 4; i++) begin
+						assert (state[i] === state_esperado[i]) else begin
+							//Mostra mensagem de erro se a saída do DUT for diferente da saída esperada
+							$error("s[%d] = %b (%b esperado) {Linha %d}", i, state[i], state_esperado[i], counter+1);
+										
+							errors = errors + 1; //Incrementa contador de erros a cada bit errado encontrado
+						end
 					end
 				end
 				
 				assert(MemtoReg === MemtoReg_esperado) else begin
 					$error("MemtoReg = %b na linha %d", MemtoReg, counter+1);
+					errors = errors + 1;
 				end
 				
 				assert(RegDst === RegDst_esperado) else begin
 					$error("RegDst = %b na linha %d", RegDst, counter+1);
+					errors = errors + 1;
 				end
 				
 				assert(IorD === IorD_esperado) else begin
 					$error("IorD = %b na linha %d", IorD, counter+1);
+					errors = errors + 1;
 				end
 				
 				assert(ALUSrcA === ALUSrcA_esperado) else begin
 					$error("ALUSrcA = %b na linha %d", ALUSrcA, counter+1);
+					errors = errors + 1;
 				end
 				
 				assert(IRWrite === IRWrite_esperado) else begin
 					$error("IRWrite = %b na linha %d", IRWrite, counter+1);
+					errors = errors + 1;
 				end
 				
 				assert(MemWrite === MemWrite_esperado) else begin
 					$error("MemWrite = %b na linha %d", MemWrite, counter+1);
+					errors = errors + 1;
 				end
 				
 				assert(PCWrite === PCWrite_esperado) else begin
 					$error("PCWrite = %b na linha %d", PCWrite, counter+1);
+					errors = errors + 1;
 				end
 				
 				assert(BranchEQ === BranchEQ_esperado) else begin
 					$error("BranchEQ = %b na linha %d", BranchEQ, counter+1);
+					errors = errors + 1;
 				end
 				
 				assert(BranchNE === BranchNE_esperado) else begin
 					$error("BranchNE = %b na linha %d", BranchNE, counter+1);
+					errors = errors + 1;
 				end
 				
 				assert(RegWrite === RegWrite_esperado) else begin
 					$error("RegWrite = %b na linha %d", RegWrite, counter+1);
+					errors = errors + 1;
 				end
 				
 				for(int i = 0; i < 2; i++) begin
@@ -137,7 +149,14 @@ module main_controller_tb;
 					$display("|  %b  |  %b  | %b | %b  | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | OK",
 						clock, reset, opcode, state, MemtoReg, RegDst,IorD, PCSrc, ALUSrcB,
 						ALUSrcA, IRWrite, MemWrite, PCWrite, BranchEQ, BranchNE ,RegWrite, ALUOp);
-					$fwrite(file, "|  %b  |  %b  | %b | %b  | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | OK",
+					$fwrite(file, "|  %b  |  %b  | %b | %b  | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | OK\n",
+						clock, reset, opcode, state, MemtoReg, RegDst,IorD, PCSrc, ALUSrcB,
+						ALUSrcA, IRWrite, MemWrite, PCWrite, BranchEQ, BranchNE ,RegWrite, ALUOp);
+				end else begin
+					$display("|  %b  |  %b  | %b | %b  | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | ERROR (see above)",
+						clock, reset, opcode, state, MemtoReg, RegDst,IorD, PCSrc, ALUSrcB,
+						ALUSrcA, IRWrite, MemWrite, PCWrite, BranchEQ, BranchNE ,RegWrite, ALUOp);
+					$fwrite(file, "|  %b  |  %b  | %b | %b  | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | %b | ERROR (see above)\n",
 						clock, reset, opcode, state, MemtoReg, RegDst,IorD, PCSrc, ALUSrcB,
 						ALUSrcA, IRWrite, MemWrite, PCWrite, BranchEQ, BranchNE ,RegWrite, ALUOp);
 				end

@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, D:/Developer/Concepcao/mips/data_path/mux2/mux2.sv
+source_file = 1, D:/Developer/Concepcao/mips/data_path/mux4/mux4.sv
+source_file = 1, D:/Developer/Concepcao/mips/data_path/mux4/db/mux4.cbx.xml
+design_name = mux4
+instance = comp, \d1~input , d1~input, mux4, 1
+instance = comp, \y~output , y~output, mux4, 1
+instance = comp, \d2~input , d2~input, mux4, 1
+instance = comp, \sel[1]~input , sel[1]~input, mux4, 1
+instance = comp, \d3~input , d3~input, mux4, 1
+instance = comp, \d0~input , d0~input, mux4, 1
+instance = comp, \sel[0]~input , sel[0]~input, mux4, 1
+instance = comp, \finalmux|y~0 , finalmux|y~0, mux4, 1
+instance = comp, \finalmux|y~1 , finalmux|y~1, mux4, 1

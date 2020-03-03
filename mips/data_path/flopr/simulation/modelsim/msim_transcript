@@ -1,0 +1,333 @@
+# Reading C:/intelFPGA/16.1/modelsim_ase/tcl/vsim/pref.tcl
+# do flopr_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Copying C:/intelFPGA/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {flopr_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:30:53 on Mar 03,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." flopr_6_1200mv_85c_slow.vo 
+# -- Compiling module flopr
+# 
+# Top level modules:
+# 	flopr
+# End time: 00:30:53 on Mar 03,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/data_path/flopr/testbench {D:/Developer/Concepcao/mips/data_path/flopr/testbench/flopr_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:30:53 on Mar 03,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/data_path/flopr/testbench" D:/Developer/Concepcao/mips/data_path/flopr/testbench/flopr_tb.sv 
+# -- Compiling module flopr_tb
+# 
+# Top level modules:
+# 	flopr_tb
+# End time: 00:30:53 on Mar 03,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" flopr_tb
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" flopr_tb 
+# Start time: 00:30:53 on Mar 03,2020
+# Loading sv_std.std
+# Loading work.flopr_tb
+# Loading work.flopr
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading altera_ver.dffeas
+# SDF 10.5b Compiler 2016.10 Oct  5 2016
+# 
+# Loading instances from flopr_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from flopr_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /flopr_tb File: D:/Developer/Concepcao/mips/data_path/flopr/testbench/flopr_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | Clk | Rst | d | q |
+# |  1  |  1  | 1 | 0 | OK
+# |  0  |  1  | 1 | 0 | OK
+# |  1  |  1  | 1 | 0 | OK
+# |  0  |  0  | 1 | 0 | OK
+# |  0  |  0  | 0 | 0 | OK
+# |  0  |  0  | 1 | 0 | OK
+# |  0  |  0  | 0 | 0 | OK
+# |  1  |  0  | 0 | 0 | OK
+# |  0  |  0  | 0 | 0 | OK
+# |  1  |  0  | 0 | 0 | OK
+# |  1  |  0  | 1 | 0 | OK
+# |  0  |  0  | 1 | 0 | OK
+# |  1  |  0  | 1 | 1 | OK
+# |  0  |  0  | 1 | 1 | OK
+# |  1  |  0  | 1 | 1 | OK
+# |  0  |  0  | 1 | 1 | OK
+# |  1  |  0  | 1 | 1 | OK
+# |  0  |  0  | 1 | 1 | OK
+# Testes Efetuados  = 19
+# Erros Encontrados = 0
+# ** Note: $stop    : D:/Developer/Concepcao/mips/data_path/flopr/testbench/flopr_tb.sv(66)
+#    Time: 325 ns  Iteration: 0  Instance: /flopr_tb
+# Break in Module flopr_tb at D:/Developer/Concepcao/mips/data_path/flopr/testbench/flopr_tb.sv line 66
+do flopr_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# Error 31: Unable to unlink file "D:/Developer/Concepcao/mips/data_path/flopr/simulation/modelsim/gate_work/_lib.qdb".
+# Error 133: Unable to remove directory "D:/Developer/Concepcao/mips/data_path/flopr/simulation/modelsim/gate_work".
+# vlib gate_work
+# ** Error: (vlib-35) Failed to create directory "gate_work".
+# File exists. (errno = EEXIST)
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {flopr_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:34:30 on Mar 03,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." flopr_6_1200mv_85c_slow.vo 
+# -- Compiling module flopr
+# 
+# Top level modules:
+# 	flopr
+# End time: 00:34:30 on Mar 03,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/data_path/flopr/testbench {D:/Developer/Concepcao/mips/data_path/flopr/testbench/flopr_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:34:30 on Mar 03,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/data_path/flopr/testbench" D:/Developer/Concepcao/mips/data_path/flopr/testbench/flopr_tb.sv 
+# -- Compiling module flopr_tb
+# 
+# Top level modules:
+# 	flopr_tb
+# End time: 00:34:30 on Mar 03,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" flopr_tb
+# End time: 00:34:33 on Mar 03,2020, Elapsed time: 0:03:40
+# Errors: 0, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" flopr_tb 
+# Start time: 00:34:33 on Mar 03,2020
+# Loading sv_std.std
+# Loading work.flopr_tb
+# Loading work.flopr
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading altera_ver.dffeas
+# Loading instances from flopr_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from flopr_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /flopr_tb File: D:/Developer/Concepcao/mips/data_path/flopr/testbench/flopr_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | Clk | Rst | d | q |
+# |  1  |  1  | 1 | 0 | OK
+# |  0  |  1  | 1 | 0 | OK
+# |  1  |  1  | 1 | 0 | OK
+# |  0  |  0  | 1 | 0 | OK
+# |  0  |  0  | 0 | 0 | OK
+# |  0  |  0  | 1 | 0 | OK
+# |  0  |  0  | 0 | 0 | OK
+# |  1  |  0  | 0 | 0 | OK
+# |  0  |  0  | 0 | 0 | OK
+# |  1  |  0  | 0 | 0 | OK
+# |  1  |  0  | 1 | 0 | OK
+# |  0  |  0  | 1 | 0 | OK
+# |  1  |  0  | 1 | 1 | OK
+# |  0  |  0  | 1 | 1 | OK
+# |  1  |  0  | 1 | 1 | OK
+# |  0  |  0  | 1 | 1 | OK
+# |  1  |  0  | 1 | 1 | OK
+# |  0  |  0  | 1 | 1 | OK
+# Testes Efetuados  = 19
+# Erros Encontrados = 0
+# ** Note: $stop    : D:/Developer/Concepcao/mips/data_path/flopr/testbench/flopr_tb.sv(66)
+#    Time: 265 ns  Iteration: 0  Instance: /flopr_tb
+# Break in Module flopr_tb at D:/Developer/Concepcao/mips/data_path/flopr/testbench/flopr_tb.sv line 66
+do flopr_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {flopr_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:35:32 on Mar 03,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." flopr_6_1200mv_85c_slow.vo 
+# -- Compiling module flopr
+# 
+# Top level modules:
+# 	flopr
+# End time: 00:35:32 on Mar 03,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/data_path/flopr/testbench {D:/Developer/Concepcao/mips/data_path/flopr/testbench/flopr_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:35:32 on Mar 03,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/data_path/flopr/testbench" D:/Developer/Concepcao/mips/data_path/flopr/testbench/flopr_tb.sv 
+# -- Compiling module flopr_tb
+# 
+# Top level modules:
+# 	flopr_tb
+# End time: 00:35:32 on Mar 03,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" flopr_tb
+# End time: 00:35:35 on Mar 03,2020, Elapsed time: 0:01:02
+# Errors: 0, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" flopr_tb 
+# Start time: 00:35:35 on Mar 03,2020
+# Loading sv_std.std
+# Loading work.flopr_tb
+# Loading work.flopr
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading altera_ver.dffeas
+# Loading instances from flopr_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from flopr_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /flopr_tb File: D:/Developer/Concepcao/mips/data_path/flopr/testbench/flopr_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | Clk | Rst | d | q |
+# |  1  |  1  | 1 | 0 | OK
+# |  0  |  1  | 1 | 0 | OK
+# |  1  |  1  | 1 | 0 | OK
+# |  0  |  0  | 1 | 0 | OK
+# |  0  |  0  | 0 | 0 | OK
+# |  0  |  0  | 1 | 0 | OK
+# |  0  |  0  | 0 | 0 | OK
+# |  1  |  0  | 0 | 0 | OK
+# |  0  |  0  | 0 | 0 | OK
+# |  1  |  0  | 0 | 0 | OK
+# |  1  |  0  | 1 | 0 | OK
+# |  0  |  0  | 1 | 0 | OK
+# ** Error: q = 0 (1 esperado) {Linha          14}
+#    Time: 145 ns  Scope: flopr_tb File: D:/Developer/Concepcao/mips/data_path/flopr/testbench/flopr_tb.sv Line: 55
+# |  0  |  0  | 1 | 1 | OK
+# |  1  |  0  | 1 | 1 | OK
+# |  0  |  0  | 1 | 1 | OK
+# |  1  |  0  | 1 | 1 | OK
+# |  0  |  0  | 1 | 1 | OK
+# Testes Efetuados  = 19
+# Erros Encontrados = 1
+# ** Note: $stop    : D:/Developer/Concepcao/mips/data_path/flopr/testbench/flopr_tb.sv(66)
+#    Time: 205 ns  Iteration: 0  Instance: /flopr_tb
+# Break in Module flopr_tb at D:/Developer/Concepcao/mips/data_path/flopr/testbench/flopr_tb.sv line 66
+do flopr_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {flopr_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:35:52 on Mar 03,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." flopr_6_1200mv_85c_slow.vo 
+# -- Compiling module flopr
+# 
+# Top level modules:
+# 	flopr
+# End time: 00:35:52 on Mar 03,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/data_path/flopr/testbench {D:/Developer/Concepcao/mips/data_path/flopr/testbench/flopr_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:35:52 on Mar 03,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/data_path/flopr/testbench" D:/Developer/Concepcao/mips/data_path/flopr/testbench/flopr_tb.sv 
+# -- Compiling module flopr_tb
+# 
+# Top level modules:
+# 	flopr_tb
+# End time: 00:35:52 on Mar 03,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" flopr_tb
+# End time: 00:35:54 on Mar 03,2020, Elapsed time: 0:00:19
+# Errors: 1, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" flopr_tb 
+# Start time: 00:35:55 on Mar 03,2020
+# Loading sv_std.std
+# Loading work.flopr_tb
+# Loading work.flopr
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading altera_ver.dffeas
+# Loading instances from flopr_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from flopr_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /flopr_tb File: D:/Developer/Concepcao/mips/data_path/flopr/testbench/flopr_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | Clk | Rst | d | q |
+# |  1  |  1  | 1 | 0 | OK
+# |  0  |  1  | 1 | 0 | OK
+# |  1  |  1  | 1 | 0 | OK
+# |  0  |  0  | 1 | 0 | OK
+# |  0  |  0  | 0 | 0 | OK
+# |  0  |  0  | 1 | 0 | OK
+# |  0  |  0  | 0 | 0 | OK
+# |  1  |  0  | 0 | 0 | OK
+# |  0  |  0  | 0 | 0 | OK
+# |  1  |  0  | 0 | 0 | OK
+# |  1  |  0  | 1 | 0 | OK
+# |  0  |  0  | 1 | 0 | OK
+# |  1  |  0  | 1 | 1 | OK
+# |  0  |  0  | 1 | 1 | OK
+# |  1  |  0  | 1 | 1 | OK
+# |  0  |  0  | 1 | 1 | OK
+# |  1  |  0  | 1 | 1 | OK
+# |  0  |  0  | 1 | 1 | OK
+# Testes Efetuados  = 19
+# Erros Encontrados = 0
+# ** Note: $stop    : D:/Developer/Concepcao/mips/data_path/flopr/testbench/flopr_tb.sv(66)
+#    Time: 225 ns  Iteration: 0  Instance: /flopr_tb
+# Break in Module flopr_tb at D:/Developer/Concepcao/mips/data_path/flopr/testbench/flopr_tb.sv line 66
+# End time: 00:46:57 on Mar 03,2020, Elapsed time: 0:11:02
+# Errors: 0, Warnings: 0

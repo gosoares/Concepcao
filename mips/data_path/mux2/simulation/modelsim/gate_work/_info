@@ -1,0 +1,57 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Developer/Concepcao/mips/data_path/mux2/simulation/modelsim
+vmux2
+Z1 !s110 1583211503
+!i10b 1
+!s100 m5I`Aa68jnOFb3lllfo=40
+I<iR2:m9mCfbkJg6cWTz;42
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1583106991
+8mux2_6_1200mv_85c_slow.vo
+Fmux2_6_1200mv_85c_slow.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1583211503.000000
+!s107 mux2_6_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|mux2_6_1200mv_85c_slow.vo|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+.
+Z5 tCvgOpt 0
+vmux2_tb
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R1
+!i10b 1
+!s100 UhgzzCagf=6ZYkR4P[M1z2
+IzAmDR7DJb_nkeTVz;6J?=2
+R2
+!s105 mux2_tb_sv_unit
+S1
+R0
+w1583211501
+8D:/Developer/Concepcao/mips/data_path/mux2/testbench/mux2_tb.sv
+FD:/Developer/Concepcao/mips/data_path/mux2/testbench/mux2_tb.sv
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Developer/Concepcao/mips/data_path/mux2/testbench/mux2_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Developer/Concepcao/mips/data_path/mux2/testbench|D:/Developer/Concepcao/mips/data_path/mux2/testbench/mux2_tb.sv|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+D:/Developer/Concepcao/mips/data_path/mux2/testbench
+R5

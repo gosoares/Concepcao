@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, D:/Developer/Concepcao/mips/data_path/flopr/flopr.sv
+source_file = 1, D:/Developer/Concepcao/mips/data_path/flopr/db/flopr.cbx.xml
+design_name = flopr
+instance = comp, \q~output , q~output, flopr, 1
+instance = comp, \clk~input , clk~input, flopr, 1
+instance = comp, \d~input , d~input, flopr, 1
+instance = comp, \rst~input , rst~input, flopr, 1
+instance = comp, \q~reg0 , q~reg0, flopr, 1

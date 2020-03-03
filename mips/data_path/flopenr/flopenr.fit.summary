@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Mar 01 15:00:59 2020
+Quartus II Version : 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
+Revision Name : flopenr
+Top-level Entity Name : flopenr
+Family : Cyclone IV E
+Device : EP4CE6E22C6
+Timing Models : Preliminary
+Total logic elements : 1 / 6,272 ( < 1 % )
+    Total combinational functions : 1 / 6,272 ( < 1 % )
+    Dedicated logic registers : 1 / 6,272 ( < 1 % )
+Total registers : 1
+Total pins : 5 / 92 ( 5 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

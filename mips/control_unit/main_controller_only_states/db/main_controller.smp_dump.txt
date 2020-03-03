@@ -1,0 +1,16 @@
+
+State Machine - |main_controller|thisState
+Name thisState.S12 thisState.S11 thisState.S10 thisState.S9 thisState.S8 thisState.S7 thisState.S6 thisState.S5 thisState.S4 thisState.S3 thisState.S2 thisState.S1 thisState.S0 
+thisState.S0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+thisState.S1 0 0 0 0 0 0 0 0 0 0 0 1 1 
+thisState.S2 0 0 0 0 0 0 0 0 0 0 1 0 1 
+thisState.S3 0 0 0 0 0 0 0 0 0 1 0 0 1 
+thisState.S4 0 0 0 0 0 0 0 0 1 0 0 0 1 
+thisState.S5 0 0 0 0 0 0 0 1 0 0 0 0 1 
+thisState.S6 0 0 0 0 0 0 1 0 0 0 0 0 1 
+thisState.S7 0 0 0 0 0 1 0 0 0 0 0 0 1 
+thisState.S8 0 0 0 0 1 0 0 0 0 0 0 0 1 
+thisState.S9 0 0 0 1 0 0 0 0 0 0 0 0 1 
+thisState.S10 0 0 1 0 0 0 0 0 0 0 0 0 1 
+thisState.S11 0 1 0 0 0 0 0 0 0 0 0 0 1 
+thisState.S12 1 0 0 0 0 0 0 0 0 0 0 0 1 

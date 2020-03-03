@@ -12,39 +12,41 @@
 # 
 # vlog -vlog01compat -work work +incdir+. {main_controller_6_1200mv_85c_slow.vo}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:39:02 on Feb 26,2020
+# Start time: 11:42:24 on Feb 27,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+." main_controller_6_1200mv_85c_slow.vo 
 # -- Compiling module main_controller
 # 
 # Top level modules:
 # 	main_controller
-# End time: 02:39:02 on Feb 26,2020, Elapsed time: 0:00:00
+# End time: 11:42:24 on Feb 27,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/control_unit/main_controller/testbench {D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:39:02 on Feb 26,2020
+# Start time: 11:42:24 on Feb 27,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/control_unit/main_controller/testbench" D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv 
 # -- Compiling module main_controller_tb
 # 
 # Top level modules:
 # 	main_controller_tb
-# End time: 02:39:02 on Feb 26,2020, Elapsed time: 0:00:00
+# End time: 11:42:24 on Feb 27,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" main_controller_tb
 # vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" main_controller_tb 
-# Start time: 02:39:02 on Feb 26,2020
+# Start time: 11:42:24 on Feb 27,2020
 # Loading sv_std.std
 # Loading work.main_controller_tb
 # Loading work.main_controller
-# Loading cycloneive_ver.cycloneive_lcell_comb
 # Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
 # Loading cycloneive_ver.cycloneive_clkctrl
 # Loading cycloneive_ver.cycloneive_mux41
 # Loading cycloneive_ver.cycloneive_ena_reg
-# Loading cycloneive_ver.cycloneive_io_obuf
 # Loading altera_ver.dffeas
+# SDF 10.5b Compiler 2016.10 Oct  5 2016
+# 
 # Loading instances from main_controller_6_1200mv_85c_v_slow.sdo
 # Loading altera_ver.PRIM_GDFF_LOW
 # Loading timing data from main_controller_6_1200mv_85c_v_slow.sdo
@@ -60,46 +62,6 @@
 # Iniciando Testbench
 # ---------------
 # | clk | rst | opcode | state | MemtoReg | RegDst | IorD | PCSrc | ALUSrcB | ALUSrcA | IRWrite | MemWrite | PCWrite | BranchEQ | BranchNE | RegWrite | ALUOp |
-# ** Error: s[          0] = 0 (x esperado) {Linha           1}
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 69
-# ** Error: s[          1] = 0 (x esperado) {Linha           1}
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 69
-# ** Error: s[          2] = 0 (x esperado) {Linha           1}
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 69
-# ** Error: s[          3] = 0 (x esperado) {Linha           1}
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 69
-# ** Error: MemtoReg = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 76
-# ** Error: RegDst = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 80
-# ** Error: IorD = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 84
-# ** Error: ALUSrcA = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 88
-# ** Error: IRWrite = 1 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 92
-# ** Error: MemWrite = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 96
-# ** Error: PCWrite = 1 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 100
-# ** Error: BranchEQ = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 104
-# ** Error: BranchNE = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
-# ** Error: RegWrite = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 112
-# ** Error: Erro PCSrc na linha           1 bit           0, saida = 0, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 117
-# ** Error: Erro PCSrc na linha           1 bit           1, saida = 0, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 117
-# ** Error: Erro ALUSrcB na linha           1 bit           0, saida = 1, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 124
-# ** Error: Erro ALUSrcB na linha           1 bit           1, saida = 0, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 124
-# ** Error: Erro ALUOp na linha           1 bit           0, saida = 0, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha           1 bit           1, saida = 0, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
 # |  1  |  1  | 100011 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
 # |  0  |  0  | 100011 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
 # |  1  |  0  | 100011 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
@@ -148,64 +110,40 @@
 # |  0  |  0  | 001000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
 # |  1  |  0  | 001000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
 # |  0  |  0  | 001000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# ** Error: Erro ALUOp na linha          50 bit           0, saida = 0, (1 esperado)
-#    Time: 1745 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          50 bit           1, saida = 0, (1 esperado)
-#    Time: 1745 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          51 bit           0, saida = 0, (1 esperado)
-#    Time: 1780 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          51 bit           1, saida = 0, (1 esperado)
-#    Time: 1780 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
+# |  1  |  0  | 001000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | OK
+# |  0  |  0  | 001000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | OK
 # |  1  |  0  | 001000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
 # |  0  |  0  | 001000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
 # |  1  |  0  | 001000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
 # |  0  |  0  | 001101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
 # |  1  |  0  | 001101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
 # |  0  |  0  | 001101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# ** Error: Erro ALUOp na linha          58 bit           0, saida = 0, (1 esperado)
-#    Time: 2025 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          58 bit           1, saida = 0, (1 esperado)
-#    Time: 2025 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          59 bit           0, saida = 0, (1 esperado)
-#    Time: 2060 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          59 bit           1, saida = 0, (1 esperado)
-#    Time: 2060 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
+# |  1  |  0  | 001101 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | OK
+# |  0  |  0  | 001101 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | OK
 # |  1  |  0  | 001101 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
 # |  0  |  0  | 001101 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
 # |  1  |  0  | 001101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
 # |  0  |  0  | 001110 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
 # |  1  |  0  | 001110 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
 # |  0  |  0  | 001110 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# ** Error: Erro ALUOp na linha          66 bit           0, saida = 0, (1 esperado)
-#    Time: 2305 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          66 bit           1, saida = 0, (1 esperado)
-#    Time: 2305 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          67 bit           0, saida = 0, (1 esperado)
-#    Time: 2340 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          67 bit           1, saida = 0, (1 esperado)
-#    Time: 2340 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
+# |  1  |  0  | 001110 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | OK
+# |  0  |  0  | 001110 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | OK
 # |  1  |  0  | 001110 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
 # |  0  |  0  | 001110 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
 # |  1  |  0  | 001110 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
 # |  0  |  0  | 001010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
 # |  1  |  0  | 001010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
 # |  0  |  0  | 001010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# ** Error: Erro ALUOp na linha          74 bit           0, saida = 0, (1 esperado)
-#    Time: 2585 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          74 bit           1, saida = 0, (1 esperado)
-#    Time: 2585 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          75 bit           0, saida = 0, (1 esperado)
-#    Time: 2620 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          75 bit           1, saida = 0, (1 esperado)
-#    Time: 2620 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
+# |  1  |  0  | 001010 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | OK
+# |  0  |  0  | 001010 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | OK
 # |  1  |  0  | 001010 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
 # |  0  |  0  | 001010 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
 # |  1  |  0  | 001010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
 # Testes Efetuados  = 78
-# Erros Encontrados = 26
-# ** Note: $stop    : D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv(151)
-#    Time: 2735 ns  Iteration: 0  Instance: /main_controller_tb
-# Break in Module main_controller_tb at D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv line 151
+# Erros Encontrados = 0
+# ** Note: $stop    : D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv(170)
+#    Time: 23795 ns  Iteration: 0  Instance: /main_controller_tb
+# Break in Module main_controller_tb at D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv line 170
 do main_controller_run_msim_gate_verilog.do
 # if {[file exists gate_work]} {
 # 	vdel -lib gate_work -all
@@ -222,40 +160,40 @@ do main_controller_run_msim_gate_verilog.do
 # 
 # vlog -vlog01compat -work work +incdir+. {main_controller_6_1200mv_85c_slow.vo}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:39:51 on Feb 26,2020
+# Start time: 11:44:24 on Feb 27,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+." main_controller_6_1200mv_85c_slow.vo 
 # -- Compiling module main_controller
 # 
 # Top level modules:
 # 	main_controller
-# End time: 02:39:51 on Feb 26,2020, Elapsed time: 0:00:00
+# End time: 11:44:25 on Feb 27,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/control_unit/main_controller/testbench {D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:39:51 on Feb 26,2020
+# Start time: 11:44:25 on Feb 27,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/control_unit/main_controller/testbench" D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv 
 # -- Compiling module main_controller_tb
 # 
 # Top level modules:
 # 	main_controller_tb
-# End time: 02:39:51 on Feb 26,2020, Elapsed time: 0:00:00
+# End time: 11:44:25 on Feb 27,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" main_controller_tb
-# End time: 02:39:54 on Feb 26,2020, Elapsed time: 0:00:52
-# Errors: 36, Warnings: 0
+# End time: 11:44:32 on Feb 27,2020, Elapsed time: 0:02:08
+# Errors: 0, Warnings: 0
 # vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" main_controller_tb 
-# Start time: 02:39:54 on Feb 26,2020
+# Start time: 11:44:32 on Feb 27,2020
 # Loading sv_std.std
 # Loading work.main_controller_tb
 # Loading work.main_controller
-# Loading cycloneive_ver.cycloneive_lcell_comb
 # Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
 # Loading cycloneive_ver.cycloneive_clkctrl
 # Loading cycloneive_ver.cycloneive_mux41
 # Loading cycloneive_ver.cycloneive_ena_reg
-# Loading cycloneive_ver.cycloneive_io_obuf
 # Loading altera_ver.dffeas
 # Loading instances from main_controller_6_1200mv_85c_v_slow.sdo
 # Loading altera_ver.PRIM_GDFF_LOW
@@ -272,152 +210,521 @@ do main_controller_run_msim_gate_verilog.do
 # Iniciando Testbench
 # ---------------
 # | clk | rst | opcode | state | MemtoReg | RegDst | IorD | PCSrc | ALUSrcB | ALUSrcA | IRWrite | MemWrite | PCWrite | BranchEQ | BranchNE | RegWrite | ALUOp |
-# ** Error: s[          0] = 0 (x esperado) {Linha           1}
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 69
-# ** Error: s[          1] = 0 (x esperado) {Linha           1}
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 69
-# ** Error: s[          2] = 0 (x esperado) {Linha           1}
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 69
-# ** Error: s[          3] = 0 (x esperado) {Linha           1}
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 69
-# ** Error: MemtoReg = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 76
-# ** Error: RegDst = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 80
-# ** Error: IorD = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 84
-# ** Error: ALUSrcA = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 88
-# ** Error: IRWrite = 1 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 92
-# ** Error: MemWrite = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 96
-# ** Error: PCWrite = 1 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 100
-# ** Error: BranchEQ = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 104
-# ** Error: BranchNE = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
-# ** Error: RegWrite = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 112
-# ** Error: Erro PCSrc na linha           1 bit           0, saida = 0, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 117
-# ** Error: Erro PCSrc na linha           1 bit           1, saida = 0, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 117
-# ** Error: Erro ALUSrcB na linha           1 bit           0, saida = 1, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 124
-# ** Error: Erro ALUSrcB na linha           1 bit           1, saida = 0, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 124
-# ** Error: Erro ALUOp na linha           1 bit           0, saida = 0, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha           1 bit           1, saida = 0, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
 # |  1  |  1  | 100011 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
 # |  0  |  0  | 100011 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 100011 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha           4}
+#    Time: 45 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: IRWrite = 1 na linha           4
+#    Time: 45 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 98
+# ** Error: PCWrite = 1 na linha           4
+#    Time: 45 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
+# ** Error: Erro ALUSrcB na linha           4 bit           1, saida = 0, (1 esperado)
+#    Time: 45 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 100011 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | ERROR (see above)
 # |  0  |  0  | 100011 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 100011 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha           6}
+#    Time: 65 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          1] = 0 (1 esperado) {Linha           6}
+#    Time: 65 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: ALUSrcA = 0 na linha           6
+#    Time: 65 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 93
+# ** Error: Erro ALUSrcB na linha           6 bit           0, saida = 1, (0 esperado)
+#    Time: 65 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 100011 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | ERROR (see above)
 # |  0  |  0  | 100011 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 100011 | 0011  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha           8}
+#    Time: 85 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: IorD = 0 na linha           8
+#    Time: 85 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 88
+# ** Error: ALUSrcA = 1 na linha           8
+#    Time: 85 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 93
+# ** Error: Erro ALUSrcB na linha           8 bit           1, saida = 1, (0 esperado)
+#    Time: 85 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 100011 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | ERROR (see above)
 # |  0  |  0  | 100011 | 0011  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 100011 | 0100  | 1 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          10}
+#    Time: 105 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          1] = 1 (0 esperado) {Linha          10}
+#    Time: 105 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          2] = 0 (1 esperado) {Linha          10}
+#    Time: 105 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: MemtoReg = 0 na linha          10
+#    Time: 105 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 78
+# ** Error: IorD = 1 na linha          10
+#    Time: 105 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 88
+# ** Error: RegWrite = 0 na linha          10
+#    Time: 105 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 123
+# |  1  |  0  | 100011 | 0011  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | ERROR (see above)
 # |  0  |  0  | 100011 | 0100  | 1 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  1  |  0  | 100011 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          2] = 1 (0 esperado) {Linha          12}
+#    Time: 125 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: MemtoReg = 1 na linha          12
+#    Time: 125 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 78
+# ** Error: IRWrite = 0 na linha          12
+#    Time: 125 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 98
+# ** Error: PCWrite = 0 na linha          12
+#    Time: 125 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
+# ** Error: RegWrite = 1 na linha          12
+#    Time: 125 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 123
+# ** Error: Erro ALUSrcB na linha          12 bit           0, saida = 0, (1 esperado)
+#    Time: 125 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 100011 | 0100  | 1 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | ERROR (see above)
 # |  0  |  0  | 101011 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 101011 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          14}
+#    Time: 145 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: IRWrite = 1 na linha          14
+#    Time: 145 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 98
+# ** Error: PCWrite = 1 na linha          14
+#    Time: 145 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
+# ** Error: Erro ALUSrcB na linha          14 bit           1, saida = 0, (1 esperado)
+#    Time: 145 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 101011 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | ERROR (see above)
 # |  0  |  0  | 101011 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 101011 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          16}
+#    Time: 165 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          1] = 0 (1 esperado) {Linha          16}
+#    Time: 165 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: ALUSrcA = 0 na linha          16
+#    Time: 165 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 93
+# ** Error: Erro ALUSrcB na linha          16 bit           0, saida = 1, (0 esperado)
+#    Time: 165 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 101011 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | ERROR (see above)
 # |  0  |  0  | 101011 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 101011 | 0101  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          18}
+#    Time: 185 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          1] = 1 (0 esperado) {Linha          18}
+#    Time: 185 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          2] = 0 (1 esperado) {Linha          18}
+#    Time: 185 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: IorD = 0 na linha          18
+#    Time: 185 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 88
+# ** Error: ALUSrcA = 1 na linha          18
+#    Time: 185 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 93
+# ** Error: MemWrite = 0 na linha          18
+#    Time: 185 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 103
+# ** Error: Erro ALUSrcB na linha          18 bit           1, saida = 1, (0 esperado)
+#    Time: 185 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 101011 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | ERROR (see above)
 # |  0  |  0  | 101011 | 0101  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 101011 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          20}
+#    Time: 205 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          2] = 1 (0 esperado) {Linha          20}
+#    Time: 205 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: IorD = 1 na linha          20
+#    Time: 205 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 88
+# ** Error: IRWrite = 0 na linha          20
+#    Time: 205 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 98
+# ** Error: MemWrite = 1 na linha          20
+#    Time: 205 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 103
+# ** Error: PCWrite = 0 na linha          20
+#    Time: 205 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
+# ** Error: Erro ALUSrcB na linha          20 bit           0, saida = 0, (1 esperado)
+#    Time: 205 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 101011 | 0101  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 00 | ERROR (see above)
 # |  0  |  0  | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          22}
+#    Time: 225 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: IRWrite = 1 na linha          22
+#    Time: 225 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 98
+# ** Error: PCWrite = 1 na linha          22
+#    Time: 225 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
+# ** Error: Erro ALUSrcB na linha          22 bit           1, saida = 0, (1 esperado)
+#    Time: 225 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | ERROR (see above)
 # |  0  |  0  | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000000 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 10 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          24}
+#    Time: 245 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          1] = 0 (1 esperado) {Linha          24}
+#    Time: 245 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          2] = 0 (1 esperado) {Linha          24}
+#    Time: 245 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: ALUSrcA = 0 na linha          24
+#    Time: 245 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 93
+# ** Error: Erro ALUSrcB na linha          24 bit           0, saida = 1, (0 esperado)
+#    Time: 245 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# ** Error: Erro ALUSrcB na linha          24 bit           1, saida = 1, (0 esperado)
+#    Time: 245 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# ** Error: Erro ALUOp na linha          24 bit           1, saida = 0, (1 esperado)
+#    Time: 245 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 143
+# |  1  |  0  | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | ERROR (see above)
 # |  0  |  0  | 000000 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 10 | OK
-# |  1  |  0  | 000000 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          26}
+#    Time: 265 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: RegDst = 0 na linha          26
+#    Time: 265 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 83
+# ** Error: ALUSrcA = 1 na linha          26
+#    Time: 265 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 93
+# ** Error: RegWrite = 0 na linha          26
+#    Time: 265 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 123
+# ** Error: Erro ALUOp na linha          26 bit           1, saida = 1, (0 esperado)
+#    Time: 265 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 143
+# |  1  |  0  | 000000 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 10 | ERROR (see above)
 # |  0  |  0  | 000000 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  1  |  0  | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          28}
+#    Time: 285 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          1] = 1 (0 esperado) {Linha          28}
+#    Time: 285 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          2] = 1 (0 esperado) {Linha          28}
+#    Time: 285 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: RegDst = 1 na linha          28
+#    Time: 285 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 83
+# ** Error: IRWrite = 0 na linha          28
+#    Time: 285 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 98
+# ** Error: PCWrite = 0 na linha          28
+#    Time: 285 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
+# ** Error: RegWrite = 1 na linha          28
+#    Time: 285 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 123
+# ** Error: Erro ALUSrcB na linha          28 bit           0, saida = 0, (1 esperado)
+#    Time: 285 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 000000 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | ERROR (see above)
 # |  0  |  0  | 000100 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000100 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          30}
+#    Time: 305 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: IRWrite = 1 na linha          30
+#    Time: 305 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 98
+# ** Error: PCWrite = 1 na linha          30
+#    Time: 305 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
+# ** Error: Erro ALUSrcB na linha          30 bit           1, saida = 0, (1 esperado)
+#    Time: 305 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 000100 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | ERROR (see above)
 # |  0  |  0  | 000100 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000100 | 1000  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 01 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          32}
+#    Time: 325 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          3] = 0 (1 esperado) {Linha          32}
+#    Time: 325 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: ALUSrcA = 0 na linha          32
+#    Time: 325 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 93
+# ** Error: BranchEQ = 0 na linha          32
+#    Time: 325 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 113
+# ** Error: Erro PCSrc na linha          32 bit           0, saida = 0, (1 esperado)
+#    Time: 325 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 129
+# ** Error: Erro ALUSrcB na linha          32 bit           0, saida = 1, (0 esperado)
+#    Time: 325 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# ** Error: Erro ALUSrcB na linha          32 bit           1, saida = 1, (0 esperado)
+#    Time: 325 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# ** Error: Erro ALUOp na linha          32 bit           0, saida = 0, (1 esperado)
+#    Time: 325 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 143
+# |  1  |  0  | 000100 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | ERROR (see above)
 # |  0  |  0  | 000100 | 1000  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 01 | OK
-# |  1  |  0  | 000100 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          3] = 1 (0 esperado) {Linha          34}
+#    Time: 345 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: ALUSrcA = 1 na linha          34
+#    Time: 345 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 93
+# ** Error: IRWrite = 0 na linha          34
+#    Time: 345 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 98
+# ** Error: PCWrite = 0 na linha          34
+#    Time: 345 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
+# ** Error: BranchEQ = 1 na linha          34
+#    Time: 345 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 113
+# ** Error: Erro PCSrc na linha          34 bit           0, saida = 1, (0 esperado)
+#    Time: 345 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 129
+# ** Error: Erro ALUSrcB na linha          34 bit           0, saida = 0, (1 esperado)
+#    Time: 345 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# ** Error: Erro ALUOp na linha          34 bit           0, saida = 1, (0 esperado)
+#    Time: 345 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 143
+# |  1  |  0  | 000100 | 1000  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 01 | ERROR (see above)
 # |  0  |  0  | 000101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          36}
+#    Time: 365 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: IRWrite = 1 na linha          36
+#    Time: 365 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 98
+# ** Error: PCWrite = 1 na linha          36
+#    Time: 365 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
+# ** Error: Erro ALUSrcB na linha          36 bit           1, saida = 0, (1 esperado)
+#    Time: 365 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 000101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | ERROR (see above)
 # |  0  |  0  | 000101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000101 | 1100  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 01 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          38}
+#    Time: 385 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          2] = 0 (1 esperado) {Linha          38}
+#    Time: 385 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          3] = 0 (1 esperado) {Linha          38}
+#    Time: 385 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: ALUSrcA = 0 na linha          38
+#    Time: 385 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 93
+# ** Error: BranchNE = 0 na linha          38
+#    Time: 385 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 118
+# ** Error: Erro PCSrc na linha          38 bit           0, saida = 0, (1 esperado)
+#    Time: 385 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 129
+# ** Error: Erro ALUSrcB na linha          38 bit           0, saida = 1, (0 esperado)
+#    Time: 385 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# ** Error: Erro ALUSrcB na linha          38 bit           1, saida = 1, (0 esperado)
+#    Time: 385 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# ** Error: Erro ALUOp na linha          38 bit           0, saida = 0, (1 esperado)
+#    Time: 385 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 143
+# |  1  |  0  | 000101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | ERROR (see above)
 # |  0  |  0  | 000101 | 1100  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 01 | OK
-# |  1  |  0  | 000101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          2] = 1 (0 esperado) {Linha          40}
+#    Time: 405 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          3] = 1 (0 esperado) {Linha          40}
+#    Time: 405 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: ALUSrcA = 1 na linha          40
+#    Time: 405 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 93
+# ** Error: IRWrite = 0 na linha          40
+#    Time: 405 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 98
+# ** Error: PCWrite = 0 na linha          40
+#    Time: 405 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
+# ** Error: BranchNE = 1 na linha          40
+#    Time: 405 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 118
+# ** Error: Erro PCSrc na linha          40 bit           0, saida = 1, (0 esperado)
+#    Time: 405 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 129
+# ** Error: Erro ALUSrcB na linha          40 bit           0, saida = 0, (1 esperado)
+#    Time: 405 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# ** Error: Erro ALUOp na linha          40 bit           0, saida = 1, (0 esperado)
+#    Time: 405 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 143
+# |  1  |  0  | 000101 | 1100  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 01 | ERROR (see above)
 # |  0  |  0  | 000010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          42}
+#    Time: 425 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: IRWrite = 1 na linha          42
+#    Time: 425 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 98
+# ** Error: PCWrite = 1 na linha          42
+#    Time: 425 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
+# ** Error: Erro ALUSrcB na linha          42 bit           1, saida = 0, (1 esperado)
+#    Time: 425 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 000010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | ERROR (see above)
 # |  0  |  0  | 000010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000010 | 1011  | 0 | 0 | 0 | 10 | 00 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          1] = 0 (1 esperado) {Linha          44}
+#    Time: 445 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          3] = 0 (1 esperado) {Linha          44}
+#    Time: 445 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: PCWrite = 0 na linha          44
+#    Time: 445 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
+# ** Error: Erro PCSrc na linha          44 bit           1, saida = 0, (1 esperado)
+#    Time: 445 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 129
+# ** Error: Erro ALUSrcB na linha          44 bit           0, saida = 1, (0 esperado)
+#    Time: 445 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# ** Error: Erro ALUSrcB na linha          44 bit           1, saida = 1, (0 esperado)
+#    Time: 445 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 000010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | ERROR (see above)
 # |  0  |  0  | 000010 | 1011  | 0 | 0 | 0 | 10 | 00 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          46}
+#    Time: 465 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          1] = 1 (0 esperado) {Linha          46}
+#    Time: 465 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          3] = 1 (0 esperado) {Linha          46}
+#    Time: 465 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: IRWrite = 0 na linha          46
+#    Time: 465 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 98
+# ** Error: Erro PCSrc na linha          46 bit           1, saida = 1, (0 esperado)
+#    Time: 465 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 129
+# ** Error: Erro ALUSrcB na linha          46 bit           0, saida = 0, (1 esperado)
+#    Time: 465 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 000010 | 1011  | 0 | 0 | 0 | 10 | 00 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 00 | ERROR (see above)
 # |  0  |  0  | 001000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 001000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          48}
+#    Time: 485 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: IRWrite = 1 na linha          48
+#    Time: 485 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 98
+# ** Error: PCWrite = 1 na linha          48
+#    Time: 485 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
+# ** Error: Erro ALUSrcB na linha          48 bit           1, saida = 0, (1 esperado)
+#    Time: 485 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 001000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | ERROR (see above)
 # |  0  |  0  | 001000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          3] = 0 (1 esperado) {Linha          50}
+#    Time: 505 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: ALUSrcA = 0 na linha          50
+#    Time: 505 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 93
+# ** Error: Erro ALUSrcB na linha          50 bit           0, saida = 1, (0 esperado)
+#    Time: 505 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
 # ** Error: Erro ALUOp na linha          50 bit           0, saida = 0, (1 esperado)
-#    Time: 3245 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
+#    Time: 505 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 143
 # ** Error: Erro ALUOp na linha          50 bit           1, saida = 0, (1 esperado)
-#    Time: 3245 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          51 bit           0, saida = 0, (1 esperado)
-#    Time: 3310 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          51 bit           1, saida = 0, (1 esperado)
-#    Time: 3310 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# |  1  |  0  | 001000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
+#    Time: 505 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 143
+# |  1  |  0  | 001000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | ERROR (see above)
+# |  0  |  0  | 001000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          52}
+#    Time: 525 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          1] = 0 (1 esperado) {Linha          52}
+#    Time: 525 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: ALUSrcA = 1 na linha          52
+#    Time: 525 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 93
+# ** Error: RegWrite = 0 na linha          52
+#    Time: 525 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 123
+# ** Error: Erro ALUSrcB na linha          52 bit           1, saida = 1, (0 esperado)
+#    Time: 525 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# ** Error: Erro ALUOp na linha          52 bit           0, saida = 1, (0 esperado)
+#    Time: 525 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 143
+# ** Error: Erro ALUOp na linha          52 bit           1, saida = 1, (0 esperado)
+#    Time: 525 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 143
+# |  1  |  0  | 001000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | ERROR (see above)
 # |  0  |  0  | 001000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  1  |  0  | 001000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          1] = 1 (0 esperado) {Linha          54}
+#    Time: 545 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          3] = 1 (0 esperado) {Linha          54}
+#    Time: 545 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: IRWrite = 0 na linha          54
+#    Time: 545 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 98
+# ** Error: PCWrite = 0 na linha          54
+#    Time: 545 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
+# ** Error: RegWrite = 1 na linha          54
+#    Time: 545 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 123
+# ** Error: Erro ALUSrcB na linha          54 bit           0, saida = 0, (1 esperado)
+#    Time: 545 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 001000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | ERROR (see above)
 # |  0  |  0  | 001101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 001101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          56}
+#    Time: 565 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: IRWrite = 1 na linha          56
+#    Time: 565 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 98
+# ** Error: PCWrite = 1 na linha          56
+#    Time: 565 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
+# ** Error: Erro ALUSrcB na linha          56 bit           1, saida = 0, (1 esperado)
+#    Time: 565 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 001101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | ERROR (see above)
 # |  0  |  0  | 001101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          3] = 0 (1 esperado) {Linha          58}
+#    Time: 585 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: ALUSrcA = 0 na linha          58
+#    Time: 585 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 93
+# ** Error: Erro ALUSrcB na linha          58 bit           0, saida = 1, (0 esperado)
+#    Time: 585 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
 # ** Error: Erro ALUOp na linha          58 bit           0, saida = 0, (1 esperado)
-#    Time: 3765 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
+#    Time: 585 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 143
 # ** Error: Erro ALUOp na linha          58 bit           1, saida = 0, (1 esperado)
-#    Time: 3765 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          59 bit           0, saida = 0, (1 esperado)
-#    Time: 3830 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          59 bit           1, saida = 0, (1 esperado)
-#    Time: 3830 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# |  1  |  0  | 001101 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
+#    Time: 585 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 143
+# |  1  |  0  | 001101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | ERROR (see above)
+# |  0  |  0  | 001101 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          60}
+#    Time: 605 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          1] = 0 (1 esperado) {Linha          60}
+#    Time: 605 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: ALUSrcA = 1 na linha          60
+#    Time: 605 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 93
+# ** Error: RegWrite = 0 na linha          60
+#    Time: 605 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 123
+# ** Error: Erro ALUSrcB na linha          60 bit           1, saida = 1, (0 esperado)
+#    Time: 605 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# ** Error: Erro ALUOp na linha          60 bit           0, saida = 1, (0 esperado)
+#    Time: 605 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 143
+# ** Error: Erro ALUOp na linha          60 bit           1, saida = 1, (0 esperado)
+#    Time: 605 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 143
+# |  1  |  0  | 001101 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | ERROR (see above)
 # |  0  |  0  | 001101 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  1  |  0  | 001101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          1] = 1 (0 esperado) {Linha          62}
+#    Time: 625 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          3] = 1 (0 esperado) {Linha          62}
+#    Time: 625 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: IRWrite = 0 na linha          62
+#    Time: 625 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 98
+# ** Error: PCWrite = 0 na linha          62
+#    Time: 625 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
+# ** Error: RegWrite = 1 na linha          62
+#    Time: 625 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 123
+# ** Error: Erro ALUSrcB na linha          62 bit           0, saida = 0, (1 esperado)
+#    Time: 625 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 001101 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | ERROR (see above)
 # |  0  |  0  | 001110 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 001110 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          64}
+#    Time: 645 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: IRWrite = 1 na linha          64
+#    Time: 645 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 98
+# ** Error: PCWrite = 1 na linha          64
+#    Time: 645 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
+# ** Error: Erro ALUSrcB na linha          64 bit           1, saida = 0, (1 esperado)
+#    Time: 645 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 001110 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | ERROR (see above)
 # |  0  |  0  | 001110 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          3] = 0 (1 esperado) {Linha          66}
+#    Time: 665 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: ALUSrcA = 0 na linha          66
+#    Time: 665 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 93
+# ** Error: Erro ALUSrcB na linha          66 bit           0, saida = 1, (0 esperado)
+#    Time: 665 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
 # ** Error: Erro ALUOp na linha          66 bit           0, saida = 0, (1 esperado)
-#    Time: 4285 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
+#    Time: 665 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 143
 # ** Error: Erro ALUOp na linha          66 bit           1, saida = 0, (1 esperado)
-#    Time: 4285 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          67 bit           0, saida = 0, (1 esperado)
-#    Time: 4350 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          67 bit           1, saida = 0, (1 esperado)
-#    Time: 4350 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# |  1  |  0  | 001110 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
+#    Time: 665 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 143
+# |  1  |  0  | 001110 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | ERROR (see above)
+# |  0  |  0  | 001110 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          68}
+#    Time: 685 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          1] = 0 (1 esperado) {Linha          68}
+#    Time: 685 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: ALUSrcA = 1 na linha          68
+#    Time: 685 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 93
+# ** Error: RegWrite = 0 na linha          68
+#    Time: 685 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 123
+# ** Error: Erro ALUSrcB na linha          68 bit           1, saida = 1, (0 esperado)
+#    Time: 685 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# ** Error: Erro ALUOp na linha          68 bit           0, saida = 1, (0 esperado)
+#    Time: 685 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 143
+# ** Error: Erro ALUOp na linha          68 bit           1, saida = 1, (0 esperado)
+#    Time: 685 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 143
+# |  1  |  0  | 001110 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | ERROR (see above)
 # |  0  |  0  | 001110 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  1  |  0  | 001110 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          1] = 1 (0 esperado) {Linha          70}
+#    Time: 705 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          3] = 1 (0 esperado) {Linha          70}
+#    Time: 705 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: IRWrite = 0 na linha          70
+#    Time: 705 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 98
+# ** Error: PCWrite = 0 na linha          70
+#    Time: 705 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
+# ** Error: RegWrite = 1 na linha          70
+#    Time: 705 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 123
+# ** Error: Erro ALUSrcB na linha          70 bit           0, saida = 0, (1 esperado)
+#    Time: 705 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 001110 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | ERROR (see above)
 # |  0  |  0  | 001010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 001010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          72}
+#    Time: 725 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: IRWrite = 1 na linha          72
+#    Time: 725 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 98
+# ** Error: PCWrite = 1 na linha          72
+#    Time: 725 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
+# ** Error: Erro ALUSrcB na linha          72 bit           1, saida = 0, (1 esperado)
+#    Time: 725 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 001010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | ERROR (see above)
 # |  0  |  0  | 001010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          3] = 0 (1 esperado) {Linha          74}
+#    Time: 745 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: ALUSrcA = 0 na linha          74
+#    Time: 745 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 93
+# ** Error: Erro ALUSrcB na linha          74 bit           0, saida = 1, (0 esperado)
+#    Time: 745 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
 # ** Error: Erro ALUOp na linha          74 bit           0, saida = 0, (1 esperado)
-#    Time: 4805 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
+#    Time: 745 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 143
 # ** Error: Erro ALUOp na linha          74 bit           1, saida = 0, (1 esperado)
-#    Time: 4805 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          75 bit           0, saida = 0, (1 esperado)
-#    Time: 4870 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          75 bit           1, saida = 0, (1 esperado)
-#    Time: 4870 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# |  1  |  0  | 001010 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
+#    Time: 745 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 143
+# |  1  |  0  | 001010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | ERROR (see above)
+# |  0  |  0  | 001010 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          76}
+#    Time: 765 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          1] = 0 (1 esperado) {Linha          76}
+#    Time: 765 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: ALUSrcA = 1 na linha          76
+#    Time: 765 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 93
+# ** Error: RegWrite = 0 na linha          76
+#    Time: 765 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 123
+# ** Error: Erro ALUSrcB na linha          76 bit           1, saida = 1, (0 esperado)
+#    Time: 765 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# ** Error: Erro ALUOp na linha          76 bit           0, saida = 1, (0 esperado)
+#    Time: 765 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 143
+# ** Error: Erro ALUOp na linha          76 bit           1, saida = 1, (0 esperado)
+#    Time: 765 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 143
+# |  1  |  0  | 001010 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | ERROR (see above)
 # |  0  |  0  | 001010 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  1  |  0  | 001010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
+# ** Error: s[          1] = 1 (0 esperado) {Linha          78}
+#    Time: 785 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: s[          3] = 1 (0 esperado) {Linha          78}
+#    Time: 785 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 70
+# ** Error: IRWrite = 0 na linha          78
+#    Time: 785 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 98
+# ** Error: PCWrite = 0 na linha          78
+#    Time: 785 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
+# ** Error: RegWrite = 1 na linha          78
+#    Time: 785 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 123
+# ** Error: Erro ALUSrcB na linha          78 bit           0, saida = 0, (1 esperado)
+#    Time: 785 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 136
+# |  1  |  0  | 001010 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | ERROR (see above)
 # Testes Efetuados  = 78
-# Erros Encontrados = 26
-# ** Note: $stop    : D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv(151)
-#    Time: 5075 ns  Iteration: 0  Instance: /main_controller_tb
-# Break in Module main_controller_tb at D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv line 151
+# Erros Encontrados = 216
+# ** Note: $stop    : D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv(170)
+#    Time: 795 ns  Iteration: 0  Instance: /main_controller_tb
+# Break in Module main_controller_tb at D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv line 170
+# A time value could not be extracted from the current line
 do main_controller_run_msim_gate_verilog.do
 # if {[file exists gate_work]} {
 # 	vdel -lib gate_work -all
@@ -430,40 +737,40 @@ do main_controller_run_msim_gate_verilog.do
 # 
 # vlog -vlog01compat -work work +incdir+. {main_controller_6_1200mv_85c_slow.vo}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:40:24 on Feb 26,2020
+# Start time: 11:45:35 on Feb 27,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+." main_controller_6_1200mv_85c_slow.vo 
 # -- Compiling module main_controller
 # 
 # Top level modules:
 # 	main_controller
-# End time: 02:40:24 on Feb 26,2020, Elapsed time: 0:00:00
+# End time: 11:45:35 on Feb 27,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/control_unit/main_controller/testbench {D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:40:24 on Feb 26,2020
+# Start time: 11:45:35 on Feb 27,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/control_unit/main_controller/testbench" D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv 
 # -- Compiling module main_controller_tb
 # 
 # Top level modules:
 # 	main_controller_tb
-# End time: 02:40:24 on Feb 26,2020, Elapsed time: 0:00:00
+# End time: 11:45:35 on Feb 27,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" main_controller_tb
-# End time: 02:40:27 on Feb 26,2020, Elapsed time: 0:00:33
-# Errors: 36, Warnings: 0
+# End time: 11:45:43 on Feb 27,2020, Elapsed time: 0:01:11
+# Errors: 216, Warnings: 0
 # vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" main_controller_tb 
-# Start time: 02:40:27 on Feb 26,2020
+# Start time: 11:45:43 on Feb 27,2020
 # Loading sv_std.std
 # Loading work.main_controller_tb
 # Loading work.main_controller
-# Loading cycloneive_ver.cycloneive_lcell_comb
 # Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
 # Loading cycloneive_ver.cycloneive_clkctrl
 # Loading cycloneive_ver.cycloneive_mux41
 # Loading cycloneive_ver.cycloneive_ena_reg
-# Loading cycloneive_ver.cycloneive_io_obuf
 # Loading altera_ver.dffeas
 # Loading instances from main_controller_6_1200mv_85c_v_slow.sdo
 # Loading altera_ver.PRIM_GDFF_LOW
@@ -480,46 +787,7 @@ do main_controller_run_msim_gate_verilog.do
 # Iniciando Testbench
 # ---------------
 # | clk | rst | opcode | state | MemtoReg | RegDst | IorD | PCSrc | ALUSrcB | ALUSrcA | IRWrite | MemWrite | PCWrite | BranchEQ | BranchNE | RegWrite | ALUOp |
-# ** Error: s[          0] = 0 (x esperado) {Linha           1}
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 69
-# ** Error: s[          1] = 0 (x esperado) {Linha           1}
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 69
-# ** Error: s[          2] = 0 (x esperado) {Linha           1}
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 69
-# ** Error: s[          3] = 0 (x esperado) {Linha           1}
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 69
-# ** Error: MemtoReg = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 76
-# ** Error: RegDst = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 80
-# ** Error: IorD = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 84
-# ** Error: ALUSrcA = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 88
-# ** Error: IRWrite = 1 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 92
-# ** Error: MemWrite = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 96
-# ** Error: PCWrite = 1 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 100
-# ** Error: BranchEQ = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 104
-# ** Error: BranchNE = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
-# ** Error: RegWrite = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 112
-# ** Error: Erro PCSrc na linha           1 bit           0, saida = 0, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 117
-# ** Error: Erro PCSrc na linha           1 bit           1, saida = 0, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 117
-# ** Error: Erro ALUSrcB na linha           1 bit           0, saida = 1, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 124
-# ** Error: Erro ALUSrcB na linha           1 bit           1, saida = 0, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 124
-# ** Error: Erro ALUOp na linha           1 bit           0, saida = 0, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha           1 bit           1, saida = 0, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
+# |  0  |  1  | 100011 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
 # |  1  |  1  | 100011 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
 # |  0  |  0  | 100011 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
 # |  1  |  0  | 100011 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
@@ -568,487 +836,39 @@ do main_controller_run_msim_gate_verilog.do
 # |  0  |  0  | 001000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
 # |  1  |  0  | 001000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
 # |  0  |  0  | 001000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# ** Error: Erro ALUOp na linha          50 bit           0, saida = 0, (1 esperado)
-#    Time: 50245 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          50 bit           1, saida = 0, (1 esperado)
-#    Time: 50245 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          51 bit           0, saida = 0, (1 esperado)
-#    Time: 51250 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          51 bit           1, saida = 0, (1 esperado)
-#    Time: 51250 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
+# |  1  |  0  | 001000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | OK
+# |  0  |  0  | 001000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | OK
 # |  1  |  0  | 001000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
 # |  0  |  0  | 001000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
 # |  1  |  0  | 001000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
 # |  0  |  0  | 001101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
 # |  1  |  0  | 001101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
 # |  0  |  0  | 001101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# ** Error: Erro ALUOp na linha          58 bit           0, saida = 0, (1 esperado)
-#    Time: 58285 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          58 bit           1, saida = 0, (1 esperado)
-#    Time: 58285 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          59 bit           0, saida = 0, (1 esperado)
-#    Time: 59290 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          59 bit           1, saida = 0, (1 esperado)
-#    Time: 59290 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
+# |  1  |  0  | 001101 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | OK
+# |  0  |  0  | 001101 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | OK
 # |  1  |  0  | 001101 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
 # |  0  |  0  | 001101 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
 # |  1  |  0  | 001101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
 # |  0  |  0  | 001110 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
 # |  1  |  0  | 001110 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
 # |  0  |  0  | 001110 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# ** Error: Erro ALUOp na linha          66 bit           0, saida = 0, (1 esperado)
-#    Time: 66325 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          66 bit           1, saida = 0, (1 esperado)
-#    Time: 66325 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          67 bit           0, saida = 0, (1 esperado)
-#    Time: 67330 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          67 bit           1, saida = 0, (1 esperado)
-#    Time: 67330 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
+# |  1  |  0  | 001110 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | OK
+# |  0  |  0  | 001110 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | OK
 # |  1  |  0  | 001110 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
 # |  0  |  0  | 001110 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
 # |  1  |  0  | 001110 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
 # |  0  |  0  | 001010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
 # |  1  |  0  | 001010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
 # |  0  |  0  | 001010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# ** Error: Erro ALUOp na linha          74 bit           0, saida = 0, (1 esperado)
-#    Time: 74365 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          74 bit           1, saida = 0, (1 esperado)
-#    Time: 74365 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          75 bit           0, saida = 0, (1 esperado)
-#    Time: 75370 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          75 bit           1, saida = 0, (1 esperado)
-#    Time: 75370 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
+# |  1  |  0  | 001010 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | OK
+# |  0  |  0  | 001010 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | OK
 # |  1  |  0  | 001010 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
 # |  0  |  0  | 001010 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
 # |  1  |  0  | 001010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
 # Testes Efetuados  = 78
-# Erros Encontrados = 26
-# ** Note: $stop    : D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv(151)
-#    Time: 78395 ns  Iteration: 0  Instance: /main_controller_tb
-# Break in Module main_controller_tb at D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv line 151
-do main_controller_run_msim_gate_verilog.do
-# if {[file exists gate_work]} {
-# 	vdel -lib gate_work -all
-# }
-# Error 31: Unable to unlink file "D:/Developer/Concepcao/mips/control_unit/main_controller/simulation/modelsim/gate_work/_lib.qdb".
-# Error 133: Unable to remove directory "D:/Developer/Concepcao/mips/control_unit/main_controller/simulation/modelsim/gate_work".
-# vlib gate_work
-# ** Error: (vlib-35) Failed to create directory "gate_work".
-# File exists. (errno = EEXIST)
-# vmap work gate_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
-# vmap work gate_work 
-# Modifying modelsim.ini
-# 
-# vlog -vlog01compat -work work +incdir+. {main_controller_6_1200mv_85c_slow.vo}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:43:03 on Feb 26,2020
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." main_controller_6_1200mv_85c_slow.vo 
-# -- Compiling module main_controller
-# 
-# Top level modules:
-# 	main_controller
-# End time: 02:43:03 on Feb 26,2020, Elapsed time: 0:00:00
+# Erros Encontrados = 0
+# ** Note: $stop    : D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv(170)
+#    Time: 1190 ns  Iteration: 0  Instance: /main_controller_tb
+# Break in Module main_controller_tb at D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv line 170
+# End time: 11:57:46 on Feb 27,2020, Elapsed time: 0:12:03
 # Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/control_unit/main_controller/testbench {D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:43:04 on Feb 26,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/control_unit/main_controller/testbench" D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv 
-# -- Compiling module main_controller_tb
-# 
-# Top level modules:
-# 	main_controller_tb
-# End time: 02:43:04 on Feb 26,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" main_controller_tb
-# End time: 02:43:07 on Feb 26,2020, Elapsed time: 0:02:40
-# Errors: 36, Warnings: 0
-# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" main_controller_tb 
-# Start time: 02:43:07 on Feb 26,2020
-# Loading sv_std.std
-# Loading work.main_controller_tb
-# Loading work.main_controller
-# Loading cycloneive_ver.cycloneive_lcell_comb
-# Loading cycloneive_ver.cycloneive_io_ibuf
-# Loading cycloneive_ver.cycloneive_clkctrl
-# Loading cycloneive_ver.cycloneive_mux41
-# Loading cycloneive_ver.cycloneive_ena_reg
-# Loading cycloneive_ver.cycloneive_io_obuf
-# Loading altera_ver.dffeas
-# Loading instances from main_controller_6_1200mv_85c_v_slow.sdo
-# Loading altera_ver.PRIM_GDFF_LOW
-# Loading timing data from main_controller_6_1200mv_85c_v_slow.sdo
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# Iniciando Testbench
-# ---------------
-# | clk | rst | opcode | state | MemtoReg | RegDst | IorD | PCSrc | ALUSrcB | ALUSrcA | IRWrite | MemWrite | PCWrite | BranchEQ | BranchNE | RegWrite | ALUOp |
-# ** Error: s[          0] = 0 (x esperado) {Linha           1}
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 69
-# ** Error: s[          1] = 0 (x esperado) {Linha           1}
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 69
-# ** Error: s[          2] = 0 (x esperado) {Linha           1}
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 69
-# ** Error: s[          3] = 0 (x esperado) {Linha           1}
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 69
-# ** Error: MemtoReg = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 76
-# ** Error: RegDst = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 80
-# ** Error: IorD = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 84
-# ** Error: ALUSrcA = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 88
-# ** Error: IRWrite = 1 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 92
-# ** Error: MemWrite = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 96
-# ** Error: PCWrite = 1 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 100
-# ** Error: BranchEQ = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 104
-# ** Error: BranchNE = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
-# ** Error: RegWrite = 0 na linha           1
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 112
-# ** Error: Erro PCSrc na linha           1 bit           0, saida = 0, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 117
-# ** Error: Erro PCSrc na linha           1 bit           1, saida = 0, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 117
-# ** Error: Erro ALUSrcB na linha           1 bit           0, saida = 1, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 124
-# ** Error: Erro ALUSrcB na linha           1 bit           1, saida = 0, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 124
-# ** Error: Erro ALUOp na linha           1 bit           0, saida = 0, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha           1 bit           1, saida = 0, (x esperado)
-#    Time: 12 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# |  1  |  1  | 100011 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 100011 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 100011 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 100011 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 100011 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 100011 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 100011 | 0011  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 100011 | 0011  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 100011 | 0100  | 1 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  0  |  0  | 100011 | 0100  | 1 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  1  |  0  | 100011 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 101011 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 101011 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 101011 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 101011 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 101011 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 101011 | 0101  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 101011 | 0101  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 101011 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000000 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 10 | OK
-# |  0  |  0  | 000000 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 10 | OK
-# |  1  |  0  | 000000 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  0  |  0  | 000000 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  1  |  0  | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 000100 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000100 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 000100 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000100 | 1000  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 01 | OK
-# |  0  |  0  | 000100 | 1000  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 01 | OK
-# |  1  |  0  | 000100 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 000101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 000101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000101 | 1100  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 01 | OK
-# |  0  |  0  | 000101 | 1100  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 01 | OK
-# |  1  |  0  | 000101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 000010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 000010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000010 | 1011  | 0 | 0 | 0 | 10 | 00 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 000010 | 1011  | 0 | 0 | 0 | 10 | 00 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 001000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 001000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 001000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# ** Error: Erro ALUOp na linha          50 bit           0, saida = 0, (1 esperado)
-#    Time: 50245 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          50 bit           1, saida = 0, (1 esperado)
-#    Time: 50245 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          51 bit           0, saida = 0, (1 esperado)
-#    Time: 51250 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          51 bit           1, saida = 0, (1 esperado)
-#    Time: 51250 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# |  1  |  0  | 001000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  0  |  0  | 001000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  1  |  0  | 001000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 001101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 001101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 001101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# ** Error: Erro ALUOp na linha          58 bit           0, saida = 0, (1 esperado)
-#    Time: 58285 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          58 bit           1, saida = 0, (1 esperado)
-#    Time: 58285 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          59 bit           0, saida = 0, (1 esperado)
-#    Time: 59290 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          59 bit           1, saida = 0, (1 esperado)
-#    Time: 59290 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# |  1  |  0  | 001101 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  0  |  0  | 001101 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  1  |  0  | 001101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 001110 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 001110 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 001110 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# ** Error: Erro ALUOp na linha          66 bit           0, saida = 0, (1 esperado)
-#    Time: 66325 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          66 bit           1, saida = 0, (1 esperado)
-#    Time: 66325 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          67 bit           0, saida = 0, (1 esperado)
-#    Time: 67330 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          67 bit           1, saida = 0, (1 esperado)
-#    Time: 67330 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# |  1  |  0  | 001110 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  0  |  0  | 001110 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  1  |  0  | 001110 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 001010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 001010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 001010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# ** Error: Erro ALUOp na linha          74 bit           0, saida = 0, (1 esperado)
-#    Time: 74365 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          74 bit           1, saida = 0, (1 esperado)
-#    Time: 74365 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          75 bit           0, saida = 0, (1 esperado)
-#    Time: 75370 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          75 bit           1, saida = 0, (1 esperado)
-#    Time: 75370 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# |  1  |  0  | 001010 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  0  |  0  | 001010 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  1  |  0  | 001010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# Testes Efetuados  = 78
-# Erros Encontrados = 26
-# ** Note: $stop    : D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv(151)
-#    Time: 78395 ns  Iteration: 0  Instance: /main_controller_tb
-# Break in Module main_controller_tb at D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv line 151
-do main_controller_run_msim_gate_verilog.do
-# if {[file exists gate_work]} {
-# 	vdel -lib gate_work -all
-# }
-# Error 31: Unable to unlink file "D:/Developer/Concepcao/mips/control_unit/main_controller/simulation/modelsim/gate_work/_lib.qdb".
-# Error 133: Unable to remove directory "D:/Developer/Concepcao/mips/control_unit/main_controller/simulation/modelsim/gate_work".
-# vlib gate_work
-# ** Error: (vlib-35) Failed to create directory "gate_work".
-# File exists. (errno = EEXIST)
-# vmap work gate_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
-# vmap work gate_work 
-# Modifying modelsim.ini
-# 
-# vlog -vlog01compat -work work +incdir+. {main_controller_6_1200mv_85c_slow.vo}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:44:38 on Feb 26,2020
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." main_controller_6_1200mv_85c_slow.vo 
-# -- Compiling module main_controller
-# 
-# Top level modules:
-# 	main_controller
-# End time: 02:44:38 on Feb 26,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/control_unit/main_controller/testbench {D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:44:38 on Feb 26,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/control_unit/main_controller/testbench" D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv 
-# -- Compiling module main_controller_tb
-# 
-# Top level modules:
-# 	main_controller_tb
-# End time: 02:44:38 on Feb 26,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" main_controller_tb
-# End time: 02:44:41 on Feb 26,2020, Elapsed time: 0:01:34
-# Errors: 36, Warnings: 0
-# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" main_controller_tb 
-# Start time: 02:44:41 on Feb 26,2020
-# Loading sv_std.std
-# Loading work.main_controller_tb
-# Loading work.main_controller
-# Loading cycloneive_ver.cycloneive_lcell_comb
-# Loading cycloneive_ver.cycloneive_io_ibuf
-# Loading cycloneive_ver.cycloneive_clkctrl
-# Loading cycloneive_ver.cycloneive_mux41
-# Loading cycloneive_ver.cycloneive_ena_reg
-# Loading cycloneive_ver.cycloneive_io_obuf
-# Loading altera_ver.dffeas
-# Loading instances from main_controller_6_1200mv_85c_v_slow.sdo
-# Loading altera_ver.PRIM_GDFF_LOW
-# Loading timing data from main_controller_6_1200mv_85c_v_slow.sdo
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# Iniciando Testbench
-# ---------------
-# | clk | rst | opcode | state | MemtoReg | RegDst | IorD | PCSrc | ALUSrcB | ALUSrcA | IRWrite | MemWrite | PCWrite | BranchEQ | BranchNE | RegWrite | ALUOp |
-# ** Error: s[          0] = 0 (x esperado) {Linha           1}
-#    Time: 100 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 69
-# ** Error: s[          1] = 0 (x esperado) {Linha           1}
-#    Time: 100 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 69
-# ** Error: s[          2] = 0 (x esperado) {Linha           1}
-#    Time: 100 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 69
-# ** Error: s[          3] = 0 (x esperado) {Linha           1}
-#    Time: 100 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 69
-# ** Error: MemtoReg = 0 na linha           1
-#    Time: 100 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 76
-# ** Error: RegDst = 0 na linha           1
-#    Time: 100 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 80
-# ** Error: IorD = 0 na linha           1
-#    Time: 100 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 84
-# ** Error: ALUSrcA = 0 na linha           1
-#    Time: 100 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 88
-# ** Error: IRWrite = 1 na linha           1
-#    Time: 100 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 92
-# ** Error: MemWrite = 0 na linha           1
-#    Time: 100 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 96
-# ** Error: PCWrite = 1 na linha           1
-#    Time: 100 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 100
-# ** Error: BranchEQ = 0 na linha           1
-#    Time: 100 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 104
-# ** Error: BranchNE = 0 na linha           1
-#    Time: 100 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 108
-# ** Error: RegWrite = 0 na linha           1
-#    Time: 100 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 112
-# ** Error: Erro PCSrc na linha           1 bit           0, saida = 0, (x esperado)
-#    Time: 100 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 117
-# ** Error: Erro PCSrc na linha           1 bit           1, saida = 0, (x esperado)
-#    Time: 100 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 117
-# ** Error: Erro ALUSrcB na linha           1 bit           0, saida = 1, (x esperado)
-#    Time: 100 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 124
-# ** Error: Erro ALUSrcB na linha           1 bit           1, saida = 0, (x esperado)
-#    Time: 100 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 124
-# ** Error: Erro ALUOp na linha           1 bit           0, saida = 0, (x esperado)
-#    Time: 100 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha           1 bit           1, saida = 0, (x esperado)
-#    Time: 100 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# |  1  |  1  | 100011 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 100011 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 100011 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 100011 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 100011 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 100011 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 100011 | 0011  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 100011 | 0011  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 100011 | 0100  | 1 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  0  |  0  | 100011 | 0100  | 1 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  1  |  0  | 100011 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 101011 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 101011 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 101011 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 101011 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 101011 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 101011 | 0101  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 101011 | 0101  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 101011 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000000 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 10 | OK
-# |  0  |  0  | 000000 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 10 | OK
-# |  1  |  0  | 000000 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  0  |  0  | 000000 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  1  |  0  | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 000100 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000100 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 000100 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000100 | 1000  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 01 | OK
-# |  0  |  0  | 000100 | 1000  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 01 | OK
-# |  1  |  0  | 000100 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 000101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 000101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000101 | 1100  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 01 | OK
-# |  0  |  0  | 000101 | 1100  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 01 | OK
-# |  1  |  0  | 000101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 000010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 000010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000010 | 1011  | 0 | 0 | 0 | 10 | 00 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 000010 | 1011  | 0 | 0 | 0 | 10 | 00 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 000010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 001000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 001000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 001000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# ** Error: Erro ALUOp na linha          50 bit           0, saida = 0, (1 esperado)
-#    Time: 54900 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          50 bit           1, saida = 0, (1 esperado)
-#    Time: 54900 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          51 bit           0, saida = 0, (1 esperado)
-#    Time: 56 us  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          51 bit           1, saida = 0, (1 esperado)
-#    Time: 56 us  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# |  1  |  0  | 001000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  0  |  0  | 001000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  1  |  0  | 001000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 001101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 001101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 001101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# ** Error: Erro ALUOp na linha          58 bit           0, saida = 0, (1 esperado)
-#    Time: 63700 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          58 bit           1, saida = 0, (1 esperado)
-#    Time: 63700 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          59 bit           0, saida = 0, (1 esperado)
-#    Time: 64800 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          59 bit           1, saida = 0, (1 esperado)
-#    Time: 64800 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# |  1  |  0  | 001101 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  0  |  0  | 001101 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  1  |  0  | 001101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 001110 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 001110 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 001110 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# ** Error: Erro ALUOp na linha          66 bit           0, saida = 0, (1 esperado)
-#    Time: 72500 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          66 bit           1, saida = 0, (1 esperado)
-#    Time: 72500 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          67 bit           0, saida = 0, (1 esperado)
-#    Time: 73600 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          67 bit           1, saida = 0, (1 esperado)
-#    Time: 73600 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# |  1  |  0  | 001110 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  0  |  0  | 001110 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  1  |  0  | 001110 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 001010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# |  1  |  0  | 001010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# |  0  |  0  | 001010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | OK
-# ** Error: Erro ALUOp na linha          74 bit           0, saida = 0, (1 esperado)
-#    Time: 81300 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          74 bit           1, saida = 0, (1 esperado)
-#    Time: 81300 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          75 bit           0, saida = 0, (1 esperado)
-#    Time: 82400 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# ** Error: Erro ALUOp na linha          75 bit           1, saida = 0, (1 esperado)
-#    Time: 82400 ns  Scope: main_controller_tb File: D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv Line: 131
-# |  1  |  0  | 001010 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  0  |  0  | 001010 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 00 | OK
-# |  1  |  0  | 001010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 00 | OK
-# Testes Efetuados  = 78
-# Erros Encontrados = 26
-# ** Note: $stop    : D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv(151)
-#    Time: 85710 ns  Iteration: 0  Instance: /main_controller_tb
-# Break in Module main_controller_tb at D:/Developer/Concepcao/mips/control_unit/main_controller/testbench/main_controller_tb.sv line 151
-# End time: 04:44:21 on Feb 26,2020, Elapsed time: 1:59:40
-# Errors: 36, Warnings: 0
