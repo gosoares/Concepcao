@@ -50,7 +50,7 @@ module control_unit_tb;
     end
 	        
     always begin
-        clk = 1; #10;
+        clk = 1; #9;
         clk = 0; #5;
     end
 

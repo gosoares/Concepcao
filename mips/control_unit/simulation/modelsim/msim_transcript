@@ -1,65 +1,55 @@
 # Reading C:/intelFPGA/16.1/modelsim_ase/tcl/vsim/pref.tcl
-# do control_unit_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
+# do control_unit_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
 # }
-# vlib rtl_work
-# vmap work rtl_work
+# vlib gate_work
+# vmap work gate_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
-# vmap work rtl_work 
+# vmap work gate_work 
 # Copying C:/intelFPGA/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/control_unit/main_controller {D:/Developer/Concepcao/mips/control_unit/main_controller/main_controller.sv}
+# vlog -vlog01compat -work work +incdir+. {control_unit_6_1200mv_85c_slow.vo}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:49 on Feb 26,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/control_unit/main_controller" D:/Developer/Concepcao/mips/control_unit/main_controller/main_controller.sv 
-# -- Compiling module main_controller
-# 
-# Top level modules:
-# 	main_controller
-# End time: 14:38:49 on Feb 26,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/control_unit/alu_decoder {D:/Developer/Concepcao/mips/control_unit/alu_decoder/alu_decoder.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:49 on Feb 26,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/control_unit/alu_decoder" D:/Developer/Concepcao/mips/control_unit/alu_decoder/alu_decoder.sv 
-# -- Compiling module alu_decoder
-# 
-# Top level modules:
-# 	alu_decoder
-# End time: 14:38:49 on Feb 26,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/control_unit {D:/Developer/Concepcao/mips/control_unit/control_unit.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:49 on Feb 26,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/control_unit" D:/Developer/Concepcao/mips/control_unit/control_unit.sv 
+# Start time: 05:12:58 on Mar 04,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." control_unit_6_1200mv_85c_slow.vo 
 # -- Compiling module control_unit
 # 
 # Top level modules:
 # 	control_unit
-# End time: 14:38:49 on Feb 26,2020, Elapsed time: 0:00:00
+# End time: 05:12:58 on Mar 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/control_unit/testbench {D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:49 on Feb 26,2020
+# Start time: 05:12:58 on Mar 04,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/control_unit/testbench" D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv 
 # -- Compiling module control_unit_tb
 # 
 # Top level modules:
 # 	control_unit_tb
-# End time: 14:38:49 on Feb 26,2020, Elapsed time: 0:00:00
+# End time: 05:12:58 on Mar 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc" control_unit_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" control_unit_tb 
-# Start time: 14:38:49 on Feb 26,2020
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" control_unit_tb
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" control_unit_tb 
+# Start time: 05:12:58 on Mar 04,2020
 # Loading sv_std.std
 # Loading work.control_unit_tb
 # Loading work.control_unit
-# Loading work.main_controller
-# Loading work.alu_decoder
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading altera_ver.dffeas
+# Loading instances from control_unit_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from control_unit_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv
 # 
 # add wave *
 # view structure
@@ -199,7 +189,988 @@
 # Testes Efetuados  = 126
 # Erros Encontrados = 0
 # ** Note: $stop    : D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv(155)
-#    Time: 1910 ns  Iteration: 0  Instance: /control_unit_tb
+#    Time: 1783 ns  Iteration: 0  Instance: /control_unit_tb
 # Break in Module control_unit_tb at D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv line 155
-# End time: 14:47:08 on Feb 26,2020, Elapsed time: 0:08:19
+do control_unit_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# Error 31: Unable to unlink file "D:/Developer/Concepcao/mips/control_unit/simulation/modelsim/gate_work/_lib.qdb".
+# Error 133: Unable to remove directory "D:/Developer/Concepcao/mips/control_unit/simulation/modelsim/gate_work".
+# vlib gate_work
+# ** Error: (vlib-35) Failed to create directory "gate_work".
+# File exists. (errno = EEXIST)
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {control_unit_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:13:35 on Mar 04,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." control_unit_6_1200mv_85c_slow.vo 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 05:13:35 on Mar 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/control_unit/testbench {D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:13:35 on Mar 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/control_unit/testbench" D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv 
+# -- Compiling module control_unit_tb
+# 
+# Top level modules:
+# 	control_unit_tb
+# End time: 05:13:35 on Mar 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" control_unit_tb
+# End time: 05:13:38 on Mar 04,2020, Elapsed time: 0:00:40
+# Errors: 0, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" control_unit_tb 
+# Start time: 05:13:39 on Mar 04,2020
+# Loading sv_std.std
+# Loading work.control_unit_tb
+# Loading work.control_unit
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading altera_ver.dffeas
+# Loading instances from control_unit_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from control_unit_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | clk | rst | opcode | funct | state | MemtoReg | RegDst | IorD | PCSrc | ALUSrcB | ALUSrcA | IRWrite | MemWrite | PCWrite | BranchEQ | BranchNE | RegWrite | ALUControl |
+# |  0  |  1  | 100011 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  1  | 100011 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 100011 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha           4}
+#    Time: 55 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 1 na linha           4
+#    Time: 55 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: Erro ALUSrcB na linha           4 bit           1, saida = 0, (1 esperado)
+#    Time: 55 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# |  0  |  0  | 100011 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha           6}
+#    Time: 79 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          1] = 0 (1 esperado) {Linha           6}
+#    Time: 79 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# |  0  |  0  | 100011 | 000000 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha           8}
+#    Time: 103 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# |  0  |  0  | 100011 | 000000 | 0011  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          10}
+#    Time: 127 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          1] = 1 (0 esperado) {Linha          10}
+#    Time: 127 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          2] = 0 (1 esperado) {Linha          10}
+#    Time: 127 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: RegWrite = 0 na linha          10
+#    Time: 127 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  0  |  0  | 100011 | 000000 | 0100  | 1 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: s[          2] = 1 (0 esperado) {Linha          12}
+#    Time: 151 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 0 na linha          12
+#    Time: 151 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: RegWrite = 1 na linha          12
+#    Time: 151 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  0  |  0  | 101011 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          14}
+#    Time: 175 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 1 na linha          14
+#    Time: 175 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: Erro ALUSrcB na linha          14 bit           1, saida = 0, (1 esperado)
+#    Time: 175 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# |  0  |  0  | 101011 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          16}
+#    Time: 199 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          1] = 0 (1 esperado) {Linha          16}
+#    Time: 199 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# |  0  |  0  | 101011 | 000000 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          18}
+#    Time: 223 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          1] = 1 (0 esperado) {Linha          18}
+#    Time: 223 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          2] = 0 (1 esperado) {Linha          18}
+#    Time: 223 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# |  0  |  0  | 101011 | 000000 | 0101  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          20}
+#    Time: 247 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          2] = 1 (0 esperado) {Linha          20}
+#    Time: 247 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 0 na linha          20
+#    Time: 247 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# |  0  |  0  | 000000 | 100000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          22}
+#    Time: 271 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 1 na linha          22
+#    Time: 271 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: Erro ALUSrcB na linha          22 bit           1, saida = 0, (1 esperado)
+#    Time: 271 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# |  0  |  0  | 000000 | 100000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          24}
+#    Time: 295 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          1] = 0 (1 esperado) {Linha          24}
+#    Time: 295 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          2] = 0 (1 esperado) {Linha          24}
+#    Time: 295 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: ALUSrcA = 0 na linha          24
+#    Time: 295 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: Erro ALUSrcB na linha          24 bit           1, saida = 1, (0 esperado)
+#    Time: 295 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# |  0  |  0  | 000000 | 100000 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: ALUSrcA = 1 na linha          26
+#    Time: 319 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: RegWrite = 0 na linha          26
+#    Time: 319 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  1  |  0  | 000000 | 100000 | 0111  | 0 | 1 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 100000 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: s[          2] = 1 (0 esperado) {Linha          28}
+#    Time: 343 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 0 na linha          28
+#    Time: 343 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: RegWrite = 1 na linha          28
+#    Time: 343 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  0  |  0  | 000000 | 100010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          30}
+#    Time: 367 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 1 na linha          30
+#    Time: 367 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: Erro ALUSrcB na linha          30 bit           1, saida = 0, (1 esperado)
+#    Time: 367 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# |  0  |  0  | 000000 | 100010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          32}
+#    Time: 391 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          1] = 0 (1 esperado) {Linha          32}
+#    Time: 391 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          2] = 0 (1 esperado) {Linha          32}
+#    Time: 391 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: ALUSrcA = 0 na linha          32
+#    Time: 391 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: Erro ALUSrcB na linha          32 bit           1, saida = 1, (0 esperado)
+#    Time: 391 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# ** Error: Erro ALUControl na linha          32 bit           2, saida = 0, (1 esperado)
+#    Time: 391 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# |  0  |  0  | 000000 | 100010 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 110 | OK
+# ** Error: ALUSrcA = 1 na linha          34
+#    Time: 415 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: RegWrite = 0 na linha          34
+#    Time: 415 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# ** Error: Erro ALUControl na linha          34 bit           2, saida = 1, (0 esperado)
+#    Time: 415 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# |  0  |  0  | 000000 | 100010 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: s[          2] = 1 (0 esperado) {Linha          36}
+#    Time: 439 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 0 na linha          36
+#    Time: 439 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: RegWrite = 1 na linha          36
+#    Time: 439 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  0  |  0  | 000000 | 100100 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          38}
+#    Time: 463 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 1 na linha          38
+#    Time: 463 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: Erro ALUSrcB na linha          38 bit           1, saida = 0, (1 esperado)
+#    Time: 463 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# |  0  |  0  | 000000 | 100100 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          40}
+#    Time: 487 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          1] = 0 (1 esperado) {Linha          40}
+#    Time: 487 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          2] = 0 (1 esperado) {Linha          40}
+#    Time: 487 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: ALUSrcA = 0 na linha          40
+#    Time: 487 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: Erro ALUSrcB na linha          40 bit           1, saida = 1, (0 esperado)
+#    Time: 487 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# |  0  |  0  | 000000 | 100100 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 000 | OK
+# ** Error: ALUSrcA = 1 na linha          42
+#    Time: 511 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: RegWrite = 0 na linha          42
+#    Time: 511 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  1  |  0  | 000000 | 100100 | 0111  | 0 | 1 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 100100 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: s[          2] = 1 (0 esperado) {Linha          44}
+#    Time: 535 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 0 na linha          44
+#    Time: 535 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: RegWrite = 1 na linha          44
+#    Time: 535 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  0  |  0  | 000000 | 100101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          46}
+#    Time: 559 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 1 na linha          46
+#    Time: 559 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: Erro ALUSrcB na linha          46 bit           1, saida = 0, (1 esperado)
+#    Time: 559 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# |  0  |  0  | 000000 | 100101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          48}
+#    Time: 583 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          1] = 0 (1 esperado) {Linha          48}
+#    Time: 583 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          2] = 0 (1 esperado) {Linha          48}
+#    Time: 583 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: ALUSrcA = 0 na linha          48
+#    Time: 583 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: Erro ALUSrcB na linha          48 bit           1, saida = 1, (0 esperado)
+#    Time: 583 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# ** Error: Erro ALUControl na linha          48 bit           0, saida = 0, (1 esperado)
+#    Time: 583 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# |  0  |  0  | 000000 | 100101 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 001 | OK
+# ** Error: ALUSrcA = 1 na linha          50
+#    Time: 607 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: RegWrite = 0 na linha          50
+#    Time: 607 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# ** Error: Erro ALUControl na linha          50 bit           0, saida = 1, (0 esperado)
+#    Time: 607 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# |  0  |  0  | 000000 | 100101 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: s[          2] = 1 (0 esperado) {Linha          52}
+#    Time: 631 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 0 na linha          52
+#    Time: 631 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: RegWrite = 1 na linha          52
+#    Time: 631 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  0  |  0  | 000000 | 100111 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          54}
+#    Time: 655 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 1 na linha          54
+#    Time: 655 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: Erro ALUSrcB na linha          54 bit           1, saida = 0, (1 esperado)
+#    Time: 655 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# |  0  |  0  | 000000 | 100111 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          56}
+#    Time: 679 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          1] = 0 (1 esperado) {Linha          56}
+#    Time: 679 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          2] = 0 (1 esperado) {Linha          56}
+#    Time: 679 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: ALUSrcA = 0 na linha          56
+#    Time: 679 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: Erro ALUSrcB na linha          56 bit           1, saida = 1, (0 esperado)
+#    Time: 679 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# ** Error: Erro ALUControl na linha          56 bit           0, saida = 0, (1 esperado)
+#    Time: 679 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# ** Error: Erro ALUControl na linha          56 bit           2, saida = 0, (1 esperado)
+#    Time: 679 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# |  0  |  0  | 000000 | 100111 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 101 | OK
+# ** Error: ALUSrcA = 1 na linha          58
+#    Time: 703 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: RegWrite = 0 na linha          58
+#    Time: 703 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# ** Error: Erro ALUControl na linha          58 bit           0, saida = 1, (0 esperado)
+#    Time: 703 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# ** Error: Erro ALUControl na linha          58 bit           2, saida = 1, (0 esperado)
+#    Time: 703 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# |  0  |  0  | 000000 | 100111 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: s[          2] = 1 (0 esperado) {Linha          60}
+#    Time: 727 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 0 na linha          60
+#    Time: 727 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: RegWrite = 1 na linha          60
+#    Time: 727 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  0  |  0  | 000000 | 100110 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          62}
+#    Time: 751 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 1 na linha          62
+#    Time: 751 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: Erro ALUSrcB na linha          62 bit           1, saida = 0, (1 esperado)
+#    Time: 751 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# |  0  |  0  | 000000 | 100110 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          64}
+#    Time: 775 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          1] = 0 (1 esperado) {Linha          64}
+#    Time: 775 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          2] = 0 (1 esperado) {Linha          64}
+#    Time: 775 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: ALUSrcA = 0 na linha          64
+#    Time: 775 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: Erro ALUSrcB na linha          64 bit           1, saida = 1, (0 esperado)
+#    Time: 775 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# ** Error: Erro ALUControl na linha          64 bit           0, saida = 0, (1 esperado)
+#    Time: 775 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# |  0  |  0  | 000000 | 100110 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 011 | OK
+# ** Error: ALUSrcA = 1 na linha          66
+#    Time: 799 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: RegWrite = 0 na linha          66
+#    Time: 799 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# ** Error: Erro ALUControl na linha          66 bit           0, saida = 1, (0 esperado)
+#    Time: 799 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# |  0  |  0  | 000000 | 100110 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: s[          2] = 1 (0 esperado) {Linha          68}
+#    Time: 823 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 0 na linha          68
+#    Time: 823 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: RegWrite = 1 na linha          68
+#    Time: 823 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  0  |  0  | 000000 | 101010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          70}
+#    Time: 847 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 1 na linha          70
+#    Time: 847 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: Erro ALUSrcB na linha          70 bit           1, saida = 0, (1 esperado)
+#    Time: 847 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# |  0  |  0  | 000000 | 101010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          72}
+#    Time: 871 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          1] = 0 (1 esperado) {Linha          72}
+#    Time: 871 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          2] = 0 (1 esperado) {Linha          72}
+#    Time: 871 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: ALUSrcA = 0 na linha          72
+#    Time: 871 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: Erro ALUSrcB na linha          72 bit           1, saida = 1, (0 esperado)
+#    Time: 871 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# ** Error: Erro ALUControl na linha          72 bit           0, saida = 0, (1 esperado)
+#    Time: 871 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# ** Error: Erro ALUControl na linha          72 bit           2, saida = 0, (1 esperado)
+#    Time: 871 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# |  0  |  0  | 000000 | 101010 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 111 | OK
+# ** Error: ALUSrcA = 1 na linha          74
+#    Time: 895 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: RegWrite = 0 na linha          74
+#    Time: 895 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# ** Error: Erro ALUControl na linha          74 bit           0, saida = 1, (0 esperado)
+#    Time: 895 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# ** Error: Erro ALUControl na linha          74 bit           2, saida = 1, (0 esperado)
+#    Time: 895 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# |  0  |  0  | 000000 | 101010 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: s[          2] = 1 (0 esperado) {Linha          76}
+#    Time: 919 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 0 na linha          76
+#    Time: 919 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: RegWrite = 1 na linha          76
+#    Time: 919 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  0  |  0  | 000100 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          78}
+#    Time: 943 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 1 na linha          78
+#    Time: 943 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: Erro ALUSrcB na linha          78 bit           1, saida = 0, (1 esperado)
+#    Time: 943 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# |  0  |  0  | 000100 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          80}
+#    Time: 967 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          3] = 0 (1 esperado) {Linha          80}
+#    Time: 967 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: ALUSrcA = 0 na linha          80
+#    Time: 967 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: Erro ALUSrcB na linha          80 bit           1, saida = 1, (0 esperado)
+#    Time: 967 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# ** Error: Erro ALUControl na linha          80 bit           2, saida = 0, (1 esperado)
+#    Time: 967 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# |  0  |  0  | 000100 | 000000 | 1000  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 110 | OK
+# ** Error: s[          3] = 1 (0 esperado) {Linha          82}
+#    Time: 991 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: ALUSrcA = 1 na linha          82
+#    Time: 991 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: PCWrite = 0 na linha          82
+#    Time: 991 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: Erro ALUControl na linha          82 bit           2, saida = 1, (0 esperado)
+#    Time: 991 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# |  0  |  0  | 000101 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          84}
+#    Time: 1015 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 1 na linha          84
+#    Time: 1015 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: Erro ALUSrcB na linha          84 bit           1, saida = 0, (1 esperado)
+#    Time: 1015 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# |  0  |  0  | 000101 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha          86}
+#    Time: 1039 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          2] = 0 (1 esperado) {Linha          86}
+#    Time: 1039 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          3] = 0 (1 esperado) {Linha          86}
+#    Time: 1039 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: ALUSrcA = 0 na linha          86
+#    Time: 1039 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: Erro ALUSrcB na linha          86 bit           1, saida = 1, (0 esperado)
+#    Time: 1039 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# ** Error: Erro ALUControl na linha          86 bit           2, saida = 0, (1 esperado)
+#    Time: 1039 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# |  0  |  0  | 000101 | 000000 | 1100  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 110 | OK
+# ** Error: s[          2] = 1 (0 esperado) {Linha          88}
+#    Time: 1063 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: s[          3] = 1 (0 esperado) {Linha          88}
+#    Time: 1063 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: ALUSrcA = 1 na linha          88
+#    Time: 1063 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: PCWrite = 0 na linha          88
+#    Time: 1063 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: Erro ALUControl na linha          88 bit           2, saida = 1, (0 esperado)
+#    Time: 1063 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# |  0  |  0  | 000010 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          90}
+#    Time: 1087 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 1 na linha          90
+#    Time: 1087 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: Erro ALUSrcB na linha          90 bit           1, saida = 0, (1 esperado)
+#    Time: 1087 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# |  0  |  0  | 000010 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: PCWrite = 0 na linha          92
+#    Time: 1111 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: Erro ALUSrcB na linha          92 bit           1, saida = 1, (0 esperado)
+#    Time: 1111 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# |  0  |  0  | 000010 | 000000 | 1011  | 0 | 0 | 0 | 10 | 00 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000010 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 001000 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha          96}
+#    Time: 1159 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 1 na linha          96
+#    Time: 1159 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: Erro ALUSrcB na linha          96 bit           1, saida = 0, (1 esperado)
+#    Time: 1159 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# |  0  |  0  | 001000 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          3] = 0 (1 esperado) {Linha          98}
+#    Time: 1183 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: ALUSrcA = 0 na linha          98
+#    Time: 1183 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# |  0  |  0  | 001000 | 000000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha         100}
+#    Time: 1207 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: ALUSrcA = 1 na linha         100
+#    Time: 1207 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: RegWrite = 0 na linha         100
+#    Time: 1207 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# ** Error: Erro ALUSrcB na linha         100 bit           1, saida = 1, (0 esperado)
+#    Time: 1207 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# |  0  |  0  | 001000 | 000000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: PCWrite = 0 na linha         102
+#    Time: 1231 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: RegWrite = 1 na linha         102
+#    Time: 1231 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  1  |  0  | 001000 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 001101 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha         104}
+#    Time: 1255 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 1 na linha         104
+#    Time: 1255 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: Erro ALUSrcB na linha         104 bit           1, saida = 0, (1 esperado)
+#    Time: 1255 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# |  0  |  0  | 001101 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          3] = 0 (1 esperado) {Linha         106}
+#    Time: 1279 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: ALUSrcA = 0 na linha         106
+#    Time: 1279 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# |  0  |  0  | 001101 | 000000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 001 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha         108}
+#    Time: 1303 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: ALUSrcA = 1 na linha         108
+#    Time: 1303 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: RegWrite = 0 na linha         108
+#    Time: 1303 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# ** Error: Erro ALUSrcB na linha         108 bit           1, saida = 1, (0 esperado)
+#    Time: 1303 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# |  0  |  0  | 001101 | 000000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: PCWrite = 0 na linha         110
+#    Time: 1327 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: RegWrite = 1 na linha         110
+#    Time: 1327 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  1  |  0  | 001101 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 001110 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha         112}
+#    Time: 1351 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 1 na linha         112
+#    Time: 1351 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: Erro ALUSrcB na linha         112 bit           1, saida = 0, (1 esperado)
+#    Time: 1351 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# |  0  |  0  | 001110 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          3] = 0 (1 esperado) {Linha         114}
+#    Time: 1375 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: ALUSrcA = 0 na linha         114
+#    Time: 1375 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# |  0  |  0  | 001110 | 000000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 011 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha         116}
+#    Time: 1399 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: ALUSrcA = 1 na linha         116
+#    Time: 1399 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: RegWrite = 0 na linha         116
+#    Time: 1399 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# ** Error: Erro ALUSrcB na linha         116 bit           1, saida = 1, (0 esperado)
+#    Time: 1399 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# |  0  |  0  | 001110 | 000000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: PCWrite = 0 na linha         118
+#    Time: 1423 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: RegWrite = 1 na linha         118
+#    Time: 1423 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  1  |  0  | 001110 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 001010 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          0] = 0 (1 esperado) {Linha         120}
+#    Time: 1447 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: PCWrite = 1 na linha         120
+#    Time: 1447 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: Erro ALUSrcB na linha         120 bit           1, saida = 0, (1 esperado)
+#    Time: 1447 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# |  0  |  0  | 001010 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          3] = 0 (1 esperado) {Linha         122}
+#    Time: 1471 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: ALUSrcA = 0 na linha         122
+#    Time: 1471 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: Erro ALUControl na linha         122 bit           2, saida = 0, (1 esperado)
+#    Time: 1471 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# |  0  |  0  | 001010 | 000000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 111 | OK
+# ** Error: s[          0] = 1 (0 esperado) {Linha         124}
+#    Time: 1495 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: ALUSrcA = 1 na linha         124
+#    Time: 1495 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# ** Error: RegWrite = 0 na linha         124
+#    Time: 1495 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# ** Error: Erro ALUSrcB na linha         124 bit           1, saida = 1, (0 esperado)
+#    Time: 1495 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 128
+# ** Error: Erro ALUControl na linha         124 bit           2, saida = 1, (0 esperado)
+#    Time: 1495 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# |  0  |  0  | 001010 | 000000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: PCWrite = 0 na linha         126
+#    Time: 1519 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 104
+# ** Error: RegWrite = 1 na linha         126
+#    Time: 1519 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  1  |  0  | 001010 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# Testes Efetuados  = 126
+# Erros Encontrados = 124
+# ** Note: $stop    : D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv(155)
+#    Time: 1529 ns  Iteration: 0  Instance: /control_unit_tb
+# Break in Module control_unit_tb at D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv line 155
+do control_unit_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {control_unit_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:13:52 on Mar 04,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." control_unit_6_1200mv_85c_slow.vo 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 05:13:53 on Mar 04,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/control_unit/testbench {D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:13:53 on Mar 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/control_unit/testbench" D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv 
+# -- Compiling module control_unit_tb
+# 
+# Top level modules:
+# 	control_unit_tb
+# End time: 05:13:53 on Mar 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" control_unit_tb
+# End time: 05:13:55 on Mar 04,2020, Elapsed time: 0:00:16
+# Errors: 206, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" control_unit_tb 
+# Start time: 05:13:55 on Mar 04,2020
+# Loading sv_std.std
+# Loading work.control_unit_tb
+# Loading work.control_unit
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading altera_ver.dffeas
+# Loading instances from control_unit_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from control_unit_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | clk | rst | opcode | funct | state | MemtoReg | RegDst | IorD | PCSrc | ALUSrcB | ALUSrcA | IRWrite | MemWrite | PCWrite | BranchEQ | BranchNE | RegWrite | ALUControl |
+# |  0  |  1  | 100011 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  1  | 100011 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 100011 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 100011 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 100011 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 100011 | 000000 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 100011 | 000000 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 100011 | 000000 | 0011  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 100011 | 000000 | 0011  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 100011 | 000000 | 0100  | 1 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 100011 | 000000 | 0100  | 1 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  1  |  0  | 100011 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 101011 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 101011 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 101011 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 101011 | 000000 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 101011 | 000000 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 101011 | 000000 | 0101  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 101011 | 000000 | 0101  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          2] = 1 (0 esperado) {Linha          20}
+#    Time: 268 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# |  0  |  0  | 000000 | 100000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 100000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 100000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          2] = 0 (1 esperado) {Linha          24}
+#    Time: 320 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# |  0  |  0  | 000000 | 100000 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 100000 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 000000 | 100000 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: RegWrite = 1 na linha          28
+#    Time: 372 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  1  |  0  | 000000 | 100000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 000000 | 100010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 100010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 100010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          2] = 0 (1 esperado) {Linha          32}
+#    Time: 424 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: Erro ALUControl na linha          32 bit           2, saida = 0, (1 esperado)
+#    Time: 424 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# |  0  |  0  | 000000 | 100010 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 110 | OK
+# ** Error: Erro ALUControl na linha          34 bit           2, saida = 1, (0 esperado)
+#    Time: 450 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# |  0  |  0  | 000000 | 100010 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: RegWrite = 1 na linha          36
+#    Time: 476 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  1  |  0  | 000000 | 100010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 000000 | 100100 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 100100 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 100100 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          2] = 0 (1 esperado) {Linha          40}
+#    Time: 528 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# |  0  |  0  | 000000 | 100100 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 000 | OK
+# |  1  |  0  | 000000 | 100100 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 000000 | 100100 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: RegWrite = 1 na linha          44
+#    Time: 580 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  1  |  0  | 000000 | 100100 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 000000 | 100101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 100101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 100101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          2] = 0 (1 esperado) {Linha          48}
+#    Time: 632 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# |  0  |  0  | 000000 | 100101 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 001 | OK
+# |  1  |  0  | 000000 | 100101 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 000000 | 100101 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: RegWrite = 1 na linha          52
+#    Time: 684 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  1  |  0  | 000000 | 100101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 000000 | 100111 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 100111 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 100111 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          2] = 0 (1 esperado) {Linha          56}
+#    Time: 736 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: Erro ALUControl na linha          56 bit           2, saida = 0, (1 esperado)
+#    Time: 736 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# |  0  |  0  | 000000 | 100111 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 101 | OK
+# ** Error: Erro ALUControl na linha          58 bit           2, saida = 1, (0 esperado)
+#    Time: 762 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# |  0  |  0  | 000000 | 100111 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: RegWrite = 1 na linha          60
+#    Time: 788 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  1  |  0  | 000000 | 100111 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 000000 | 100110 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 100110 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 100110 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          2] = 0 (1 esperado) {Linha          64}
+#    Time: 840 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# |  0  |  0  | 000000 | 100110 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 011 | OK
+# |  1  |  0  | 000000 | 100110 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 000000 | 100110 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: RegWrite = 1 na linha          68
+#    Time: 892 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  1  |  0  | 000000 | 100110 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 000000 | 101010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 101010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 101010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# ** Error: s[          2] = 0 (1 esperado) {Linha          72}
+#    Time: 944 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 73
+# ** Error: Erro ALUControl na linha          72 bit           2, saida = 0, (1 esperado)
+#    Time: 944 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# |  0  |  0  | 000000 | 101010 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 111 | OK
+# ** Error: Erro ALUControl na linha          74 bit           2, saida = 1, (0 esperado)
+#    Time: 970 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 135
+# |  0  |  0  | 000000 | 101010 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: RegWrite = 1 na linha          76
+#    Time: 996 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  1  |  0  | 000000 | 101010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 000100 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000100 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000100 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000100 | 000000 | 1000  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 110 | OK
+# |  0  |  0  | 000100 | 000000 | 1000  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 110 | OK
+# ** Error: ALUSrcA = 1 na linha          82
+#    Time: 1074 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 92
+# |  1  |  0  | 000100 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000101 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000101 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000101 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000101 | 000000 | 1100  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 110 | OK
+# |  0  |  0  | 000101 | 000000 | 1100  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 110 | OK
+# |  1  |  0  | 000101 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000010 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000010 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000010 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000010 | 000000 | 1011  | 0 | 0 | 0 | 10 | 00 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000010 | 000000 | 1011  | 0 | 0 | 0 | 10 | 00 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000010 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 001000 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 001000 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 001000 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 001000 | 000000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 001000 | 000000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 001000 | 000000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 001000 | 000000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: RegWrite = 1 na linha         102
+#    Time: 1334 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  1  |  0  | 001000 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 001101 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 001101 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 001101 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 001101 | 000000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 001 | OK
+# |  0  |  0  | 001101 | 000000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 001 | OK
+# |  1  |  0  | 001101 | 000000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 001101 | 000000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: RegWrite = 1 na linha         110
+#    Time: 1438 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  1  |  0  | 001101 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 001110 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 001110 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 001110 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 001110 | 000000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 011 | OK
+# |  0  |  0  | 001110 | 000000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 011 | OK
+# |  1  |  0  | 001110 | 000000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 001110 | 000000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: RegWrite = 1 na linha         118
+#    Time: 1542 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  1  |  0  | 001110 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 001010 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 001010 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 001010 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 001010 | 000000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 111 | OK
+# |  0  |  0  | 001010 | 000000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 111 | OK
+# |  1  |  0  | 001010 | 000000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 001010 | 000000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# ** Error: RegWrite = 1 na linha         126
+#    Time: 1646 ns  Scope: control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv Line: 116
+# |  1  |  0  | 001010 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 010 | OK
+# Testes Efetuados  = 126
+# Erros Encontrados = 14
+# ** Note: $stop    : D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv(155)
+#    Time: 1656 ns  Iteration: 0  Instance: /control_unit_tb
+# Break in Module control_unit_tb at D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv line 155
+do control_unit_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {control_unit_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:14:11 on Mar 04,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." control_unit_6_1200mv_85c_slow.vo 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 05:14:11 on Mar 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/control_unit/testbench {D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:14:11 on Mar 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/control_unit/testbench" D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv 
+# -- Compiling module control_unit_tb
+# 
+# Top level modules:
+# 	control_unit_tb
+# End time: 05:14:11 on Mar 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" control_unit_tb
+# End time: 05:14:14 on Mar 04,2020, Elapsed time: 0:00:19
+# Errors: 26, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" control_unit_tb 
+# Start time: 05:14:14 on Mar 04,2020
+# Loading sv_std.std
+# Loading work.control_unit_tb
+# Loading work.control_unit
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading altera_ver.dffeas
+# Loading instances from control_unit_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from control_unit_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /control_unit_tb File: D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | clk | rst | opcode | funct | state | MemtoReg | RegDst | IorD | PCSrc | ALUSrcB | ALUSrcA | IRWrite | MemWrite | PCWrite | BranchEQ | BranchNE | RegWrite | ALUControl |
+# |  0  |  1  | 100011 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  1  | 100011 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 100011 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 100011 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 100011 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 100011 | 000000 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 100011 | 000000 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 100011 | 000000 | 0011  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 100011 | 000000 | 0011  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 100011 | 000000 | 0100  | 1 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 100011 | 000000 | 0100  | 1 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  1  |  0  | 100011 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 101011 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 101011 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 101011 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 101011 | 000000 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 101011 | 000000 | 0010  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 101011 | 000000 | 0101  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 101011 | 000000 | 0101  | 0 | 0 | 1 | 00 | 00 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 101011 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 100000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 100000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 100000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 100000 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 100000 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 100000 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 000000 | 100000 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  1  |  0  | 000000 | 100000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 100010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 100010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 100010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 100010 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 110 | OK
+# |  0  |  0  | 000000 | 100010 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 110 | OK
+# |  1  |  0  | 000000 | 100010 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 000000 | 100010 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  1  |  0  | 000000 | 100010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 100100 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 100100 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 100100 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 100100 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 000 | OK
+# |  0  |  0  | 000000 | 100100 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 000 | OK
+# |  1  |  0  | 000000 | 100100 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 000000 | 100100 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  1  |  0  | 000000 | 100100 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 100101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 100101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 100101 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 100101 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 001 | OK
+# |  0  |  0  | 000000 | 100101 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 001 | OK
+# |  1  |  0  | 000000 | 100101 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 000000 | 100101 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  1  |  0  | 000000 | 100101 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 100111 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 100111 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 100111 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 100111 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 101 | OK
+# |  0  |  0  | 000000 | 100111 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 101 | OK
+# |  1  |  0  | 000000 | 100111 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 000000 | 100111 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  1  |  0  | 000000 | 100111 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 100110 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 100110 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 100110 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 100110 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 011 | OK
+# |  0  |  0  | 000000 | 100110 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 011 | OK
+# |  1  |  0  | 000000 | 100110 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 000000 | 100110 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  1  |  0  | 000000 | 100110 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 101010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 101010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000000 | 101010 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000000 | 101010 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 111 | OK
+# |  0  |  0  | 000000 | 101010 | 0110  | 0 | 0 | 0 | 00 | 00 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 111 | OK
+# |  1  |  0  | 000000 | 101010 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 000000 | 101010 | 0111  | 0 | 1 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  1  |  0  | 000000 | 101010 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000100 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000100 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000100 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000100 | 000000 | 1000  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 110 | OK
+# |  0  |  0  | 000100 | 000000 | 1000  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 110 | OK
+# |  1  |  0  | 000100 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000101 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000101 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000101 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000101 | 000000 | 1100  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 110 | OK
+# |  0  |  0  | 000101 | 000000 | 1100  | 0 | 0 | 0 | 01 | 00 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 110 | OK
+# |  1  |  0  | 000101 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000010 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000010 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000010 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000010 | 000000 | 1011  | 0 | 0 | 0 | 10 | 00 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 000010 | 000000 | 1011  | 0 | 0 | 0 | 10 | 00 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 000010 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 001000 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 001000 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 001000 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 001000 | 000000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 001000 | 000000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 001000 | 000000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 001000 | 000000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  1  |  0  | 001000 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 001101 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 001101 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 001101 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 001101 | 000000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 001 | OK
+# |  0  |  0  | 001101 | 000000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 001 | OK
+# |  1  |  0  | 001101 | 000000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 001101 | 000000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  1  |  0  | 001101 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 001110 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 001110 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 001110 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 001110 | 000000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 011 | OK
+# |  0  |  0  | 001110 | 000000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 011 | OK
+# |  1  |  0  | 001110 | 000000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 001110 | 000000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  1  |  0  | 001110 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 001010 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 001010 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  0  |  0  | 001010 | 000000 | 0001  | 0 | 0 | 0 | 00 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 010 | OK
+# |  1  |  0  | 001010 | 000000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 111 | OK
+# |  0  |  0  | 001010 | 000000 | 1001  | 0 | 0 | 0 | 00 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 111 | OK
+# |  1  |  0  | 001010 | 000000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  0  |  0  | 001010 | 000000 | 1010  | 0 | 0 | 0 | 00 | 00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 010 | OK
+# |  1  |  0  | 001010 | 000000 | 0000  | 0 | 0 | 0 | 00 | 01 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 010 | OK
+# Testes Efetuados  = 126
+# Erros Encontrados = 0
+# ** Note: $stop    : D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv(155)
+#    Time: 1783 ns  Iteration: 0  Instance: /control_unit_tb
+# Break in Module control_unit_tb at D:/Developer/Concepcao/mips/control_unit/testbench/control_unit_tb.sv line 155
+# End time: 05:19:25 on Mar 04,2020, Elapsed time: 0:05:11
 # Errors: 0, Warnings: 0

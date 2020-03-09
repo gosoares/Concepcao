@@ -1,22 +1,21 @@
 Info: Start Nativelink Simulation process
-Info: NativeLink has detected Verilog design -- Verilog simulation models will be used
 
 ========= EDA Simulation Settings =====================
 
-Sim Mode              :  RTL
+Sim Mode              :  Gate
 Family                :  cycloneive
 Quartus root          :  c:/altera/91sp2/quartus/bin/
 Quartus sim root      :  c:/altera/91sp2/quartus/eda/sim_lib
 Simulation Tool       :  modelsim-altera
 Simulation Language   :  verilog
 Simulation Mode       :  GUI
-Sim Output File       :  control_unit.vo
-Sim SDF file          :  control_unit__verilog.sdo
+Sim Output File       :  control_unit_6_1200mv_85c_slow.vo
+Sim SDF File       :  control_unit_6_1200mv_85c_v_slow.sdo
 Sim dir               :  simulation\modelsim
 
 =======================================================
 
 Info: Starting NativeLink simulation with ModelSim-Altera software
 Sourced NativeLink script c:/altera/91sp2/quartus/common/tcl/internal/nativelink/modelsim.tcl
-Warning: File control_unit_run_msim_rtl_verilog.do already exists - backing up current file as control_unit_run_msim_rtl_verilog.do.bak1
+Warning: File control_unit_run_msim_gate_verilog.do already exists - backing up current file as control_unit_run_msim_gate_verilog.do.bak1
 Info: Spawning ModelSim-Altera Simulation software 

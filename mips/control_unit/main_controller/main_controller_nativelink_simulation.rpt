@@ -17,5 +17,5 @@ Sim dir               :  simulation\modelsim
 
 Info: Starting NativeLink simulation with ModelSim-Altera software
 Sourced NativeLink script c:/altera/91sp2/quartus/common/tcl/internal/nativelink/modelsim.tcl
-Warning: File main_controller_run_msim_gate_verilog.do already exists - backing up current file as main_controller_run_msim_gate_verilog.do.bak7
+Warning: File main_controller_run_msim_gate_verilog.do already exists - backing up current file as main_controller_run_msim_gate_verilog.do.bak8
 Info: Spawning ModelSim-Altera Simulation software 
