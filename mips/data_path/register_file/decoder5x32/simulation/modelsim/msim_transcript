@@ -92,3 +92,5 @@
 # ** Note: $stop    : D:/Developer/Concepcao/mips/data_path/register_file/decoder5x32/testbench/decoder5x32_tb.sv(70)
 #    Time: 566 ns  Iteration: 0  Instance: /decoder5x32_tb
 # Break in Module decoder5x32_tb at D:/Developer/Concepcao/mips/data_path/register_file/decoder5x32/testbench/decoder5x32_tb.sv line 70
+# End time: 23:13:53 on Mar 08,2020, Elapsed time: 0:03:48
+# Errors: 0, Warnings: 0
