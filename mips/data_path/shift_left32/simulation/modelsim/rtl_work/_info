@@ -1,0 +1,60 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Developer/Concepcao/mips/data_path/shift_left32/simulation/modelsim
+vshift_left32
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1584754317
+!i10b 1
+!s100 >TaLjQHmkk`=mAbHPaZJ81
+Ig56U]B0b3zCPb9[e@gkQJ1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 shift_left32_sv_unit
+S1
+R0
+w1584750706
+8D:/Developer/Concepcao/mips/data_path/shift_left32/shift_left32.sv
+FD:/Developer/Concepcao/mips/data_path/shift_left32/shift_left32.sv
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1584754317.000000
+!s107 D:/Developer/Concepcao/mips/data_path/shift_left32/shift_left32.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Developer/Concepcao/mips/data_path/shift_left32|D:/Developer/Concepcao/mips/data_path/shift_left32/shift_left32.sv|
+!i113 1
+Z4 o-sv -work work
+!s92 -sv -work work +incdir+D:/Developer/Concepcao/mips/data_path/shift_left32
+Z5 tCvgOpt 0
+vshift_left32_tb
+R1
+!s110 1584754318
+!i10b 1
+!s100 4almolUoGD7zX7SoGZj7^0
+IPR8nhZiTnZ>b:T0a9jP9T3
+R2
+!s105 shift_left32_tb_sv_unit
+S1
+R0
+w1584751141
+8D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv
+FD:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1584754318.000000
+!s107 D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Developer/Concepcao/mips/data_path/shift_left32/testbench|D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv|
+!i113 1
+R4
+!s92 -sv -work work +incdir+D:/Developer/Concepcao/mips/data_path/shift_left32/testbench
+R5

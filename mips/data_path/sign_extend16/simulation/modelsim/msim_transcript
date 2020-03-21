@@ -1,0 +1,83 @@
+# Reading C:/intelFPGA/16.1/modelsim_ase/tcl/vsim/pref.tcl
+# do sign_extend16_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Copying C:/intelFPGA/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {sign_extend16_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:34:47 on Mar 20,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." sign_extend16_6_1200mv_85c_slow.vo 
+# -- Compiling module sign_extend16
+# 
+# Top level modules:
+# 	sign_extend16
+# End time: 21:34:47 on Mar 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/data_path/sign_extend16/testbench {D:/Developer/Concepcao/mips/data_path/sign_extend16/testbench/sign_extend16_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:34:47 on Mar 20,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/data_path/sign_extend16/testbench" D:/Developer/Concepcao/mips/data_path/sign_extend16/testbench/sign_extend16_tb.sv 
+# -- Compiling module sign_extend16_tb
+# 
+# Top level modules:
+# 	sign_extend16_tb
+# End time: 21:34:47 on Mar 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" sign_extend16_tb
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" sign_extend16_tb 
+# Start time: 21:34:47 on Mar 20,2020
+# Loading sv_std.std
+# Loading work.sign_extend16_tb
+# Loading work.sign_extend16
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading instances from sign_extend16_6_1200mv_85c_v_slow.sdo
+# Loading timing data from sign_extend16_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /sign_extend16_tb File: D:/Developer/Concepcao/mips/data_path/sign_extend16/testbench/sign_extend16_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | Y |
+# | 0011111100011001 | 00000000000000000011111100011001 | OK
+# | 0111100100111011 | 00000000000000000111100100111011 | OK
+# | 0101011111011100 | 00000000000000000101011111011100 | OK
+# | 0111011100101110 | 00000000000000000111011100101110 | OK
+# | 0100101101100000 | 00000000000000000100101101100000 | OK
+# | 0111010100010000 | 00000000000000000111010100010000 | OK
+# | 0101000011111010 | 00000000000000000101000011111010 | OK
+# | 0010110101000010 | 00000000000000000010110101000010 | OK
+# | 0101111000011111 | 00000000000000000101111000011111 | OK
+# | 0101101100001100 | 00000000000000000101101100001100 | OK
+# | 1001011001000100 | 11111111111111111001011001000100 | OK
+# | 1011100111000100 | 11111111111111111011100111000100 | OK
+# | 1010101111001101 | 11111111111111111010101111001101 | OK
+# | 1111011110010100 | 11111111111111111111011110010100 | OK
+# | 1010111000011001 | 11111111111111111010111000011001 | OK
+# | 1010010011100011 | 11111111111111111010010011100011 | OK
+# | 1001011011011010 | 11111111111111111001011011011010 | OK
+# | 1100101110011011 | 11111111111111111100101110011011 | OK
+# | 1011111100001010 | 11111111111111111011111100001010 | OK
+# | 1110001010100001 | 11111111111111111110001010100001 | OK
+# Testes Efetuados  = 20
+# Erros Encontrados = 0
+# ** Note: $stop    : D:/Developer/Concepcao/mips/data_path/sign_extend16/testbench/sign_extend16_tb.sv(66)
+#    Time: 299 ns  Iteration: 0  Instance: /sign_extend16_tb
+# Break in Module sign_extend16_tb at D:/Developer/Concepcao/mips/data_path/sign_extend16/testbench/sign_extend16_tb.sv line 66
+# End time: 21:39:13 on Mar 20,2020, Elapsed time: 0:04:26
+# Errors: 0, Warnings: 0

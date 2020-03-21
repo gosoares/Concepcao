@@ -1,0 +1,346 @@
+# Reading C:/intelFPGA/16.1/modelsim_ase/tcl/vsim/pref.tcl
+# do shift_left32_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Copying C:/intelFPGA/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {shift_left32_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:34:57 on Mar 20,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." shift_left32_6_1200mv_85c_slow.vo 
+# -- Compiling module shift_left32
+# 
+# Top level modules:
+# 	shift_left32
+# End time: 22:34:57 on Mar 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/data_path/shift_left32/testbench {D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:34:57 on Mar 20,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/data_path/shift_left32/testbench" D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv 
+# -- Compiling module shift_left32_tb
+# 
+# Top level modules:
+# 	shift_left32_tb
+# End time: 22:34:57 on Mar 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" shift_left32_tb
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" shift_left32_tb 
+# Start time: 22:34:57 on Mar 20,2020
+# Loading sv_std.std
+# Loading work.shift_left32_tb
+# Loading work.shift_left32
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# SDF 10.5b Compiler 2016.10 Oct  5 2016
+# 
+# Loading instances from shift_left32_6_1200mv_85c_v_slow.sdo
+# Loading timing data from shift_left32_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /shift_left32_tb File: D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | Y |
+# | 01110111011010011001110101110101 | 11011101101001100111010111010100 | OK
+# | 01110011110111100000110101100111 | 11001111011110000011010110011100 | OK
+# | 01100011110101111000011101110011 | 10001111010111100001110111001100 | OK
+# | 11001111011011011101100100111110 | 00111101101101110110010011111000 | OK
+# | 11111000011101010001111110010100 | 11100001110101000111111001010000 | OK
+# | 01000111000001011100101101011010 | 00011100000101110010110101101000 | OK
+# | 11010100100000101010000011000011 | 01010010000010101000001100001100 | OK
+# | 10111100111100001101011110011001 | 11110011110000110101111001100100 | OK
+# | 11110001111110001101101011110000 | 11000111111000110110101111000000 | OK
+# | 11000010110100110101110011101010 | 00001011010011010111001110101000 | OK
+# | 11111110111001000011100010011001 | 11111011100100001110001001100100 | OK
+# | 01001111101010010001101111000111 | 00111110101001000110111100011100 | OK
+# | 10101101110001100100110011100011 | 10110111000110010011001110001100 | OK
+# | 01100010111111000011010001000001 | 10001011111100001101000100000100 | OK
+# | 01110001111011010001010101100010 | 11000111101101000101010110001000 | OK
+# | 10101101011010010010001101010000 | 10110101101001001000110101000000 | OK
+# | 00010010000000000100000111001011 | 01001000000000010000011100101100 | OK
+# | 01000101110101111111000011011100 | 00010111010111111100001101110000 | OK
+# | 00110010011111110011110011101111 | 11001001111111001111001110111100 | OK
+# | 00001010000100100010010100011111 | 00101000010010001001010001111100 | OK
+# Testes Efetuados  = 20
+# Erros Encontrados = 0
+# ** Note: $stop    : D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv(65)
+#    Time: 299 ns  Iteration: 0  Instance: /shift_left32_tb
+# Break in Module shift_left32_tb at D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv line 65
+do shift_left32_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# Error 31: Unable to unlink file "D:/Developer/Concepcao/mips/data_path/shift_left32/simulation/modelsim/gate_work/_lib.qdb".
+# Error 133: Unable to remove directory "D:/Developer/Concepcao/mips/data_path/shift_left32/simulation/modelsim/gate_work".
+# vlib gate_work
+# ** Error: (vlib-35) Failed to create directory "gate_work".
+# File exists. (errno = EEXIST)
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {shift_left32_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:36:10 on Mar 20,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." shift_left32_6_1200mv_85c_slow.vo 
+# -- Compiling module shift_left32
+# 
+# Top level modules:
+# 	shift_left32
+# End time: 22:36:10 on Mar 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/data_path/shift_left32/testbench {D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:36:10 on Mar 20,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/data_path/shift_left32/testbench" D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv 
+# -- Compiling module shift_left32_tb
+# 
+# Top level modules:
+# 	shift_left32_tb
+# End time: 22:36:10 on Mar 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" shift_left32_tb
+# End time: 22:36:13 on Mar 20,2020, Elapsed time: 0:01:16
+# Errors: 0, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" shift_left32_tb 
+# Start time: 22:36:13 on Mar 20,2020
+# Loading sv_std.std
+# Loading work.shift_left32_tb
+# Loading work.shift_left32
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading instances from shift_left32_6_1200mv_85c_v_slow.sdo
+# Loading timing data from shift_left32_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /shift_left32_tb File: D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | Y |
+# | 01110111011010011001110101110101 | 11011101101001100111010111010100 | OK
+# | 01110011110111100000110101100111 | 11001111011110000011010110011100 | OK
+# | 01100011110101111000011101110011 | 10001111010111100001110111001100 | OK
+# | 11001111011011011101100100111110 | 00111101101101110110010011111000 | OK
+# | 11111000011101010001111110010100 | 11100001110101000111111001010000 | OK
+# | 01000111000001011100101101011010 | 00011100000101110010110101101000 | OK
+# | 11010100100000101010000011000011 | 01010010000010101000001100001100 | OK
+# | 10111100111100001101011110011001 | 11110011110000110101111001100100 | OK
+# | 11110001111110001101101011110000 | 11000111111000110110101111000000 | OK
+# | 11000010110100110101110011101010 | 00001011010011010111001110101000 | OK
+# | 11111110111001000011100010011001 | 11111011100100001110001001100100 | OK
+# | 01001111101010010001101111000111 | 00111110101001000110111100011100 | OK
+# | 10101101110001100100110011100011 | 10110111000110010011001110001100 | OK
+# | 01100010111111000011010001000001 | 10001011111100001101000100000100 | OK
+# | 01110001111011010001010101100010 | 11000111101101000101010110001000 | OK
+# | 10101101011010010010001101010000 | 10110101101001001000110101000000 | OK
+# | 00010010000000000100000111001011 | 01001000000000010000011100101100 | OK
+# | 01000101110101111111000011011100 | 00010111010111111100001101110000 | OK
+# | 00110010011111110011110011101111 | 11001001111111001111001110111100 | OK
+# | 00001010000100100010010100011111 | 00101000010010001001010001111100 | OK
+# Testes Efetuados  = 20
+# Erros Encontrados = 0
+# ** Note: $stop    : D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv(65)
+#    Time: 278 ns  Iteration: 0  Instance: /shift_left32_tb
+# Break in Module shift_left32_tb at D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv line 65
+do shift_left32_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {shift_left32_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:36:29 on Mar 20,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." shift_left32_6_1200mv_85c_slow.vo 
+# -- Compiling module shift_left32
+# 
+# Top level modules:
+# 	shift_left32
+# End time: 22:36:29 on Mar 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/data_path/shift_left32/testbench {D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:36:30 on Mar 20,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/data_path/shift_left32/testbench" D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv 
+# -- Compiling module shift_left32_tb
+# 
+# Top level modules:
+# 	shift_left32_tb
+# End time: 22:36:30 on Mar 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" shift_left32_tb
+# End time: 22:36:33 on Mar 20,2020, Elapsed time: 0:00:20
+# Errors: 0, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" shift_left32_tb 
+# Start time: 22:36:33 on Mar 20,2020
+# Loading sv_std.std
+# Loading work.shift_left32_tb
+# Loading work.shift_left32
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading instances from shift_left32_6_1200mv_85c_v_slow.sdo
+# Loading timing data from shift_left32_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /shift_left32_tb File: D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | Y |
+# ** Error: | 01110111011010011001110101110101 | 11011101101001100111010111010100 | ERROR
+#    Time: 19 ns  Scope: shift_left32_tb File: D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv Line: 54
+# | 01110011110111100000110101100111 | 11001111011110000011010110011100 | OK
+# ** Error: | 01100011110101111000011101110011 | 10001111010111100001110111001100 | ERROR
+#    Time: 43 ns  Scope: shift_left32_tb File: D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv Line: 54
+# ** Error: | 11001111011011011101100100111110 | 00111101101101110110010011111000 | ERROR
+#    Time: 55 ns  Scope: shift_left32_tb File: D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv Line: 54
+# ** Error: | 11111000011101010001111110010100 | 11100001110101000111111001010000 | ERROR
+#    Time: 67 ns  Scope: shift_left32_tb File: D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv Line: 54
+# ** Error: | 01000111000001011100101101011010 | 00011100000101110010110101101000 | ERROR
+#    Time: 79 ns  Scope: shift_left32_tb File: D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv Line: 54
+# ** Error: | 11010100100000101010000011000011 | 01010010000010101000001100001100 | ERROR
+#    Time: 91 ns  Scope: shift_left32_tb File: D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv Line: 54
+# ** Error: | 10111100111100001101011110011001 | 11110011110000110101111001100100 | ERROR
+#    Time: 103 ns  Scope: shift_left32_tb File: D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv Line: 54
+# ** Error: | 11110001111110001101101011110000 | 11000111111000110110101111000000 | ERROR
+#    Time: 115 ns  Scope: shift_left32_tb File: D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv Line: 54
+# ** Error: | 11000010110100110101110011101010 | 00001011010011010111001110101000 | ERROR
+#    Time: 127 ns  Scope: shift_left32_tb File: D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv Line: 54
+# | 11111110111001000011100010011001 | 11111011100100001110001001100100 | OK
+# ** Error: | 01001111101010010001101111000111 | 00111110101001000110111100011100 | ERROR
+#    Time: 151 ns  Scope: shift_left32_tb File: D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv Line: 54
+# ** Error: | 10101101110001100100110011100011 | 10110111000110010011001110001100 | ERROR
+#    Time: 163 ns  Scope: shift_left32_tb File: D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv Line: 54
+# ** Error: | 01100010111111000011010001000001 | 10001011111100001101000100000100 | ERROR
+#    Time: 175 ns  Scope: shift_left32_tb File: D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv Line: 54
+# | 01110001111011010001010101100010 | 11000111101101000101010110001000 | OK
+# ** Error: | 10101101011010010010001101010000 | 10110101101001001000110101000000 | ERROR
+#    Time: 199 ns  Scope: shift_left32_tb File: D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv Line: 54
+# ** Error: | 00010010000000000100000111001011 | 01001000000000010000011100101100 | ERROR
+#    Time: 211 ns  Scope: shift_left32_tb File: D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv Line: 54
+# | 01000101110101111111000011011100 | 00010111010111111100001101110000 | OK
+# | 00110010011111110011110011101111 | 11001001111111001111001110111100 | OK
+# | 00001010000100100010010100011111 | 00101000010010001001010001111100 | OK
+# Testes Efetuados  = 20
+# Erros Encontrados = 14
+# ** Note: $stop    : D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv(65)
+#    Time: 257 ns  Iteration: 0  Instance: /shift_left32_tb
+# Break in Module shift_left32_tb at D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv line 65
+do shift_left32_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {shift_left32_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:37:02 on Mar 20,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." shift_left32_6_1200mv_85c_slow.vo 
+# -- Compiling module shift_left32
+# 
+# Top level modules:
+# 	shift_left32
+# End time: 22:37:02 on Mar 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/data_path/shift_left32/testbench {D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:37:02 on Mar 20,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/data_path/shift_left32/testbench" D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv 
+# -- Compiling module shift_left32_tb
+# 
+# Top level modules:
+# 	shift_left32_tb
+# End time: 22:37:02 on Mar 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" shift_left32_tb
+# End time: 22:37:05 on Mar 20,2020, Elapsed time: 0:00:32
+# Errors: 14, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" shift_left32_tb 
+# Start time: 22:37:06 on Mar 20,2020
+# Loading sv_std.std
+# Loading work.shift_left32_tb
+# Loading work.shift_left32
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading instances from shift_left32_6_1200mv_85c_v_slow.sdo
+# Loading timing data from shift_left32_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /shift_left32_tb File: D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | Y |
+# | 01110111011010011001110101110101 | 11011101101001100111010111010100 | OK
+# | 01110011110111100000110101100111 | 11001111011110000011010110011100 | OK
+# | 01100011110101111000011101110011 | 10001111010111100001110111001100 | OK
+# | 11001111011011011101100100111110 | 00111101101101110110010011111000 | OK
+# | 11111000011101010001111110010100 | 11100001110101000111111001010000 | OK
+# | 01000111000001011100101101011010 | 00011100000101110010110101101000 | OK
+# | 11010100100000101010000011000011 | 01010010000010101000001100001100 | OK
+# | 10111100111100001101011110011001 | 11110011110000110101111001100100 | OK
+# | 11110001111110001101101011110000 | 11000111111000110110101111000000 | OK
+# | 11000010110100110101110011101010 | 00001011010011010111001110101000 | OK
+# | 11111110111001000011100010011001 | 11111011100100001110001001100100 | OK
+# | 01001111101010010001101111000111 | 00111110101001000110111100011100 | OK
+# | 10101101110001100100110011100011 | 10110111000110010011001110001100 | OK
+# | 01100010111111000011010001000001 | 10001011111100001101000100000100 | OK
+# | 01110001111011010001010101100010 | 11000111101101000101010110001000 | OK
+# | 10101101011010010010001101010000 | 10110101101001001000110101000000 | OK
+# | 00010010000000000100000111001011 | 01001000000000010000011100101100 | OK
+# | 01000101110101111111000011011100 | 00010111010111111100001101110000 | OK
+# | 00110010011111110011110011101111 | 11001001111111001111001110111100 | OK
+# | 00001010000100100010010100011111 | 00101000010010001001010001111100 | OK
+# Testes Efetuados  = 20
+# Erros Encontrados = 0
+# ** Note: $stop    : D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv(65)
+#    Time: 278 ns  Iteration: 0  Instance: /shift_left32_tb
+# Break in Module shift_left32_tb at D:/Developer/Concepcao/mips/data_path/shift_left32/testbench/shift_left32_tb.sv line 65
+# End time: 22:37:59 on Mar 20,2020, Elapsed time: 0:00:53
+# Errors: 0, Warnings: 0
