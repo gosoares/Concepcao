@@ -36,7 +36,10 @@ class Logic:
     def __format__(self, format_spec):
         if self.data is None:
             return 'x' * self.n_bits
-        return format(self.data, format_spec)
+        if format_spec is None or format_spec == '':
+            return format(self.data, '0{}b'.format(self.n_bits))
+        else:
+            return format(self.data, format_spec)
 
 
 class LogicListener(ABC):

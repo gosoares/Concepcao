@@ -1,0 +1,210 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+12
+3700
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+full_adder
+# storage
+db|alu.(1).cnf
+db|alu.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|developer|concepcao|mips|data_path|full_adder|full_adder.sv
+8988a9864967c693b06888ccf7a56b77
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+full_adder:full_adder
+}
+# macro_sequence
+
+# end
+# entity
+mux8
+# storage
+db|alu.(2).cnf
+db|alu.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|developer|concepcao|mips|data_path|mux8|mux8.sv
+b73ec1adf6d493d07fc4c1a8f4ee51cd
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+mux8:mux
+}
+# macro_sequence
+
+# end
+# entity
+mux4
+# storage
+db|alu.(3).cnf
+db|alu.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|developer|concepcao|mips|data_path|mux4|mux4.sv
+38c0825b1de8a4993419e42f38d46f4
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+mux8:mux|mux4:generate_muxes1[0].m4
+mux8:mux|mux4:generate_muxes1[1].m4
+}
+# macro_sequence
+
+# end
+# entity
+mux2
+# storage
+db|alu.(4).cnf
+db|alu.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|developer|concepcao|mips|data_path|mux2|mux2.sv
+855cc02ce17d9fb0efa56ad3857993f2
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+mux8:mux|mux4:generate_muxes1[0].m4|mux2:mux0
+mux8:mux|mux4:generate_muxes1[0].m4|mux2:mux1
+mux8:mux|mux4:generate_muxes1[0].m4|mux2:finalmux
+mux8:mux|mux4:generate_muxes1[1].m4|mux2:mux0
+mux8:mux|mux4:generate_muxes1[1].m4|mux2:mux1
+mux8:mux|mux4:generate_muxes1[1].m4|mux2:finalmux
+mux8:mux|mux2:m2
+}
+# macro_sequence
+
+# end
+# entity
+alu
+# storage
+db|alu.(0).cnf
+db|alu.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+alu.sv
+1379645d8f40ceb7bdceb40583724ed
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

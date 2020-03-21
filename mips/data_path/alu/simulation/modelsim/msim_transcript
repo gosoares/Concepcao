@@ -1,0 +1,363 @@
+# Reading C:/intelFPGA/16.1/modelsim_ase/tcl/vsim/pref.tcl
+# do alu_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Copying C:/intelFPGA/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {alu_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:03:57 on Mar 21,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." alu_6_1200mv_85c_slow.vo 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 05:03:57 on Mar 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/data_path/alu/testbench {D:/Developer/Concepcao/mips/data_path/alu/testbench/alu_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:03:57 on Mar 21,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/data_path/alu/testbench" D:/Developer/Concepcao/mips/data_path/alu/testbench/alu_tb.sv 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 05:03:57 on Mar 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" alu_tb
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" alu_tb 
+# Start time: 05:03:58 on Mar 21,2020
+# Loading sv_std.std
+# Loading work.alu_tb
+# Loading work.alu
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# SDF 10.5b Compiler 2016.10 Oct  5 2016
+# 
+# Loading instances from alu_6_1200mv_85c_v_slow.sdo
+# Loading timing data from alu_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb File: D:/Developer/Concepcao/mips/data_path/alu/testbench/alu_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | B | SLT | Cin | op | cout | s | result |
+# | 0 | 0 | 0 | 0 | 010 | 0 | 0 | 0 | OK
+# | 0 | 0 | 0 | 1 | 010 | 0 | 1 | 1 | OK
+# | 0 | 1 | 0 | 0 | 010 | 0 | 1 | 1 | OK
+# | 0 | 1 | 0 | 1 | 010 | 1 | 0 | 0 | OK
+# | 1 | 0 | 0 | 0 | 010 | 0 | 1 | 1 | OK
+# | 1 | 0 | 0 | 1 | 010 | 1 | 0 | 0 | OK
+# | 1 | 1 | 0 | 0 | 010 | 1 | 0 | 0 | OK
+# | 1 | 1 | 0 | 1 | 010 | 1 | 1 | 1 | OK
+# | 0 | 0 | 0 | 0 | 110 | 0 | 0 | 0 | OK
+# | 0 | 0 | 0 | 1 | 110 | 0 | 1 | 1 | OK
+# | 0 | 1 | 0 | 0 | 110 | 0 | 1 | 1 | OK
+# | 0 | 1 | 0 | 1 | 110 | 1 | 0 | 0 | OK
+# | 1 | 0 | 0 | 0 | 110 | 0 | 1 | 1 | OK
+# | 1 | 0 | 0 | 1 | 110 | 1 | 0 | 0 | OK
+# | 1 | 1 | 0 | 0 | 110 | 1 | 0 | 0 | OK
+# | 1 | 1 | 0 | 1 | 110 | 1 | 1 | 1 | OK
+# | 0 | 0 | 0 | 0 | 000 | 0 | 0 | 0 | OK
+# | 0 | 0 | 0 | 1 | 000 | 0 | 1 | 0 | OK
+# | 0 | 1 | 0 | 0 | 000 | 0 | 1 | 0 | OK
+# | 0 | 1 | 0 | 1 | 000 | 1 | 0 | 0 | OK
+# | 1 | 0 | 0 | 0 | 000 | 0 | 1 | 0 | OK
+# | 1 | 0 | 0 | 1 | 000 | 1 | 0 | 0 | OK
+# | 1 | 1 | 0 | 0 | 000 | 1 | 0 | 1 | OK
+# | 1 | 1 | 0 | 1 | 000 | 1 | 1 | 1 | OK
+# ** Error: | 0 | 0 | 0 | 0 | 001 | 0 | 1 | 1 | ERROR
+#    Time: 359 ns  Scope: alu_tb File: D:/Developer/Concepcao/mips/data_path/alu/testbench/alu_tb.sv Line: 56
+# | 0 | 0 | 0 | 1 | 001 | 1 | 0 | 0 | OK
+# | 0 | 1 | 0 | 0 | 001 | 0 | 0 | 1 | OK
+# | 0 | 1 | 0 | 1 | 001 | 0 | 1 | 1 | OK
+# | 1 | 0 | 0 | 0 | 001 | 1 | 0 | 1 | OK
+# | 1 | 0 | 0 | 1 | 001 | 1 | 1 | 1 | OK
+# | 1 | 1 | 0 | 0 | 001 | 0 | 1 | 1 | OK
+# | 1 | 1 | 0 | 1 | 001 | 1 | 0 | 1 | OK
+# | 0 | 0 | 0 | 0 | 101 | 0 | 1 | 1 | OK
+# | 0 | 0 | 0 | 1 | 101 | 1 | 0 | 1 | OK
+# | 0 | 1 | 0 | 0 | 101 | 0 | 0 | 0 | OK
+# | 0 | 1 | 0 | 1 | 101 | 0 | 1 | 0 | OK
+# | 1 | 0 | 0 | 0 | 101 | 1 | 0 | 0 | OK
+# | 1 | 0 | 0 | 1 | 101 | 1 | 1 | 0 | OK
+# | 1 | 1 | 0 | 0 | 101 | 0 | 1 | 0 | OK
+# | 1 | 1 | 0 | 1 | 101 | 1 | 0 | 0 | OK
+# | 0 | 0 | 0 | 0 | 011 | 0 | 1 | 0 | OK
+# | 0 | 0 | 0 | 1 | 011 | 1 | 0 | 0 | OK
+# | 0 | 1 | 0 | 0 | 011 | 0 | 0 | 1 | OK
+# | 0 | 1 | 0 | 1 | 011 | 0 | 1 | 1 | OK
+# | 1 | 0 | 0 | 0 | 011 | 1 | 0 | 1 | OK
+# | 1 | 0 | 0 | 1 | 011 | 1 | 1 | 1 | OK
+# | 1 | 1 | 0 | 0 | 011 | 0 | 1 | 0 | OK
+# | 1 | 1 | 0 | 1 | 011 | 1 | 0 | 0 | OK
+# | 0 | 0 | 0 | 0 | 111 | 0 | 1 | 0 | OK
+# | 0 | 0 | 0 | 1 | 111 | 1 | 0 | 0 | OK
+# | 0 | 1 | 0 | 0 | 111 | 0 | 0 | 0 | OK
+# | 0 | 1 | 0 | 1 | 111 | 0 | 1 | 0 | OK
+# | 1 | 0 | 0 | 0 | 111 | 1 | 0 | 0 | OK
+# | 1 | 0 | 0 | 1 | 111 | 1 | 1 | 0 | OK
+# | 1 | 1 | 0 | 0 | 111 | 0 | 1 | 0 | OK
+# | 1 | 1 | 0 | 1 | 111 | 1 | 0 | 0 | OK
+# Testes Efetuados  = 56
+# Erros Encontrados = 1
+# ** Note: $stop    : D:/Developer/Concepcao/mips/data_path/alu/testbench/alu_tb.sv(67)
+#    Time: 803 ns  Iteration: 0  Instance: /alu_tb
+# Break in Module alu_tb at D:/Developer/Concepcao/mips/data_path/alu/testbench/alu_tb.sv line 67
+do alu_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# Error 31: Unable to unlink file "D:/Developer/Concepcao/mips/data_path/alu/simulation/modelsim/gate_work/_lib.qdb".
+# Error 133: Unable to remove directory "D:/Developer/Concepcao/mips/data_path/alu/simulation/modelsim/gate_work".
+# vlib gate_work
+# ** Error: (vlib-35) Failed to create directory "gate_work".
+# File exists. (errno = EEXIST)
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {alu_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:09:06 on Mar 21,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." alu_6_1200mv_85c_slow.vo 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 05:09:06 on Mar 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/data_path/alu/testbench {D:/Developer/Concepcao/mips/data_path/alu/testbench/alu_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:09:06 on Mar 21,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/data_path/alu/testbench" D:/Developer/Concepcao/mips/data_path/alu/testbench/alu_tb.sv 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 05:09:06 on Mar 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" alu_tb
+# End time: 05:09:09 on Mar 21,2020, Elapsed time: 0:05:11
+# Errors: 1, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" alu_tb 
+# Start time: 05:09:10 on Mar 21,2020
+# Loading sv_std.std
+# Loading work.alu_tb
+# Loading work.alu
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading instances from alu_6_1200mv_85c_v_slow.sdo
+# Loading timing data from alu_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb File: D:/Developer/Concepcao/mips/data_path/alu/testbench/alu_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | B | SLT | Cin | op | cout | s | result |
+# | 0 | 0 | 0 | 0 | 010 | 0 | 0 | 0 | OK
+# | 0 | 0 | 0 | 1 | 010 | 0 | 1 | 1 | OK
+# | 0 | 1 | 0 | 0 | 010 | 0 | 1 | 1 | OK
+# | 0 | 1 | 0 | 1 | 010 | 1 | 0 | 0 | OK
+# | 1 | 0 | 0 | 0 | 010 | 0 | 1 | 1 | OK
+# | 1 | 0 | 0 | 1 | 010 | 1 | 0 | 0 | OK
+# | 1 | 1 | 0 | 0 | 010 | 1 | 0 | 0 | OK
+# | 1 | 1 | 0 | 1 | 010 | 1 | 1 | 1 | OK
+# | 0 | 0 | 0 | 0 | 110 | 0 | 0 | 0 | OK
+# | 0 | 0 | 0 | 1 | 110 | 0 | 1 | 1 | OK
+# | 0 | 1 | 0 | 0 | 110 | 0 | 1 | 1 | OK
+# | 0 | 1 | 0 | 1 | 110 | 1 | 0 | 0 | OK
+# | 1 | 0 | 0 | 0 | 110 | 0 | 1 | 1 | OK
+# | 1 | 0 | 0 | 1 | 110 | 1 | 0 | 0 | OK
+# | 1 | 1 | 0 | 0 | 110 | 1 | 0 | 0 | OK
+# | 1 | 1 | 0 | 1 | 110 | 1 | 1 | 1 | OK
+# | 0 | 0 | 0 | 0 | 000 | 0 | 0 | 0 | OK
+# | 0 | 0 | 0 | 1 | 000 | 0 | 1 | 0 | OK
+# | 0 | 1 | 0 | 0 | 000 | 0 | 1 | 0 | OK
+# | 0 | 1 | 0 | 1 | 000 | 1 | 0 | 0 | OK
+# | 1 | 0 | 0 | 0 | 000 | 0 | 1 | 0 | OK
+# | 1 | 0 | 0 | 1 | 000 | 1 | 0 | 0 | OK
+# | 1 | 1 | 0 | 0 | 000 | 1 | 0 | 1 | OK
+# | 1 | 1 | 0 | 1 | 000 | 1 | 1 | 1 | OK
+# | 0 | 0 | 0 | 0 | 001 | 0 | 1 | 0 | OK
+# | 0 | 0 | 0 | 1 | 001 | 1 | 0 | 0 | OK
+# | 0 | 1 | 0 | 0 | 001 | 0 | 0 | 1 | OK
+# | 0 | 1 | 0 | 1 | 001 | 0 | 1 | 1 | OK
+# | 1 | 0 | 0 | 0 | 001 | 1 | 0 | 1 | OK
+# | 1 | 0 | 0 | 1 | 001 | 1 | 1 | 1 | OK
+# | 1 | 1 | 0 | 0 | 001 | 0 | 1 | 1 | OK
+# | 1 | 1 | 0 | 1 | 001 | 1 | 0 | 1 | OK
+# | 0 | 0 | 0 | 0 | 101 | 0 | 1 | 1 | OK
+# | 0 | 0 | 0 | 1 | 101 | 1 | 0 | 1 | OK
+# | 0 | 1 | 0 | 0 | 101 | 0 | 0 | 0 | OK
+# | 0 | 1 | 0 | 1 | 101 | 0 | 1 | 0 | OK
+# | 1 | 0 | 0 | 0 | 101 | 1 | 0 | 0 | OK
+# | 1 | 0 | 0 | 1 | 101 | 1 | 1 | 0 | OK
+# | 1 | 1 | 0 | 0 | 101 | 0 | 1 | 0 | OK
+# | 1 | 1 | 0 | 1 | 101 | 1 | 0 | 0 | OK
+# | 0 | 0 | 0 | 0 | 011 | 0 | 1 | 0 | OK
+# | 0 | 0 | 0 | 1 | 011 | 1 | 0 | 0 | OK
+# | 0 | 1 | 0 | 0 | 011 | 0 | 0 | 1 | OK
+# | 0 | 1 | 0 | 1 | 011 | 0 | 1 | 1 | OK
+# | 1 | 0 | 0 | 0 | 011 | 1 | 0 | 1 | OK
+# | 1 | 0 | 0 | 1 | 011 | 1 | 1 | 1 | OK
+# | 1 | 1 | 0 | 0 | 011 | 0 | 1 | 0 | OK
+# | 1 | 1 | 0 | 1 | 011 | 1 | 0 | 0 | OK
+# | 0 | 0 | 0 | 0 | 111 | 0 | 1 | 0 | OK
+# | 0 | 0 | 0 | 1 | 111 | 1 | 0 | 0 | OK
+# | 0 | 1 | 0 | 0 | 111 | 0 | 0 | 0 | OK
+# | 0 | 1 | 0 | 1 | 111 | 0 | 1 | 0 | OK
+# | 1 | 0 | 0 | 0 | 111 | 1 | 0 | 0 | OK
+# | 1 | 0 | 0 | 1 | 111 | 1 | 1 | 0 | OK
+# | 1 | 1 | 0 | 0 | 111 | 0 | 1 | 0 | OK
+# | 1 | 1 | 0 | 1 | 111 | 1 | 0 | 0 | OK
+# Testes Efetuados  = 56
+# Erros Encontrados = 0
+# ** Note: $stop    : D:/Developer/Concepcao/mips/data_path/alu/testbench/alu_tb.sv(67)
+#    Time: 974 ns  Iteration: 0  Instance: /alu_tb
+# Break in Module alu_tb at D:/Developer/Concepcao/mips/data_path/alu/testbench/alu_tb.sv line 67
+do alu_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {alu_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:09:26 on Mar 21,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." alu_6_1200mv_85c_slow.vo 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 05:09:26 on Mar 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/data_path/alu/testbench {D:/Developer/Concepcao/mips/data_path/alu/testbench/alu_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:09:26 on Mar 21,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/data_path/alu/testbench" D:/Developer/Concepcao/mips/data_path/alu/testbench/alu_tb.sv 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 05:09:26 on Mar 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" alu_tb
+# End time: 05:09:29 on Mar 21,2020, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 0
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" alu_tb 
+# Start time: 05:09:29 on Mar 21,2020
+# Loading sv_std.std
+# Loading work.alu_tb
+# Loading work.alu
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading instances from alu_6_1200mv_85c_v_slow.sdo
+# Loading timing data from alu_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb File: D:/Developer/Concepcao/mips/data_path/alu/testbench/alu_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | A | B | SLT | Cin | op | cout | s | result |
+# | 0 | 0 | 0 | 0 | 010 | 0 | 0 | 0 | OK
+# | 0 | 0 | 0 | 1 | 010 | 0 | 1 | 1 | OK
+# | 0 | 1 | 0 | 0 | 010 | 0 | 1 | 1 | OK
+# | 0 | 1 | 0 | 1 | 010 | 1 | 0 | 0 | OK
+# | 1 | 0 | 0 | 0 | 010 | 0 | 1 | 1 | OK
+# | 1 | 0 | 0 | 1 | 010 | 1 | 0 | 0 | OK
+# | 1 | 1 | 0 | 0 | 010 | 1 | 0 | 0 | OK
+# | 1 | 1 | 0 | 1 | 010 | 1 | 1 | 1 | OK
+# | 0 | 0 | 0 | 0 | 110 | 0 | 0 | 0 | OK
+# | 0 | 0 | 0 | 1 | 110 | 0 | 1 | 1 | OK
+# | 0 | 1 | 0 | 0 | 110 | 0 | 1 | 1 | OK
+# | 0 | 1 | 0 | 1 | 110 | 1 | 0 | 0 | OK
+# | 1 | 0 | 0 | 0 | 110 | 0 | 1 | 1 | OK
+# | 1 | 0 | 0 | 1 | 110 | 1 | 0 | 0 | OK
+# | 1 | 1 | 0 | 0 | 110 | 1 | 0 | 0 | OK
+# | 1 | 1 | 0 | 1 | 110 | 1 | 1 | 1 | OK
+# | 0 | 0 | 0 | 0 | 000 | 0 | 0 | 0 | OK
+# | 0 | 0 | 0 | 1 | 000 | 0 | 1 | 0 | OK
+# | 0 | 1 | 0 | 0 | 000 | 0 | 1 | 0 | OK
+# | 0 | 1 | 0 | 1 | 000 | 1 | 0 | 0 | OK
+# | 1 | 0 | 0 | 0 | 000 | 0 | 1 | 0 | OK
+# | 1 | 0 | 0 | 1 | 000 | 1 | 0 | 0 | OK
+# | 1 | 1 | 0 | 0 | 000 | 1 | 0 | 1 | OK
+# | 1 | 1 | 0 | 1 | 000 | 1 | 1 | 1 | OK
+# | 0 | 0 | 0 | 0 | 001 | 0 | 1 | 0 | OK
+# | 0 | 0 | 0 | 1 | 001 | 1 | 0 | 0 | OK
+# | 0 | 1 | 0 | 0 | 001 | 0 | 0 | 1 | OK
+# | 0 | 1 | 0 | 1 | 001 | 0 | 1 | 1 | OK
+# | 1 | 0 | 0 | 0 | 001 | 1 | 0 | 1 | OK
+# | 1 | 0 | 0 | 1 | 001 | 1 | 1 | 1 | OK
+# | 1 | 1 | 0 | 0 | 001 | 0 | 1 | 1 | OK
+# | 1 | 1 | 0 | 1 | 001 | 1 | 0 | 1 | OK
+# | 0 | 0 | 0 | 0 | 101 | 0 | 1 | 1 | OK
+# | 0 | 0 | 0 | 1 | 101 | 1 | 0 | 1 | OK
+# | 0 | 1 | 0 | 0 | 101 | 0 | 0 | 0 | OK
+# | 0 | 1 | 0 | 1 | 101 | 0 | 1 | 0 | OK
+# | 1 | 0 | 0 | 0 | 101 | 1 | 0 | 0 | OK
+# | 1 | 0 | 0 | 1 | 101 | 1 | 1 | 0 | OK
+# | 1 | 1 | 0 | 0 | 101 | 0 | 1 | 0 | OK
+# | 1 | 1 | 0 | 1 | 101 | 1 | 0 | 0 | OK
+# | 0 | 0 | 0 | 0 | 011 | 0 | 1 | 0 | OK
+# | 0 | 0 | 0 | 1 | 011 | 1 | 0 | 0 | OK
+# | 0 | 1 | 0 | 0 | 011 | 0 | 0 | 1 | OK
+# | 0 | 1 | 0 | 1 | 011 | 0 | 1 | 1 | OK
+# | 1 | 0 | 0 | 0 | 011 | 1 | 0 | 1 | OK
+# | 1 | 0 | 0 | 1 | 011 | 1 | 1 | 1 | OK
+# | 1 | 1 | 0 | 0 | 011 | 0 | 1 | 0 | OK
+# | 1 | 1 | 0 | 1 | 011 | 1 | 0 | 0 | OK
+# | 0 | 0 | 0 | 0 | 111 | 0 | 1 | 0 | OK
+# | 0 | 0 | 0 | 1 | 111 | 1 | 0 | 0 | OK
+# | 0 | 1 | 0 | 0 | 111 | 0 | 0 | 0 | OK
+# | 0 | 1 | 0 | 1 | 111 | 0 | 1 | 0 | OK
+# | 1 | 0 | 0 | 0 | 111 | 1 | 0 | 0 | OK
+# | 1 | 0 | 0 | 1 | 111 | 1 | 1 | 0 | OK
+# | 1 | 1 | 0 | 0 | 111 | 0 | 1 | 0 | OK
+# | 1 | 1 | 0 | 1 | 111 | 1 | 0 | 0 | OK
+# Testes Efetuados  = 56
+# Erros Encontrados = 0
+# ** Note: $stop    : D:/Developer/Concepcao/mips/data_path/alu/testbench/alu_tb.sv(67)
+#    Time: 860 ns  Iteration: 0  Instance: /alu_tb
+# Break in Module alu_tb at D:/Developer/Concepcao/mips/data_path/alu/testbench/alu_tb.sv line 67
+# End time: 05:11:34 on Mar 21,2020, Elapsed time: 0:02:05
+# Errors: 0, Warnings: 0

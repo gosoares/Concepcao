@@ -6,3 +6,4 @@ module shift_left32(
     assign y = a << 2;
 
 endmodule
+

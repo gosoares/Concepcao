@@ -1,0 +1,57 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Developer/Concepcao/mips/data_path/alu/simulation/modelsim
+valu
+Z1 !s110 1584778166
+!i10b 1
+!s100 U<RTigDF]90MJ1V;^HJiX1
+IFm>HdbDXgKCb_5O9?BUdZ0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1584771510
+8alu_6_1200mv_85c_slow.vo
+Falu_6_1200mv_85c_slow.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1584778166.000000
+!s107 alu_6_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|alu_6_1200mv_85c_slow.vo|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+.
+Z5 tCvgOpt 0
+valu_tb
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R1
+!i10b 1
+!s100 acMLUon:G^KaD?OHRFon@0
+I:KomXaEei8USE8k[Z``0o1
+R2
+!s105 alu_tb_sv_unit
+S1
+R0
+w1584778163
+8D:/Developer/Concepcao/mips/data_path/alu/testbench/alu_tb.sv
+FD:/Developer/Concepcao/mips/data_path/alu/testbench/alu_tb.sv
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Developer/Concepcao/mips/data_path/alu/testbench/alu_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Developer/Concepcao/mips/data_path/alu/testbench|D:/Developer/Concepcao/mips/data_path/alu/testbench/alu_tb.sv|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+D:/Developer/Concepcao/mips/data_path/alu/testbench
+R5
