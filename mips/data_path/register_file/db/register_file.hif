@@ -1,0 +1,355 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+12
+3700
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+flopenr
+# storage
+db|register_file.(1).cnf
+db|register_file.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|developer|concepcao|mips|data_path|flopenr|flopenr.sv
+6fb88bec7d322f66747d23ff7499300
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+flopenr:registers[0]
+flopenr:registers[1]
+flopenr:registers[2]
+flopenr:registers[3]
+flopenr:registers[4]
+flopenr:registers[5]
+flopenr:registers[6]
+flopenr:registers[7]
+flopenr:registers[8]
+flopenr:registers[9]
+flopenr:registers[10]
+flopenr:registers[11]
+flopenr:registers[12]
+flopenr:registers[13]
+flopenr:registers[14]
+flopenr:registers[15]
+flopenr:registers[16]
+flopenr:registers[17]
+flopenr:registers[18]
+flopenr:registers[19]
+flopenr:registers[20]
+flopenr:registers[21]
+flopenr:registers[22]
+flopenr:registers[23]
+flopenr:registers[24]
+flopenr:registers[25]
+flopenr:registers[26]
+flopenr:registers[27]
+flopenr:registers[28]
+flopenr:registers[29]
+flopenr:registers[30]
+flopenr:registers[31]
+}
+# macro_sequence
+
+# end
+# entity
+mux32
+# storage
+db|register_file.(2).cnf
+db|register_file.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|developer|concepcao|mips|data_path|mux32|mux32.sv
+3299659b78115e9a2aa23ecc01bf31
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+mux32:MuxA
+mux32:MuxB
+}
+# macro_sequence
+
+# end
+# entity
+mux4
+# storage
+db|register_file.(3).cnf
+db|register_file.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|developer|concepcao|mips|data_path|mux4|mux4.sv
+38c0825b1de8a4993419e42f38d46f4
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+mux32:MuxA|mux4:generate_muxes1[0].m4
+mux32:MuxA|mux4:generate_muxes1[1].m4
+mux32:MuxA|mux4:generate_muxes1[2].m4
+mux32:MuxA|mux4:generate_muxes1[3].m4
+mux32:MuxA|mux4:generate_muxes1[4].m4
+mux32:MuxA|mux4:generate_muxes1[5].m4
+mux32:MuxA|mux4:generate_muxes1[6].m4
+mux32:MuxA|mux4:generate_muxes1[7].m4
+mux32:MuxA|mux4:generate_muxes2[0].m4
+mux32:MuxA|mux4:generate_muxes2[1].m4
+mux32:MuxB|mux4:generate_muxes1[0].m4
+mux32:MuxB|mux4:generate_muxes1[1].m4
+mux32:MuxB|mux4:generate_muxes1[2].m4
+mux32:MuxB|mux4:generate_muxes1[3].m4
+mux32:MuxB|mux4:generate_muxes1[4].m4
+mux32:MuxB|mux4:generate_muxes1[5].m4
+mux32:MuxB|mux4:generate_muxes1[6].m4
+mux32:MuxB|mux4:generate_muxes1[7].m4
+mux32:MuxB|mux4:generate_muxes2[0].m4
+mux32:MuxB|mux4:generate_muxes2[1].m4
+}
+# macro_sequence
+
+# end
+# entity
+mux2
+# storage
+db|register_file.(4).cnf
+db|register_file.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|developer|concepcao|mips|data_path|mux2|mux2.sv
+855cc02ce17d9fb0efa56ad3857993f2
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+mux32:MuxA|mux4:generate_muxes1[0].m4|mux2:mux0
+mux32:MuxA|mux4:generate_muxes1[0].m4|mux2:mux1
+mux32:MuxA|mux4:generate_muxes1[0].m4|mux2:finalmux
+mux32:MuxA|mux4:generate_muxes1[1].m4|mux2:mux0
+mux32:MuxA|mux4:generate_muxes1[1].m4|mux2:mux1
+mux32:MuxA|mux4:generate_muxes1[1].m4|mux2:finalmux
+mux32:MuxA|mux4:generate_muxes1[2].m4|mux2:mux0
+mux32:MuxA|mux4:generate_muxes1[2].m4|mux2:mux1
+mux32:MuxA|mux4:generate_muxes1[2].m4|mux2:finalmux
+mux32:MuxA|mux4:generate_muxes1[3].m4|mux2:mux0
+mux32:MuxA|mux4:generate_muxes1[3].m4|mux2:mux1
+mux32:MuxA|mux4:generate_muxes1[3].m4|mux2:finalmux
+mux32:MuxA|mux4:generate_muxes1[4].m4|mux2:mux0
+mux32:MuxA|mux4:generate_muxes1[4].m4|mux2:mux1
+mux32:MuxA|mux4:generate_muxes1[4].m4|mux2:finalmux
+mux32:MuxA|mux4:generate_muxes1[5].m4|mux2:mux0
+mux32:MuxA|mux4:generate_muxes1[5].m4|mux2:mux1
+mux32:MuxA|mux4:generate_muxes1[5].m4|mux2:finalmux
+mux32:MuxA|mux4:generate_muxes1[6].m4|mux2:mux0
+mux32:MuxA|mux4:generate_muxes1[6].m4|mux2:mux1
+mux32:MuxA|mux4:generate_muxes1[6].m4|mux2:finalmux
+mux32:MuxA|mux4:generate_muxes1[7].m4|mux2:mux0
+mux32:MuxA|mux4:generate_muxes1[7].m4|mux2:mux1
+mux32:MuxA|mux4:generate_muxes1[7].m4|mux2:finalmux
+mux32:MuxA|mux4:generate_muxes2[0].m4|mux2:mux0
+mux32:MuxA|mux4:generate_muxes2[0].m4|mux2:mux1
+mux32:MuxA|mux4:generate_muxes2[0].m4|mux2:finalmux
+mux32:MuxA|mux4:generate_muxes2[1].m4|mux2:mux0
+mux32:MuxA|mux4:generate_muxes2[1].m4|mux2:mux1
+mux32:MuxA|mux4:generate_muxes2[1].m4|mux2:finalmux
+mux32:MuxA|mux2:m2
+mux32:MuxB|mux4:generate_muxes1[0].m4|mux2:mux0
+mux32:MuxB|mux4:generate_muxes1[0].m4|mux2:mux1
+mux32:MuxB|mux4:generate_muxes1[0].m4|mux2:finalmux
+mux32:MuxB|mux4:generate_muxes1[1].m4|mux2:mux0
+mux32:MuxB|mux4:generate_muxes1[1].m4|mux2:mux1
+mux32:MuxB|mux4:generate_muxes1[1].m4|mux2:finalmux
+mux32:MuxB|mux4:generate_muxes1[2].m4|mux2:mux0
+mux32:MuxB|mux4:generate_muxes1[2].m4|mux2:mux1
+mux32:MuxB|mux4:generate_muxes1[2].m4|mux2:finalmux
+mux32:MuxB|mux4:generate_muxes1[3].m4|mux2:mux0
+mux32:MuxB|mux4:generate_muxes1[3].m4|mux2:mux1
+mux32:MuxB|mux4:generate_muxes1[3].m4|mux2:finalmux
+mux32:MuxB|mux4:generate_muxes1[4].m4|mux2:mux0
+mux32:MuxB|mux4:generate_muxes1[4].m4|mux2:mux1
+mux32:MuxB|mux4:generate_muxes1[4].m4|mux2:finalmux
+mux32:MuxB|mux4:generate_muxes1[5].m4|mux2:mux0
+mux32:MuxB|mux4:generate_muxes1[5].m4|mux2:mux1
+mux32:MuxB|mux4:generate_muxes1[5].m4|mux2:finalmux
+mux32:MuxB|mux4:generate_muxes1[6].m4|mux2:mux0
+mux32:MuxB|mux4:generate_muxes1[6].m4|mux2:mux1
+mux32:MuxB|mux4:generate_muxes1[6].m4|mux2:finalmux
+mux32:MuxB|mux4:generate_muxes1[7].m4|mux2:mux0
+mux32:MuxB|mux4:generate_muxes1[7].m4|mux2:mux1
+mux32:MuxB|mux4:generate_muxes1[7].m4|mux2:finalmux
+mux32:MuxB|mux4:generate_muxes2[0].m4|mux2:mux0
+mux32:MuxB|mux4:generate_muxes2[0].m4|mux2:mux1
+mux32:MuxB|mux4:generate_muxes2[0].m4|mux2:finalmux
+mux32:MuxB|mux4:generate_muxes2[1].m4|mux2:mux0
+mux32:MuxB|mux4:generate_muxes2[1].m4|mux2:mux1
+mux32:MuxB|mux4:generate_muxes2[1].m4|mux2:finalmux
+mux32:MuxB|mux2:m2
+}
+# macro_sequence
+
+# end
+# entity
+register_file
+# storage
+db|register_file.(0).cnf
+db|register_file.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+register_file.sv
+db6a4d3b34ed8d4462cb9c3d70bc21cb
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# include_file {
+|developer|concepcao|mips|data_path|flopenr|flopenr.sv
+6fb88bec7d322f66747d23ff7499300
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+decoder5x32
+# storage
+db|register_file.(5).cnf
+db|register_file.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|developer|concepcao|mips|data_path|decoder5x32|decoder5x32.sv
+73a714f121f25ebfd58d5db871d2eaac
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+decoder5x32:decoder
+}
+# macro_sequence
+
+# end
+# complete
+

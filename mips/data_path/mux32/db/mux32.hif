@@ -1,0 +1,170 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+12
+3700
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+mux4
+# storage
+db|mux32.(1).cnf
+db|mux32.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|developer|concepcao|mips|data_path|mux4|mux4.sv
+38c0825b1de8a4993419e42f38d46f4
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+mux4:generate_muxes1[0].m4
+mux4:generate_muxes1[1].m4
+mux4:generate_muxes1[2].m4
+mux4:generate_muxes1[3].m4
+mux4:generate_muxes1[4].m4
+mux4:generate_muxes1[5].m4
+mux4:generate_muxes1[6].m4
+mux4:generate_muxes1[7].m4
+mux4:generate_muxes2[0].m4
+mux4:generate_muxes2[1].m4
+}
+# macro_sequence
+
+# end
+# entity
+mux2
+# storage
+db|mux32.(2).cnf
+db|mux32.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|developer|concepcao|mips|data_path|mux2|mux2.sv
+855cc02ce17d9fb0efa56ad3857993f2
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+mux4:generate_muxes1[0].m4|mux2:mux0
+mux4:generate_muxes1[0].m4|mux2:mux1
+mux4:generate_muxes1[0].m4|mux2:finalmux
+mux4:generate_muxes1[1].m4|mux2:mux0
+mux4:generate_muxes1[1].m4|mux2:mux1
+mux4:generate_muxes1[1].m4|mux2:finalmux
+mux4:generate_muxes1[2].m4|mux2:mux0
+mux4:generate_muxes1[2].m4|mux2:mux1
+mux4:generate_muxes1[2].m4|mux2:finalmux
+mux4:generate_muxes1[3].m4|mux2:mux0
+mux4:generate_muxes1[3].m4|mux2:mux1
+mux4:generate_muxes1[3].m4|mux2:finalmux
+mux4:generate_muxes1[4].m4|mux2:mux0
+mux4:generate_muxes1[4].m4|mux2:mux1
+mux4:generate_muxes1[4].m4|mux2:finalmux
+mux4:generate_muxes1[5].m4|mux2:mux0
+mux4:generate_muxes1[5].m4|mux2:mux1
+mux4:generate_muxes1[5].m4|mux2:finalmux
+mux4:generate_muxes1[6].m4|mux2:mux0
+mux4:generate_muxes1[6].m4|mux2:mux1
+mux4:generate_muxes1[6].m4|mux2:finalmux
+mux4:generate_muxes1[7].m4|mux2:mux0
+mux4:generate_muxes1[7].m4|mux2:mux1
+mux4:generate_muxes1[7].m4|mux2:finalmux
+mux4:generate_muxes2[0].m4|mux2:mux0
+mux4:generate_muxes2[0].m4|mux2:mux1
+mux4:generate_muxes2[0].m4|mux2:finalmux
+mux4:generate_muxes2[1].m4|mux2:mux0
+mux4:generate_muxes2[1].m4|mux2:mux1
+mux4:generate_muxes2[1].m4|mux2:finalmux
+mux2:m2
+}
+# macro_sequence
+
+# end
+# entity
+mux32
+# storage
+db|mux32.(0).cnf
+db|mux32.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+mux32.sv
+3299659b78115e9a2aa23ecc01bf31
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

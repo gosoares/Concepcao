@@ -1,0 +1,1160 @@
+|register_file
+RegA[0] => RegA[0].IN1
+RegA[1] => RegA[1].IN1
+RegA[2] => RegA[2].IN1
+RegA[3] => RegA[3].IN1
+RegA[4] => RegA[4].IN1
+RegB[0] => RegB[0].IN1
+RegB[1] => RegB[1].IN1
+RegB[2] => RegB[2].IN1
+RegB[3] => RegB[3].IN1
+RegB[4] => RegB[4].IN1
+RegC[0] => RegC[0].IN1
+RegC[1] => RegC[1].IN1
+RegC[2] => RegC[2].IN1
+RegC[3] => RegC[3].IN1
+RegC[4] => RegC[4].IN1
+clk => flopenr:registers[0].clk
+clk => flopenr:registers[1].clk
+clk => flopenr:registers[2].clk
+clk => flopenr:registers[3].clk
+clk => flopenr:registers[4].clk
+clk => flopenr:registers[5].clk
+clk => flopenr:registers[6].clk
+clk => flopenr:registers[7].clk
+clk => flopenr:registers[8].clk
+clk => flopenr:registers[9].clk
+clk => flopenr:registers[10].clk
+clk => flopenr:registers[11].clk
+clk => flopenr:registers[12].clk
+clk => flopenr:registers[13].clk
+clk => flopenr:registers[14].clk
+clk => flopenr:registers[15].clk
+clk => flopenr:registers[16].clk
+clk => flopenr:registers[17].clk
+clk => flopenr:registers[18].clk
+clk => flopenr:registers[19].clk
+clk => flopenr:registers[20].clk
+clk => flopenr:registers[21].clk
+clk => flopenr:registers[22].clk
+clk => flopenr:registers[23].clk
+clk => flopenr:registers[24].clk
+clk => flopenr:registers[25].clk
+clk => flopenr:registers[26].clk
+clk => flopenr:registers[27].clk
+clk => flopenr:registers[28].clk
+clk => flopenr:registers[29].clk
+clk => flopenr:registers[30].clk
+clk => flopenr:registers[31].clk
+reset => flopenr:registers[0].rst
+reset => flopenr:registers[1].rst
+reset => flopenr:registers[2].rst
+reset => flopenr:registers[3].rst
+reset => flopenr:registers[4].rst
+reset => flopenr:registers[5].rst
+reset => flopenr:registers[6].rst
+reset => flopenr:registers[7].rst
+reset => flopenr:registers[8].rst
+reset => flopenr:registers[9].rst
+reset => flopenr:registers[10].rst
+reset => flopenr:registers[11].rst
+reset => flopenr:registers[12].rst
+reset => flopenr:registers[13].rst
+reset => flopenr:registers[14].rst
+reset => flopenr:registers[15].rst
+reset => flopenr:registers[16].rst
+reset => flopenr:registers[17].rst
+reset => flopenr:registers[18].rst
+reset => flopenr:registers[19].rst
+reset => flopenr:registers[20].rst
+reset => flopenr:registers[21].rst
+reset => flopenr:registers[22].rst
+reset => flopenr:registers[23].rst
+reset => flopenr:registers[24].rst
+reset => flopenr:registers[25].rst
+reset => flopenr:registers[26].rst
+reset => flopenr:registers[27].rst
+reset => flopenr:registers[28].rst
+reset => flopenr:registers[29].rst
+reset => flopenr:registers[30].rst
+reset => flopenr:registers[31].rst
+dataIn => flopenr:registers[0].d
+dataIn => flopenr:registers[1].d
+dataIn => flopenr:registers[2].d
+dataIn => flopenr:registers[3].d
+dataIn => flopenr:registers[4].d
+dataIn => flopenr:registers[5].d
+dataIn => flopenr:registers[6].d
+dataIn => flopenr:registers[7].d
+dataIn => flopenr:registers[8].d
+dataIn => flopenr:registers[9].d
+dataIn => flopenr:registers[10].d
+dataIn => flopenr:registers[11].d
+dataIn => flopenr:registers[12].d
+dataIn => flopenr:registers[13].d
+dataIn => flopenr:registers[14].d
+dataIn => flopenr:registers[15].d
+dataIn => flopenr:registers[16].d
+dataIn => flopenr:registers[17].d
+dataIn => flopenr:registers[18].d
+dataIn => flopenr:registers[19].d
+dataIn => flopenr:registers[20].d
+dataIn => flopenr:registers[21].d
+dataIn => flopenr:registers[22].d
+dataIn => flopenr:registers[23].d
+dataIn => flopenr:registers[24].d
+dataIn => flopenr:registers[25].d
+dataIn => flopenr:registers[26].d
+dataIn => flopenr:registers[27].d
+dataIn => flopenr:registers[28].d
+dataIn => flopenr:registers[29].d
+dataIn => flopenr:registers[30].d
+dataIn => flopenr:registers[31].d
+RegWrite => ands[0].IN1
+RegWrite => ands[1].IN1
+RegWrite => ands[2].IN1
+RegWrite => ands[3].IN1
+RegWrite => ands[4].IN1
+RegWrite => ands[5].IN1
+RegWrite => ands[6].IN1
+RegWrite => ands[7].IN1
+RegWrite => ands[8].IN1
+RegWrite => ands[9].IN1
+RegWrite => ands[10].IN1
+RegWrite => ands[11].IN1
+RegWrite => ands[12].IN1
+RegWrite => ands[13].IN1
+RegWrite => ands[14].IN1
+RegWrite => ands[15].IN1
+RegWrite => ands[16].IN1
+RegWrite => ands[17].IN1
+RegWrite => ands[18].IN1
+RegWrite => ands[19].IN1
+RegWrite => ands[20].IN1
+RegWrite => ands[21].IN1
+RegWrite => ands[22].IN1
+RegWrite => ands[23].IN1
+RegWrite => ands[24].IN1
+RegWrite => ands[25].IN1
+RegWrite => ands[26].IN1
+RegWrite => ands[27].IN1
+RegWrite => ands[28].IN1
+RegWrite => ands[29].IN1
+RegWrite => ands[30].IN1
+RegWrite => ands[31].IN1
+RD1 <= mux32:MuxA.port2
+RD2 <= mux32:MuxB.port2
+
+
+|register_file|decoder5x32:decoder
+a[0] => ShiftLeft0.IN37
+a[1] => ShiftLeft0.IN36
+a[2] => ShiftLeft0.IN35
+a[3] => ShiftLeft0.IN34
+a[4] => ShiftLeft0.IN33
+y[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[7] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[8] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[9] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[10] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[11] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[12] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[13] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[14] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[15] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[16] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[17] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[18] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[19] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[20] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[21] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[22] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[23] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[24] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[25] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[26] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[27] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[28] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[29] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[30] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+y[31] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[0]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[1]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[2]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[3]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[4]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[5]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[6]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[7]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[8]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[9]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[10]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[11]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[12]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[13]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[14]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[15]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[16]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[17]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[18]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[19]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[20]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[21]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[22]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[23]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[24]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[25]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[26]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[27]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[28]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[29]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[30]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|flopenr:registers[31]
+clk => q~reg0.CLK
+en => q~reg0.ENA
+rst => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA
+d[0] => d[0].IN1
+d[1] => d[1].IN1
+d[2] => d[2].IN1
+d[3] => d[3].IN1
+d[4] => d[4].IN1
+d[5] => d[5].IN1
+d[6] => d[6].IN1
+d[7] => d[7].IN1
+d[8] => d[8].IN1
+d[9] => d[9].IN1
+d[10] => d[10].IN1
+d[11] => d[11].IN1
+d[12] => d[12].IN1
+d[13] => d[13].IN1
+d[14] => d[14].IN1
+d[15] => d[15].IN1
+d[16] => d[16].IN1
+d[17] => d[17].IN1
+d[18] => d[18].IN1
+d[19] => d[19].IN1
+d[20] => d[20].IN1
+d[21] => d[21].IN1
+d[22] => d[22].IN1
+d[23] => d[23].IN1
+d[24] => d[24].IN1
+d[25] => d[25].IN1
+d[26] => d[26].IN1
+d[27] => d[27].IN1
+d[28] => d[28].IN1
+d[29] => d[29].IN1
+d[30] => d[30].IN1
+d[31] => d[31].IN1
+sel[0] => sel[0].IN8
+sel[1] => sel[1].IN8
+sel[2] => sel[2].IN2
+sel[3] => sel[3].IN2
+sel[4] => sel[4].IN1
+y <= mux2:m2.port3
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[0].m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN1
+y <= mux2:finalmux.port3
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[0].m4|mux2:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[0].m4|mux2:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[0].m4|mux2:finalmux
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[1].m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN1
+y <= mux2:finalmux.port3
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[1].m4|mux2:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[1].m4|mux2:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[1].m4|mux2:finalmux
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[2].m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN1
+y <= mux2:finalmux.port3
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[2].m4|mux2:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[2].m4|mux2:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[2].m4|mux2:finalmux
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[3].m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN1
+y <= mux2:finalmux.port3
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[3].m4|mux2:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[3].m4|mux2:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[3].m4|mux2:finalmux
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[4].m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN1
+y <= mux2:finalmux.port3
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[4].m4|mux2:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[4].m4|mux2:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[4].m4|mux2:finalmux
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[5].m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN1
+y <= mux2:finalmux.port3
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[5].m4|mux2:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[5].m4|mux2:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[5].m4|mux2:finalmux
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[6].m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN1
+y <= mux2:finalmux.port3
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[6].m4|mux2:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[6].m4|mux2:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[6].m4|mux2:finalmux
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[7].m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN1
+y <= mux2:finalmux.port3
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[7].m4|mux2:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[7].m4|mux2:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes1[7].m4|mux2:finalmux
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes2[0].m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN1
+y <= mux2:finalmux.port3
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes2[0].m4|mux2:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes2[0].m4|mux2:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes2[0].m4|mux2:finalmux
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes2[1].m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN1
+y <= mux2:finalmux.port3
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes2[1].m4|mux2:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes2[1].m4|mux2:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux4:generate_muxes2[1].m4|mux2:finalmux
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxA|mux2:m2
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB
+d[0] => d[0].IN1
+d[1] => d[1].IN1
+d[2] => d[2].IN1
+d[3] => d[3].IN1
+d[4] => d[4].IN1
+d[5] => d[5].IN1
+d[6] => d[6].IN1
+d[7] => d[7].IN1
+d[8] => d[8].IN1
+d[9] => d[9].IN1
+d[10] => d[10].IN1
+d[11] => d[11].IN1
+d[12] => d[12].IN1
+d[13] => d[13].IN1
+d[14] => d[14].IN1
+d[15] => d[15].IN1
+d[16] => d[16].IN1
+d[17] => d[17].IN1
+d[18] => d[18].IN1
+d[19] => d[19].IN1
+d[20] => d[20].IN1
+d[21] => d[21].IN1
+d[22] => d[22].IN1
+d[23] => d[23].IN1
+d[24] => d[24].IN1
+d[25] => d[25].IN1
+d[26] => d[26].IN1
+d[27] => d[27].IN1
+d[28] => d[28].IN1
+d[29] => d[29].IN1
+d[30] => d[30].IN1
+d[31] => d[31].IN1
+sel[0] => sel[0].IN8
+sel[1] => sel[1].IN8
+sel[2] => sel[2].IN2
+sel[3] => sel[3].IN2
+sel[4] => sel[4].IN1
+y <= mux2:m2.port3
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[0].m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN1
+y <= mux2:finalmux.port3
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[0].m4|mux2:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[0].m4|mux2:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[0].m4|mux2:finalmux
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[1].m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN1
+y <= mux2:finalmux.port3
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[1].m4|mux2:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[1].m4|mux2:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[1].m4|mux2:finalmux
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[2].m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN1
+y <= mux2:finalmux.port3
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[2].m4|mux2:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[2].m4|mux2:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[2].m4|mux2:finalmux
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[3].m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN1
+y <= mux2:finalmux.port3
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[3].m4|mux2:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[3].m4|mux2:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[3].m4|mux2:finalmux
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[4].m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN1
+y <= mux2:finalmux.port3
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[4].m4|mux2:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[4].m4|mux2:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[4].m4|mux2:finalmux
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[5].m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN1
+y <= mux2:finalmux.port3
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[5].m4|mux2:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[5].m4|mux2:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[5].m4|mux2:finalmux
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[6].m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN1
+y <= mux2:finalmux.port3
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[6].m4|mux2:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[6].m4|mux2:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[6].m4|mux2:finalmux
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[7].m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN1
+y <= mux2:finalmux.port3
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[7].m4|mux2:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[7].m4|mux2:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes1[7].m4|mux2:finalmux
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes2[0].m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN1
+y <= mux2:finalmux.port3
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes2[0].m4|mux2:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes2[0].m4|mux2:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes2[0].m4|mux2:finalmux
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes2[1].m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN1
+y <= mux2:finalmux.port3
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes2[1].m4|mux2:mux0
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes2[1].m4|mux2:mux1
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux4:generate_muxes2[1].m4|mux2:finalmux
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|register_file|mux32:MuxB|mux2:m2
+d0 => y.DATAA
+d1 => y.DATAB
+sel => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+

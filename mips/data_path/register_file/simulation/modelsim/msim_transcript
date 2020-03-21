@@ -1,0 +1,200 @@
+# Reading C:/intelFPGA/16.1/modelsim_ase/tcl/vsim/pref.tcl
+# do register_file_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Copying C:/intelFPGA/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {register_file_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:02:43 on Mar 16,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." register_file_6_1200mv_85c_slow.vo 
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# End time: 19:02:43 on Mar 16,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Developer/Concepcao/mips/data_path/register_file/testbench {D:/Developer/Concepcao/mips/data_path/register_file/testbench/register_file_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:02:43 on Mar 16,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Developer/Concepcao/mips/data_path/register_file/testbench" D:/Developer/Concepcao/mips/data_path/register_file/testbench/register_file_tb.sv 
+# -- Compiling module register_file_tb
+# 
+# Top level modules:
+# 	register_file_tb
+# End time: 19:02:43 on Mar 16,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc" register_file_tb
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" register_file_tb 
+# Start time: 19:02:43 on Mar 16,2020
+# Loading sv_std.std
+# Loading work.register_file_tb
+# Loading work.register_file
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_io_obuf
+# SDF 10.5b Compiler 2016.10 Oct  5 2016
+# 
+# Loading instances from register_file_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from register_file_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /register_file_tb File: D:/Developer/Concepcao/mips/data_path/register_file/testbench/register_file_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ---------------
+# | RegA | RegB | RegC | clk | rst | dIn | RW | RD1 | RD2
+# | 00001 | 00001 | 00001 | 1 | 1 | 0 | 0 | 0 | 0 | OK
+# | 00001 | 00001 | 00001 | 0 | 1 | 0 | 0 | 0 | 0 | OK
+# | 00001 | 00001 | 00001 | 1 | 0 | 0 | 0 | 0 | 0 | OK
+# | 00000 | 00001 | 00000 | 0 | 0 | 1 | 1 | 0 | 0 | OK
+# | 00000 | 00001 | 00000 | 1 | 0 | 1 | 1 | 1 | 0 | OK
+# | 00000 | 00000 | 00000 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 00000 | 00000 | 00000 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 00001 | 00000 | 00001 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 00001 | 00000 | 00001 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 00001 | 00001 | 00001 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 00001 | 00001 | 00001 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 00010 | 00001 | 00010 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 00010 | 00001 | 00010 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 00010 | 00010 | 00010 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 00010 | 00010 | 00010 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 00011 | 00010 | 00011 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 00011 | 00010 | 00011 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 00011 | 00011 | 00011 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 00011 | 00011 | 00011 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 00100 | 00011 | 00100 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 00100 | 00011 | 00100 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 00100 | 00100 | 00100 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 00100 | 00100 | 00100 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 00101 | 00100 | 00101 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 00101 | 00100 | 00101 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 00101 | 00101 | 00101 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 00101 | 00101 | 00101 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 00110 | 00101 | 00110 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 00110 | 00101 | 00110 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 00110 | 00110 | 00110 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 00110 | 00110 | 00110 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 00111 | 00110 | 00111 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 00111 | 00110 | 00111 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 00111 | 00111 | 00111 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 00111 | 00111 | 00111 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01000 | 00111 | 01000 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 01000 | 00111 | 01000 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01000 | 01000 | 01000 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01000 | 01000 | 01000 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01001 | 01000 | 01001 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 01001 | 01000 | 01001 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01001 | 01001 | 01001 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01001 | 01001 | 01001 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01010 | 01001 | 01010 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 01010 | 01001 | 01010 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01010 | 01010 | 01010 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01010 | 01010 | 01010 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01011 | 01010 | 01011 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 01011 | 01010 | 01011 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01011 | 01011 | 01011 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01011 | 01011 | 01011 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01100 | 01011 | 01100 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 01100 | 01011 | 01100 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01100 | 01100 | 01100 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01100 | 01100 | 01100 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01101 | 01100 | 01101 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 01101 | 01100 | 01101 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01101 | 01101 | 01101 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01101 | 01101 | 01101 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01110 | 01101 | 01110 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 01110 | 01101 | 01110 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01110 | 01110 | 01110 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01110 | 01110 | 01110 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01111 | 01110 | 01111 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 01111 | 01110 | 01111 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01111 | 01111 | 01111 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 01111 | 01111 | 01111 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10000 | 01111 | 10000 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 10000 | 01111 | 10000 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10000 | 10000 | 10000 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10000 | 10000 | 10000 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10001 | 10000 | 10001 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 10001 | 10000 | 10001 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10001 | 10001 | 10001 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10001 | 10001 | 10001 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10010 | 10001 | 10010 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 10010 | 10001 | 10010 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10010 | 10010 | 10010 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10010 | 10010 | 10010 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10011 | 10010 | 10011 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 10011 | 10010 | 10011 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10011 | 10011 | 10011 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10011 | 10011 | 10011 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10100 | 10011 | 10100 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 10100 | 10011 | 10100 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10100 | 10100 | 10100 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10100 | 10100 | 10100 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10101 | 10100 | 10101 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 10101 | 10100 | 10101 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10101 | 10101 | 10101 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10101 | 10101 | 10101 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10110 | 10101 | 10110 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 10110 | 10101 | 10110 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10110 | 10110 | 10110 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10110 | 10110 | 10110 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10111 | 10110 | 10111 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 10111 | 10110 | 10111 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10111 | 10111 | 10111 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 10111 | 10111 | 10111 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11000 | 10111 | 11000 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 11000 | 10111 | 11000 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11000 | 11000 | 11000 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11000 | 11000 | 11000 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11001 | 11000 | 11001 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 11001 | 11000 | 11001 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11001 | 11001 | 11001 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11001 | 11001 | 11001 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11010 | 11001 | 11010 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 11010 | 11001 | 11010 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11010 | 11010 | 11010 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11010 | 11010 | 11010 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11011 | 11010 | 11011 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 11011 | 11010 | 11011 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11011 | 11011 | 11011 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11011 | 11011 | 11011 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11100 | 11011 | 11100 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 11100 | 11011 | 11100 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11100 | 11100 | 11100 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11100 | 11100 | 11100 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11101 | 11100 | 11101 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 11101 | 11100 | 11101 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11101 | 11101 | 11101 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11101 | 11101 | 11101 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11110 | 11101 | 11110 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 11110 | 11101 | 11110 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11110 | 11110 | 11110 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11110 | 11110 | 11110 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11111 | 11110 | 11111 | 0 | 0 | 1 | 1 | 0 | 1 | OK
+# | 11111 | 11110 | 11111 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11111 | 11111 | 11111 | 0 | 0 | 1 | 1 | 1 | 1 | OK
+# | 11111 | 11111 | 11111 | 1 | 0 | 1 | 1 | 1 | 1 | OK
+# Testes Efetuados  = 132
+# Erros Encontrados = 0
+# ** Note: $stop    : D:/Developer/Concepcao/mips/data_path/register_file/testbench/register_file_tb.sv(66)
+#    Time: 2381 ns  Iteration: 0  Instance: /register_file_tb
+# Break in Module register_file_tb at D:/Developer/Concepcao/mips/data_path/register_file/testbench/register_file_tb.sv line 66
